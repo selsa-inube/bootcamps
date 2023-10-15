@@ -1,3 +1,7 @@
+# Libraries
 node_modules
 build
 coverage
+
+# Tokens
+**/*.token.mjs
