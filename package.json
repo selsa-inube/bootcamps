@@ -1,0 +1,39 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "description": "Project for bootcamp development tasks",
+  "homepage": "https://github.com/selsa-inube/bootcamp#readme",
+  "main": "index.js",
+  "author": "wfercanas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selsa-inube/bootcamp.git"
+  },
+  "keywords": [
+    "bootcamp",
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "git"
+  ],
+  "bugs": {
+    "url": "https://github.com/selsa-inube/bootcamp/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "3.0.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
