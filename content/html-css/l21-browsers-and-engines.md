@@ -8,3 +8,5 @@ Only the sections **1 - Introduction** and 2.1, 2.2, 2.3 of the **2 - The render
 
 And this one:
 [Inside a super fast CSS engine: Quantum CSS (aka Stylo) - Mozilla Hacks - the Web developer blog](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/)
+
+Quiz: https://forms.office.com/r/waMZS33fur
