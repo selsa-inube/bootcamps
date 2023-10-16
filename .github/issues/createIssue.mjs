@@ -21,7 +21,7 @@ async function createIssue(issue) {
       body: issue.body,
     },
   );
-  console.log(response.status, response.data.title);
+  console.log(response.status, response.data.title, issue.assignees);
 }
 
 export { createIssue };
