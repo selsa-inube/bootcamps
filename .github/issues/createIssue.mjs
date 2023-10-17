@@ -9,19 +9,21 @@ const owner = "selsa-inube";
 const repo = "bootcamp";
 
 async function createIssue(issue) {
-  const response = await octokit.request(
-    `POST /repos/${owner}/${repo}/issues`,
-    {
-      owner: owner,
-      repo: repo,
-      title: issue.title,
-      assignees: issue.assignees,
-      labels: issue.labels,
-      milestone: issue.milestone,
-      body: issue.body,
-    },
-  );
-  console.log(response.status, response.data.title, issue.assignees);
+  setTimeout(() => {
+    octokit
+      .request(`POST /repos/${owner}/${repo}/issues`, {
+        owner: owner,
+        repo: repo,
+        title: issue.title,
+        assignees: issue.assignees,
+        labels: issue.labels,
+        milestone: issue.milestone,
+        body: issue.body,
+      })
+      .then((response) =>
+        console.log(response.status, response.data.title, issue.assignees),
+      );
+  }, issue.delay);
 }
 
 export { createIssue };
