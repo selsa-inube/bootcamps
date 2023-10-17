@@ -1,0 +1,323 @@
+const URL = "https://github.com/selsa-inube/bootcamp/blob/main/content/";
+
+const lectures = [
+  {
+    title: "L1 - Introduction to HTML and CSS",
+    body: `${URL}/html-css/l1-intro-to-html-css.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L2 - Basic Web Pages",
+    body: `${URL}/html-css/l2-basic-web-pages.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L3 - Links and Images",
+    body: `${URL}/html-css/l3-links-and-images.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L4 - Hello, CSS",
+    body: `${URL}/html-css/l4-hello-css.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L5 - CSS Box Model",
+    body: `${URL}/html-css/l5-css-box-model.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L6 - CSS Selectors",
+    body: `${URL}/html-css/l6-css-selectors.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L7 - Pseudoelements and Pseudoclasses",
+    body: `${URL}/html-css/l7-pseudoelements-pseudoclasses.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L8 - Sizing Units",
+    body: `${URL}/html-css/l8-sizing-units.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L9 - Specificity",
+    body: `${URL}/html-css/l9-specificity.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L10 - Floats",
+    body: `${URL}/html-css/l10-floats.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L11 - Flexbox",
+    body: `${URL}/html-css/l11-flexbox.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L12 - Grid",
+    body: `${URL}/html-css/l12-grid.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L13 - Positioning",
+    body: `${URL}/html-css/l13-positioning.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L14 - Z index and Stacking Context",
+    body: `${URL}/html-css/l14-z-index-and-stacking-context.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L15 - Responsive Design",
+    body: `${URL}/html-css/l15-responsive-design.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L16 - Responsive Images",
+    body: `${URL}/html-css/l16-responsive-images.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L17 - Semantic HTML",
+    body: `${URL}/html-css/l17-semantic-html.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L18 - Forms",
+    body: `${URL}/html-css/l18-forms.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L19 - Typography",
+    body: `${URL}/html-css/l19-typography.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L20 - Critical Rendering Path",
+    body: `${URL}/html-css/l20-critical-rendering-path.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+  {
+    title: "L21 - Browsers and Engines",
+    body: `${URL}/html-css/l21-browsers-and-engines.md`,
+    labels: ["lecture"],
+    milestone: "html-css",
+  },
+];
+
+const activities = [
+  {
+    title: "A1 - Freecodecamp - Basic HTML and HTML5",
+    body: `${URL}/html-css/a1-freecodecamp-basic-html.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A2 - Markup a readme",
+    body: `${URL}/html-css/a2-markup-a-readme.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A3 - Press Release",
+    body: `${URL}/html-css/a3-press-release.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A4 - Freecodecamp - Basic CSS",
+    body: `${URL}/html-css/a4-freecodecamp-basic-css.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A5 - Pseudoclasses and Pseudoelements",
+    body: `${URL}/html-css/a5-pseudoclasses-pseudoelements.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A6 - Selectors without Classes and Ids",
+    body: `${URL}/html-css/a6-selectors-without-classes-and-ids.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A7 - Freecodecamp - Cat Photo App",
+    body: `${URL}/html-css/a7-freecodecamp-cat-photo-app.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A8 - Freecodecamp - Cafe Menu",
+    body: `${URL}/html-css/a8-freecodecamp-cafe-menu.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A9 - Float Layout",
+    body: `${URL}/html-css/a9-float-layout.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A10 - Freecodecamp - CSS Flexbox",
+    body: `${URL}/html-css/a10-freecodecamp-css-flexbox.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A11 - Freecodecamp - Photo Gallery",
+    body: `${URL}/html-css/a11-freecodecamp-photo-gallery.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A12 - Freecodecamp - CSS Grid",
+    body: `${URL}/html-css/a12-freecodecamp-css-grid.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A13 - Freecodecamp - Magazine",
+    body: `${URL}/html-css/a13-freecodecamp-magazine.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A14 - Freecodecamp - Rothko Painting",
+    body: `${URL}/html-css/a14-freecodecamp-rothko-painting.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A15 - Freecodecamp - Balance Sheet",
+    body: `${URL}/html-css/a15-freecodecamp-balance-sheet.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A16 - Grid Garden",
+    body: `${URL}/html-css/a16-grid-garden.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A17 - Sidebar",
+    body: `${URL}/html-css/a17-sidebar.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A18 - Calendar",
+    body: `${URL}/html-css/a18-calendar.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A19 - Freecodecamp - Responsive Web Design",
+    body: `${URL}/html-css/a19-freecodecamp-responsive-web-design.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A20 - Freecodecamp - Piano",
+    body: `${URL}/html-css/a20-freecodecamp-piano.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A21 - Freecodecamp - Technical Documentation Page",
+    body: `${URL}/html-css/a21-freecodecamp-tecnical-doc-page.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A22 - Landing Page",
+    body: `${URL}/html-css/a22-landing-page.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A23 - Stella Studio",
+    body: `${URL}/html-css/a23-stella-studio.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A24 - Freecodecamp - Registration Form",
+    body: `${URL}/html-css/a24-freecodecamp-registration-form.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A25 - Freecodecamp - Survey Form",
+    body: `${URL}/html-css/a25-freecodecamp-survey-form.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A26 - Freecodecamp - Nutrition Label",
+    body: `${URL}/html-css/a26-freecodecamp-nutrition-label.md`,
+    labels: ["exercise"],
+    milestone: "html-css",
+  },
+  {
+    title: "A27 - Google",
+    body: `${URL}/html-css/a27-google.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A28 - Agency",
+    body: `${URL}/html-css/a28-agency.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A29 - Netflix",
+    body: `${URL}/html-css/a29-netflix.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A30 - New York Times",
+    body: `${URL}/html-css/a30-new-york-times.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+  {
+    title: "A31 - Weather",
+    body: `${URL}/html-css/a31-weather.md`,
+    labels: ["assignment"],
+    milestone: "html-css",
+  },
+];
+
+const htmlCSS = [...lectures, ...activities];
+
+export { htmlCSS };
