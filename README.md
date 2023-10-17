@@ -10,7 +10,7 @@ This bootcamp is dedicated to junior frontend developers, so they can learn the 
 4. React
 5. Git
 
-## Contributions
+## Guidelines
 
 ### Directories
 
