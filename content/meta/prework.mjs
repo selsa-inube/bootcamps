@@ -43,6 +43,12 @@ const prework = [
     labels: ["lecture"],
     milestone: "prework",
   },
+  {
+    title: "Github",
+    body: `${URL}/prework/l8-github.md`,
+    labels: ["lecture"],
+    milestone: "prework",
+  },
 ];
 
 export { prework };
