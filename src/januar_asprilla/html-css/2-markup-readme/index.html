@@ -63,7 +63,7 @@
           <a href="https://react.dev/learn/add-react-to-an-existing-project"
             >Add React to a Website</a
           >
-          as a script tag in one minute.
+          as a <code> &lt;script&gt; </code> tag in one minute
         </li>
         <li>
           <a href="https://react.dev/learn/start-a-new-react-project"
@@ -73,9 +73,9 @@
         </li>
       </ul>
       <p>
-        You can use React as a script tag from a
+        You can use React as a <code> &lt;script&gt; </code> tag from a
         <a href="https://legacy.reactjs.org/docs/cdn-links.html">CDN</a>, or as
-        a react package on
+        a <code>react</code> package on
         <a href="https://www.npmjs.com/package/react">npm</a>.
       </p>
     </section>
@@ -127,19 +127,17 @@
       <p>
         We have several examples
         <a href="https://github.com/reactjs/react.dev">on the website</a>. Here
-        is the first one to get you started:
-      </p>
+        is the first one to get you started: <br>
+      
 
-      <div>
-        <p>
-          import { createRoot } from "react-dom/client";<br /><br /><br />
+        <code>
+          import { createRoot } from "react-dom/client";<br /><br>
           function HelloMessage({ name }) {<br /><br />
-          return "div" Hello {name} /"div";<br />
-          }<br /><br /><br /><br />
+            return "div" Hello {name} /"div";<br />
+          }<br /><br />
           const root = createRoot(document.getElementById("container"));<br /><br />
           root.render( HelloMessage name="Taylor" );
-        </p>
-      </div>
+        </code>
       <p>
         This example will render "Hello Taylor" into a container on the page.
       </p>
@@ -149,7 +147,7 @@
           >we call it JSX</a
         >. JSX is not required to use React, but it makes code more readable,
         and writing it feels like writing HTML. If you're using React as a
-        "script" tag, read
+        <code> &lt;script&gt; </code> tag, read
         <a
           href="https://react.dev/learn/add-react-to-an-existing-project#optional-try-react-with-jsx"
           >this section</a
