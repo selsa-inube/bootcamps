@@ -127,16 +127,16 @@
       <p>
         We have several examples
         <a href="https://github.com/reactjs/react.dev">on the website</a>. Here
-        is the first one to get you started: <br>
+        is the first one to get you started: <br><br>
       
 
         <code>
           import { createRoot } from "react-dom/client";<br /><br>
-          function HelloMessage({ name }) {<br /><br />
-            return "div" Hello {name} /"div";<br />
+          function HelloMessage({ name }) {<br />
+            return &lt;div&gt;Hello {name}&lt;/div&gt;;<br />
           }<br /><br />
-          const root = createRoot(document.getElementById("container"));<br /><br />
-          root.render( HelloMessage name="Taylor" );
+          const root = createRoot(document.getElementById("container"));<br />
+          root.render(&lt;HelloMessage name="Taylor" /&gt;);
         </code>
       <p>
         This example will render "Hello Taylor" into a container on the page.
