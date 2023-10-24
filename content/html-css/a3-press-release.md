@@ -1,6 +1,6 @@
 # A3: Press Release
 
-Create the HTML Document linked to a Stylesheet file to look like the following press release from Apple:
+Create a HTML Document linked to a Stylesheet file to look like the following press release from Apple:
 
 [Apple's "Ted Lasso" wins back-to-back Emmy Awards for Outstanding Comedy Series](https://www.apple.com/newsroom/2022/09/apples-ted-lasso-wins-back-to-back-emmy-awards-for-outstanding-comedy-series/)
 
