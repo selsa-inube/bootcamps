@@ -2,63 +2,55 @@
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
 }
-
 .pagina-principal {
-  width: 600px;
+  width: 790px;
   margin: 0 auto;
 }
-
 .comunicado {
   color: #6e6e73;
   font-size: 12px;
   font-weight: bold;
 }
-
 .titulo {
   font-size: 40px;
   font-weight: bold;
 }
-
 .enunciado {
   font-size: 23px;
   font-weight: 500;
 }
-
 .image {
-  width: 150%;
-  margin-left: -130px;
-  border-radius: 25px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
-
 figcaption {
   margin-top: 10px;
   font-size: 13px;
   color: #6e6e73;
   font-weight: 540;
 }
-
 .primero {
   font-size: 14px;
 }
-
 .texto {
-  font-size: 18.5px;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
   color: #303030;
 }
-
 .categorias {
-  font-size: 17px;
+  font-size: 19px;
 }
-
 li {
   color: #303030;
+  line-height: 1.47059;
 }
-
 .descripcion-categorias {
   color: #303030;
   font-size: 21px;
 }
-
 section {
   margin-bottom: 45px;
 }
