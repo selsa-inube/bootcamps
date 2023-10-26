@@ -40,9 +40,10 @@
         font-family: Roboto;
       }
 
-      /* * {
-        margin: 30px 20px 30px 30px;
-      } */
+      .code-block1 {
+        font-family: Consolas;
+        color: black;
+      }
     </style>
 
     <meta charset="UTF-8" />
@@ -119,7 +120,7 @@
           >.
         </p>
 
-        <h4><strong>Installation</strong></h4>
+        <h3><strong>Installation</strong></h3>
 
         <hr />
 
@@ -174,7 +175,7 @@
           >.
         </p>
 
-        <h4><strong>Documentation</strong></h4>
+        <h3><strong>Documentation</strong></h3>
         <hr />
 
         <p>
@@ -250,7 +251,7 @@
           >.
         </p>
 
-        <h4><strong>Examples</strong></h4>
+        <h3><strong>Examples</strong></h3>
 
         <hr />
 
@@ -260,14 +261,14 @@
           Here is the first one to get you started:
         </p>
         <div class="container" style="background-color: #f6f8fa">
-          <p style="font-family: Consolas">
+          <code class="code-block1">
             import {createRoot} from "react-dom/client"; <br /><br />
             function HelloMessage({name})<br />{ return &lt;div>Hello
             {name}&lt;/div>;<br />
             }<br /><br />
             const root = createRoot(document.getElementById("container"));<br />root.render(&lt;HelloMessage
             name="Taylor" />);
-          </p>
+          </code>
         </div>
       </div>
     </div>
