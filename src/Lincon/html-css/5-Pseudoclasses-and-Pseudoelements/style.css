@@ -55,6 +55,9 @@ a:link {
 a:visited {
   color: rgb(10, 122, 10);
 }
+a:hover {
+  color: #fffb00;
+}
 a:active {
   color: #0747a6;
 }
