@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Suscribirse a newsletter</title>
   </head>
   <body>
     <main>
@@ -12,15 +12,16 @@
         <h1>Suscribirse a newsletter.</h1>
         <form>
           <input
+            name="nombre"
             class="informacion"
             type="text"
             id="nombre"
             placeholder="Ingrese su nombre"
             required
-            pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+"
           />
 
           <input
+            name="email"
             class="informacion"
             type="email"
             id="email"
@@ -29,6 +30,7 @@
           />
 
           <input
+            name="telefono"
             class="informacion"
             type="tel"
             id="telefono"
@@ -37,12 +39,24 @@
             pattern="[0-9]*"
           />
 
-          <input class="terminos" type="checkbox" id="terminos" required />
+          <input
+            class="terminos"
+            type="checkbox"
+            id="terminos"
+            required
+            name="terminos"
+          />
           <span class="terminos-text"
             >Acepto los
             <a href="#terminos-y-condiciones">Términos y Condiciones</a></span
           >
-          <button type="submit" id="submit-button" disabled href="index.html">
+          <button
+            name="submit"
+            type="submit"
+            id="submit-button"
+            disabled
+            href="index.html"
+          >
             Suscribirse
           </button>
         </form>
