@@ -1,0 +1,145 @@
+*::selection {
+  background-color: #ffe600;
+}
+
+* {
+  color: #2e2e38;
+}
+
+div {
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+section strong {
+  font-weight: 700;
+  font-family: Georgia, serif;
+}
+
+section li {
+  font-size: 1.3rem;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-style: italic;
+}
+
+article section p {
+  font-size: 1.3rem;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+article section h2 {
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+article section:first-of-type::first-letter {
+  font-size: 6rem;
+  line-height: 50px;
+  float: left;
+  margin-right: 19px;
+  margin-top: 5px;
+}
+
+table mark {
+  font-size: 8vw;
+  background-color: white;
+  font-family: arial;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: Georgia, serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article :nth-child(4) table {
+  background-color: #c4c4c4;
+  width: 100%;
+}
+
+article :nth-child(4) table div {
+  height: 180px;
+  margin: 20px auto 50px auto;
+  width: 60%;
+}
+
+article :nth-child(4) table div b {
+  font-size: 1vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}
+
+article :nth-child(4) table div mark {
+  font-size: 3vw;
+  background-color: transparent;
+  text-align: center;
+  margin-left: 33%;
+}
+
+article :nth-child(4) table div mark:hover {
+  font-size: 4vw;
+  background-color: transparent;
+  color: #ffe600;
+}
+
+section > div {
+  width: 100%;
+  margin-left: 0%;
+}
+
+table div {
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 20%;
+}
+
+section > span {
+  position: relative;
+  float: right;
+  width: 40%;
+  font-family: "EYInterstate", sans-serif;
+  clear: both;
+  display: block;
+  padding-left: 5%;
+  line-height: 0.2em;
+}
+
+span p:first-of-type {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+span a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+span a:first-of-type {
+  font-size: 1.5rem;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+span p:last-of-type {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
