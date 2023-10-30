@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,12 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      figure {
+        margin-bottom: 50px;
       }
 
       .release {
@@ -64,14 +70,6 @@
         padding-top: 30px;
       }
 
-      .navbar1 {
-        overflow: hidden;
-        background-color: #ffffff;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
       .navbar2 {
         overflow: hidden;
         background-color: #ffffff;
@@ -93,17 +91,33 @@
       .main {
         margin-top: 30px;
       }
+
+      .icons-container {
+        margin-bottom: 60px;
+      }
+
+      .icons-container a {
+        text-decoration: none;
+      }
+
+      .icons-container a:hover {
+        color: black;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
     </style>
   </head>
 
   <body>
-    <div class="navbar2">
+    <nav class="navbar2">
       <a href="#home">Newsroom</a>
       <a href="#home" style="width: 40%"></a>
       <a href="#home"></a>
       <a href="#news">Apple Stories</a>
       <a href="#contact">Popular Topics</a>
-    </div>
+    </nav>
     <main>
       <div class="div-centered">
         <p class="release">PRESS RELEASE</p>
@@ -114,41 +128,31 @@
           Outstanding Comedy Series at the 74th Primetime Emmy Awards
         </h1>
 
-        <h4 class="press-headings">
+        <p class="press-headings">
           “Ted Lasso” once again becomes the most Emmy Award-winning comedy
-        </h4>
-        <h4 class="press-headings">
+        </p>
+        <p class="press-headings">
           Apple TV+ lands nine Emmys total, including four wins for “Ted Lasso,”
           and honors for “Carpool Karaoke: The Series,” “Severance,”
           “Schmigadoon!,” and “Home Before Dark”
-        </h4>
-        <div>
-          <span class="col-1">
-            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-          </span>
-
-          <span class="col-1">
-            <a href="https://twitter.com/" class="fa fa-twitter"></a>
-          </span>
-
-          <span class="col-1">
-            <a href="gmail.com" class="fa fa-envelope"></a>
-          </span>
-
-          <span class="col-1">
-            <a href="#" class="fa fa-clone"></a>
-          </span>
+        </p>
+        <div class="icons-container">
+          <a href="https://www.facebook.com/" class="fa fa-facebook col-1"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter col-1"></a>
+          <a href="gmail.com" class="fa fa-envelope col-1"></a>
+          <a href="#" class="fa fa-clone col-1"></a>
         </div>
       </div>
-
-      <img class="div-images" src="press-release.png" alt="picture1" />
-      <div class="div-centered">
-        <p class="release">
+      <figure>
+        <img class="div-images" src="press-release.png" alt="picture1" />
+        <figcaption class="release div-centered">
           “Ted Lasso” took home four wins at the 74th Primetime Emmy Awards,
           including back-to-back wins for Outstanding Comedy Series for both its
           first and second seasons.
-        </p>
+        </figcaption>
+      </figure>
 
+      <div class="div-centered">
         <article class="press-article">
           <p>
             <strong>CULVER CITY, CALIFORNIA</strong>- Tonight at the 74th
@@ -225,154 +229,167 @@
             In 2022, Apple scored nine Primetime Emmy Awards in the following
             categories
           </p>
-          <p>
-            <strong>“Ted Lasso”</strong>
-          </p>
-          <ul>
-            <li>Outstanding Comedy Series</li>
-            <li>Outstanding Lead Actor in a Comedy Series: Jason Sudeikis</li>
-            <li>
-              Outstanding Supporting Actor in a Comedy Series: Brett Goldstein
-            </li>
-            <li>
-              Outstanding Supporting Actor in a Comedy Series: Brett Goldstein
-            </li>
-          </ul>
+          <div class="div-centered">
+            <p>
+              <strong>“Ted Lasso”</strong>
+            </p>
+            <ul>
+              <li>Outstanding Comedy Series</li>
+              <li>Outstanding Lead Actor in a Comedy Series: Jason Sudeikis</li>
+              <li>
+                Outstanding Supporting Actor in a Comedy Series: Brett Goldstein
+              </li>
+              <li>
+                Outstanding Supporting Actor in a Comedy Series: Brett Goldstein
+              </li>
+            </ul>
+          </div>
 
-          <p>
-            <strong>“Severance”</strong>
-          </p>
+          <div class="div-centered">
+            <p>
+              <strong>“Severance”</strong>
+            </p>
 
-          <ul>
-            <li>Outstanding Main Title Design</li>
-            <li>
-              Outstanding Music Composition for a Series (Original Dramatic
-              Score)
-            </li>
-          </ul>
+            <ul>
+              <li>Outstanding Main Title Design</li>
+              <li>
+                Outstanding Music Composition for a Series (Original Dramatic
+                Score)
+              </li>
+            </ul>
+          </div>
 
-          <p>
-            <strong>“Carpool Karaoke: The Series”</strong>
-          </p>
+          <div class="div-centered">
+            <p>
+              <strong>“Carpool Karaoke: The Series”</strong>
+            </p>
 
-          <ul>
-            <li>Outstanding Short Form Comedy, Drama or Variety Series</li>
-          </ul>
+            <ul>
+              <li>Outstanding Short Form Comedy, Drama or Variety Series</li>
+            </ul>
+          </div>
+          <div class="div-centered">
+            <p>
+              <strong>“Schmigadoon!”</strong>
+            </p>
 
-          <p>
-            <strong>“Schmigadoon!”</strong>
-          </p>
+            <ul>
+              <li>Outstanding Original Music and Lyrics</li>
+            </ul>
+          </div>
+          <div class="div-centered">
+            <p>
+              <strong>“Home Before Dark”</strong>
+            </p>
 
-          <ul>
-            <li>Outstanding Original Music and Lyrics</li>
-          </ul>
+            <ul>
+              <li>Outstanding Motion Design</li>
+            </ul>
+          </div>
 
-          <p>
-            <strong>“Home Before Dark”</strong>
-          </p>
+          <section class="div-centered">
+            <p>
+              <strong>“Home Before Dark”</strong>
+            </p>
+            <p>
+              Each episode of “Carpool Karaoke: The Series” features celebrities
+              sharing a car, singing along to their personal playlists, and
+              embarking on adventures. Season five kicks off with Simu Liu and
+              Jessica Henwick; “The White Lotus” costars Murray Bartlett,
+              Alexandra Daddario and Sydney Sweeney; Anitta and Saweetie; Zooey
+              Deschanel and Jonathan Scott, who first met on “Carpool Karaoke”;
+              the stars of All Elite Wrestling; and the D’Amelio family.
+            </p>
 
-          <ul>
-            <li>Outstanding Motion Design</li>
-          </ul>
-          <p>
-            <strong>“Home Before Dark”</strong>
-          </p>
-          <p>
-            Each episode of “Carpool Karaoke: The Series” features celebrities
-            sharing a car, singing along to their personal playlists, and
-            embarking on adventures. Season five kicks off with Simu Liu and
-            Jessica Henwick; “The White Lotus” costars Murray Bartlett,
-            Alexandra Daddario and Sydney Sweeney; Anitta and Saweetie; Zooey
-            Deschanel and Jonathan Scott, who first met on “Carpool Karaoke”;
-            the stars of All Elite Wrestling; and the D’Amelio family.
-          </p>
-          <p>
-            “Carpool Karaoke: The Series,” which has won an Emmy for each of its
-            previous four seasons, along with multiple Producers Guild Awards
-            and a Critics Choice Award, is produced for Apple by CBS Studios and
-            Fulwell 73 Productions, with executive producers James Corden, Eric
-            Pankowski, and Ben Winston.
-          </p>
+            <p>
+              “Carpool Karaoke: The Series,” which has won an Emmy for each of
+              its previous four seasons, along with multiple Producers Guild
+              Awards and a Critics Choice Award, is produced for Apple by CBS
+              Studios and Fulwell 73 Productions, with executive producers James
+              Corden, Eric Pankowski, and Ben Winston.
+            </p>
+          </section>
+          <section class="div-centered">
+            <p>
+              <strong>“Schmigadoon!”</strong>
+            </p>
+            <p>
+              A parody of iconic musicals, “Schmigadoon!” is a new musical
+              comedy series starring Emmy Award nominee Cecily Strong and Emmy
+              Award winner Keegan-Michael Key as a couple on a backpacking trip
+              designed to reinvigorate their relationship when they discover a
+              magical town in which everyone is living in a studio musical from
+              the 1940s. They then discover that they can’t leave until they
+              find “true love.”
+            </p>
+            <p>
+              The series hails from Broadway Video and Universal Television, a
+              division of Universal Studio Group, “Schmigadoon!” is co-created
+              by Cinco Paul and Ken Daurio. Paul serves as showrunner and wrote
+              all of the original songs for the series. Robert Luketic directs
+              and co-executive produces. Lorne Michaels and Andrew Singer serve
+              as executive producers, Micah Frank serves as co-executive
+              producer, and star Cecily Strong and Caroline Maroney serve as
+              producers.
+            </p>
+          </section>
+          <section class="div-centered">
+            <p>
+              <strong>“Severance”</strong>
+            </p>
+            <p>
+              In “Severance,” Mark Scout (Adam Scott) leads a team at Lumon
+              Industries, whose employees have undergone a severance procedure,
+              which surgically divides their memories between their work and
+              personal lives. This daring experiment in “work-life balance” is
+              called into question as Mark finds himself at the center of an
+              unraveling mystery that will force him to confront the true nature
+              of his work… and of himself.
+            </p>
+            <p>
+              “Severance” is written and created by Dan Erickson. Mark Friedman,
+              Chris Black, John Cameron, and Andrew Colville are executive
+              producers alongside Erickson. Ben Stiller, Nicky Weinstock, and
+              Jackie Cohn executive produce through Red Hour Productions, and
+              both Patricia Arquette and Adam Scott serve as producers. Endeavor
+              Content serves as the studio.
+            </p>
+          </section>
+          <section class="div-centered">
+            <p>
+              <strong>“Ted Lasso”</strong>
+            </p>
+            <p>
+              Jason Sudeikis is Ted Lasso, an American football coach hired to
+              manage a British soccer team — despite having no experience. But
+              what he lacks in knowledge, he makes up for with optimism,
+              underdog determination — and biscuits. The widely acclaimed series
+              also stars Hannah Waddingham, Brendan Hunt, Jeremy Swift, Juno
+              Temple, Brett Goldstein, Phil Dunster, and Nick Mohammed.
+            </p>
+            <p>
+              In addition to starring, Sudeikis serves as executive producer,
+              alongside Bill Lawrence via his Doozer Productions, in association
+              with Warner Bros. and Universal Television, a division of
+              Universal Studio Group. Doozer’s Jeff Ingold also serves as an
+              executives producer, with Liza Katzer as co-executive producer.
+              The series was developed by Sudeikis, Lawrence, Brendan Hunt, and
+              Joe Kelly, and is based on the preexisting format and characters
+              from NBC Sports
+            </p>
+          </section>
 
-          <p>
-            <strong>“Schmigadoon!”</strong>
-          </p>
-          <p>
-            A parody of iconic musicals, “Schmigadoon!” is a new musical comedy
-            series starring Emmy Award nominee Cecily Strong and Emmy Award
-            winner Keegan-Michael Key as a couple on a backpacking trip designed
-            to reinvigorate their relationship when they discover a magical town
-            in which everyone is living in a studio musical from the 1940s. They
-            then discover that they can’t leave until they find “true love.”
-          </p>
-          <p>
-            The series hails from Broadway Video and Universal Television, a
-            division of Universal Studio Group, “Schmigadoon!” is co-created by
-            Cinco Paul and Ken Daurio. Paul serves as showrunner and wrote all
-            of the original songs for the series. Robert Luketic directs and
-            co-executive produces. Lorne Michaels and Andrew Singer serve as
-            executive producers, Micah Frank serves as co-executive producer,
-            and star Cecily Strong and Caroline Maroney serve as producers.
-          </p>
-
-          <p>
-            <strong>“Severance”</strong>
-          </p>
-          <p>
-            In “Severance,” Mark Scout (Adam Scott) leads a team at Lumon
-            Industries, whose employees have undergone a severance procedure,
-            which surgically divides their memories between their work and
-            personal lives. This daring experiment in “work-life balance” is
-            called into question as Mark finds himself at the center of an
-            unraveling mystery that will force him to confront the true nature
-            of his work… and of himself.
-          </p>
-          <p>
-            “Severance” is written and created by Dan Erickson. Mark Friedman,
-            Chris Black, John Cameron, and Andrew Colville are executive
-            producers alongside Erickson. Ben Stiller, Nicky Weinstock, and
-            Jackie Cohn executive produce through Red Hour Productions, and both
-            Patricia Arquette and Adam Scott serve as producers. Endeavor
-            Content serves as the studio.
-          </p>
-
-          <p>
-            <strong>“Ted Lasso”</strong>
-          </p>
-          <p>
-            Jason Sudeikis is Ted Lasso, an American football coach hired to
-            manage a British soccer team — despite having no experience. But
-            what he lacks in knowledge, he makes up for with optimism, underdog
-            determination — and biscuits. The widely acclaimed series also stars
-            Hannah Waddingham, Brendan Hunt, Jeremy Swift, Juno Temple, Brett
-            Goldstein, Phil Dunster, and Nick Mohammed.
-          </p>
-          <p>
-            In addition to starring, Sudeikis serves as executive producer,
-            alongside Bill Lawrence via his Doozer Productions, in association
-            with Warner Bros. and Universal Television, a division of Universal
-            Studio Group. Doozer’s Jeff Ingold also serves as an executives
-            producer, with Liza Katzer as co-executive producer. The series was
-            developed by Sudeikis, Lawrence, Brendan Hunt, and Joe Kelly, and is
-            based on the preexisting format and characters from NBC Sports
-          </p>
-          <p><strong>Share article</strong></p>
           <div>
-            <span class="col-1">
-              <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-            </span>
-
-            <span class="col-1">
-              <a href="https://twitter.com/" class="fa fa-twitter"></a>
-            </span>
-
-            <span class="col-1">
-              <a href="gmail.com" class="fa fa-envelope"></a>
-            </span>
-
-            <span class="col-1">
-              <a href="#" class="fa fa-clone"></a>
-            </span>
+            <p><strong>Share article</strong></p>
+            <div class="icons-container">
+              <a
+                href="https://www.facebook.com/"
+                class="fa fa-facebook col-1"
+              ></a>
+              <a href="https://twitter.com/" class="fa fa-twitter col-1"></a>
+              <a href="gmail.com" class="fa fa-envelope col-1"></a>
+              <a href="#" class="fa fa-clone col-1"></a>
+            </div>
           </div>
         </article>
       </div>
