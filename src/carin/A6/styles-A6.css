@@ -29,21 +29,21 @@ section li {
   font-style: italic;
 }
 
-article section p {
+main section p {
   font-size: 1.3rem;
   font-family: Georgia, serif;
   font-weight: 400;
   line-height: 32px;
 }
 
-article section h2 {
+main section h2 {
   font-size: 2rem;
   font-family: Georgia, serif;
   font-weight: 400;
   line-height: 32px;
 }
 
-article section:first-of-type::first-letter {
+main section:first-of-type::first-letter {
   font-size: 6rem;
   line-height: 50px;
   float: left;
@@ -51,7 +51,7 @@ article section:first-of-type::first-letter {
   margin-top: 5px;
 }
 
-table mark {
+article mark {
   font-size: 8vw;
   background-color: white;
   font-family: arial;
@@ -59,41 +59,52 @@ table mark {
   margin-bottom: 20px;
 }
 
-table {
+article {
   font-family: Georgia, serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-article :nth-child(4) table {
+main :nth-child(4) article {
   background-color: #c4c4c4;
   width: 100%;
 }
 
-article :nth-child(4) table div {
-  height: 180px;
-  margin: 20px auto 50px auto;
-  width: 60%;
+main :nth-child(4) article div {
+  /* margin-left: 5%; */
+  width: 44%;
+  display: inline-block;
+  margin: 0;
 }
 
-article :nth-child(4) table div b {
+main :nth-child(4) article div:nth-child(2) {
+  margin: 0;
+  width: 10%;
+  display: inline-block;
+}
+
+main :nth-child(4) article div:nth-child(2) img {
+  width: 50%;
+}
+
+main :nth-child(4) article div b {
   font-size: 1vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 20px;
+  margin-top: 0px;
+  line-height: 1em;
   display: block;
-  margin-top: 50px;
+  height: 5em;
   text-align: center;
 }
 
-article :nth-child(4) table div mark {
+main :nth-child(4) article div mark {
   font-size: 3vw;
   background-color: transparent;
   text-align: center;
-  margin-left: 33%;
+  display: block;
+  padding: 0%;
 }
 
-article :nth-child(4) table div mark:hover {
+main :nth-child(4) article div mark:hover {
   font-size: 4vw;
   background-color: transparent;
   color: #ffe600;
@@ -104,10 +115,11 @@ section > div {
   margin-left: 0%;
 }
 
-table div {
-  width: 95%;
-  margin-left: 0%;
-  margin-right: 20%;
+article > div {
+  width: 40%;
+  margin-left: 5%;
+
+  display: inline-block;
 }
 
 section > span {
@@ -117,22 +129,24 @@ section > span {
   font-family: "EYInterstate", sans-serif;
   clear: both;
   display: block;
-  padding-left: 5%;
+  padding: 5%;
   line-height: 0.2em;
 }
 
 span p:first-of-type {
-  font-size: 2rem;
+  font-size: 3vw;
   margin-top: 10px;
+  line-height: 1em;
 }
 
 span a {
   text-decoration: none;
   font-weight: bold;
+  font-size: 1vw;
 }
 
 span a:first-of-type {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 span a:hover {
@@ -140,6 +154,6 @@ span a:hover {
 }
 
 span p:last-of-type {
-  font-size: 1rem;
+  font-size: 1vw;
   line-height: 1.5em;
 }
