@@ -8,62 +8,56 @@
   </head>
   <body>
     <main>
-      <div class="nav-bar"><h1>Navigation bar</h1></div>
+      <h1>Subscribe my newsletter</h1>
+      <nav class="nav-bar"><h2>Navigation bar</h2></nav>
       <div class="Suscription-form">
-        <h1>Suscription form</h1>
+        <h2>Suscription form</h2>
         <form>
-          <div>
-            <input
-              type="text"
-              id="choose"
-              name="i-like"
-              required
-              minlength="6"
-              maxlength="20"
-              placeholder="Name Lastname"
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@domain.com"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="tel"
-              id="Phone-number"
-              min="10"
-              max="10"
-              placeholder="555555555"
-            />
-          </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="6"
+            maxlength="20"
+            placeholder="Name Lastname"
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@domain.com"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            required
+          />
+
+          <input
+            type="tel"
+            id="Phone-number"
+            name="Phone-number"
+            min="10"
+            max="10"
+            placeholder="555555555"
+          />
 
           <div>
-            <span>
-              <button>Submit</button>
-            </span>
-            <span>
+            <button>Submit</button>
+            <label for="checking-terms">
               <a href="#terms-conditions">Terms and conditions</a>
-            </span>
-            <span>
-              <input
-                type="checkbox"
-                id="cheking-terms"
-                name="cheking-terms"
-                value="cheking-terms"
-                required
-              />
-            </span>
+            </label>
+            <input
+              type="checkbox"
+              id="checking-terms"
+              name="checking-terms"
+              value="checking-terms"
+              required
+            />
           </div>
         </form>
       </div>
       <div id="terms-conditions" class="terms-conditions">
-        <h1>Terms and conditions</h1>
+        <h2>Terms and conditions</h2>
         <p class="terms-conditions-p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim
