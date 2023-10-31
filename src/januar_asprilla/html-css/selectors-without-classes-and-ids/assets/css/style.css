@@ -95,49 +95,51 @@ section:nth-child(5) div:nth-of-type(1) {
   display: inline-flex;
   position: relative;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(1) {
+section:nth-child(5) p:nth-of-type(1) {
   background-color: rgb(196, 196, 196);
   color: rgb(0, 0, 0);
   margin: 1.5rem;
   width: 20rem;
   display: block;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(1) p {
+section:nth-child(5) p:nth-of-type(1) {
   font-size: 21px;
   font-weight: bold;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(1) span {
+section:nth-child(5) span:nth-of-type(1) {
   font-size: 5em;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(2) {
+section:nth-child(5) span p {
   background-color: rgb(196, 196, 196);
   color: rgb(0, 0, 0);
+
   margin: 1.5rem;
   width: 20rem;
   display: block;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(2) span {
+section:nth-child(5) span:nth-of-type(2) {
   font-size: 5em;
   text-align: center;
 }
-section:nth-child(5) div:nth-of-type(1) div:nth-of-type(2) p {
+section:nth-child(5) p:nth-of-type(2) {
   font-size: 21px;
   font-weight: bold;
 }
-section:nth-child(6) div:nth-of-type(1) p:nth-of-type(1) {
+section:nth-child(6) p:nth-of-type(1) {
   padding: 30px 0px 28px 0px;
   font-family: Georgia, serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+  border-top: 1px solid rgb(196, 196, 205);
   border-bottom: 1px solid rgb(196, 196, 205);
 }
-section:nth-child(6) div:nth-of-type(2) {
+section:nth-child(6) p:nth-of-type(2) {
   display: flex;
   position: relative;
   margin: 20px 10px 20px 10px;
 }
-section:nth-child(6) div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(1) {
+section:nth-child(6) p:nth-of-type(2) {
   padding: 30px 0px 28px 0px;
   display: block;
   font-family: EYInterstate, sans-serif;
@@ -146,7 +148,7 @@ section:nth-child(6) div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(1) {
   border-top: 1px solid rgb(196, 196, 205);
   border-bottom: 1px solid rgb(196, 196, 205);
 }
-section:nth-child(6) div:nth-of-type(2) span {
+section:nth-child(6) span:nth-of-type(1) {
   font-size: 120px;
   line-height: 144px;
   display: block;
@@ -157,7 +159,7 @@ section:nth-child(6) div:nth-of-type(2) span {
   position: relative;
 }
 
-section:nth-child(6) div:nth-of-type(2) div:nth-of-type(2) p:nth-of-type(1) {
+section:nth-child(6) p:nth-of-type(3) {
   padding: 30px 0px 28px 0px;
   display: block;
   font-family: EYInterstate, sans-serif;
@@ -166,7 +168,7 @@ section:nth-child(6) div:nth-of-type(2) div:nth-of-type(2) p:nth-of-type(1) {
   border-top: 1px solid rgb(196, 196, 205);
   border-bottom: 1px solid rgb(196, 196, 205);
 }
-section:nth-child(6) div:nth-of-type(3) p:nth-of-type(1) {
+section:nth-child(6) p:nth-of-type(4) {
   padding: 30px 0px 28px 0px;
   font-family: Georgia, serif;
   font-size: 20px;
@@ -175,7 +177,7 @@ section:nth-child(6) div:nth-of-type(3) p:nth-of-type(1) {
   border-bottom: 1px solid rgb(196, 196, 205);
 }
 
-section:nth-child(6) div:nth-of-type(4) div:nth-of-type(1) p:nth-of-type(1) {
+section:nth-child(6) p:nth-of-type(5) {
   padding: 30px 0px 28px 0px;
   display: block;
   font-family: EYInterstate, sans-serif;
@@ -185,14 +187,14 @@ section:nth-child(6) div:nth-of-type(4) div:nth-of-type(1) p:nth-of-type(1) {
   border-bottom: 1px solid rgb(196, 196, 205);
   position: relative;
 }
-section:nth-child(6) div:nth-of-type(4) div:nth-of-type(2) span {
+section:nth-child(6) span:nth-of-type(2) {
   display: block;
   font-size: 120px;
   font-weight: 300;
   margin: 10px 0px 20px 0px;
   position: relative;
 }
-section:nth-child(6) div:nth-of-type(4) div:nth-of-type(1) span {
+section:nth-child(6) span:nth-of-type(3) {
   display: block;
   font-size: 120px;
   font-weight: 300;
