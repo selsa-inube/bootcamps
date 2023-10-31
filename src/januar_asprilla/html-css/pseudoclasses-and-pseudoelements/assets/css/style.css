@@ -93,8 +93,8 @@ li::marker {
   content: " ◆";
 }
 li:nth-child(odd)::marker {
-  color: #5e6c84;
+  color: #ff0000;
 }
 h2 {
-  color: #0747a6;
+  color: #113a79;
 }
