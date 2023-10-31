@@ -1,0 +1,197 @@
+main {
+  background: url("figures/Earth-image.jpg");
+  background-size: 100vw 100vh;
+}
+
+sidebar {
+  float: left;
+  background-color: #1a1c1e;
+  color: white;
+  height: 600px;
+}
+
+content {
+  float: left;
+  width: 79vw;
+  background-color: transparent;
+}
+
+main {
+  float: left;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  padding: 10px;
+  color: white;
+}
+.profile:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
+
+.profile img {
+  height: 20px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+}
+nav a {
+  align-self: stretch;
+  width: 200px;
+  height: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+nav a:hover {
+  background-color: #111111;
+  cursor: pointer;
+}
+
+nav a::before {
+  font-size: 50%;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  vertical-align: center;
+  content: "0";
+  padding-right: 10px;
+}
+
+nav a:nth-of-type(1)::before {
+  content: url("figures/icons8-home-20.png");
+}
+nav a:nth-of-type(1):hover::before {
+  content: url("figures/icons8-home-20-h.png");
+}
+
+nav a:nth-of-type(2)::before {
+  content: url("figures/icons8-category-20.png");
+}
+nav a:nth-of-type(2):hover::before {
+  content: url("figures/icons8-category-20-h.png");
+}
+
+nav a:nth-of-type(3)::before {
+  content: url("figures/icons8-featured-20.png");
+}
+nav a:nth-of-type(3):hover::before {
+  content: url("figures/icons8-featured-20-h.png");
+}
+
+nav a:nth-of-type(4)::before {
+  content: url("figures/icons8-cart-20.png");
+}
+nav a:nth-of-type(4):hover::before {
+  content: url("figures/icons8-cart-20-h.png");
+}
+
+nav a:nth-of-type(5)::before {
+  content: url("figures/icons8-history-20.png");
+}
+nav a:nth-of-type(5):hover::before {
+  content: url("figures/icons8-history-20-h.png");
+}
+
+nav a:nth-of-type(6)::before {
+  content: url("figures/icons8-favourites-20.png");
+}
+nav a:nth-of-type(6):hover::before {
+  content: url("figures/icons8-favourites-20-h.png");
+}
+
+nav a:nth-of-type(7)::before {
+  content: url("figures/icons8-liked-20.png");
+}
+nav a:nth-of-type(7):hover::before {
+  content: url("figures/icons8-liked-20-h.png");
+}
+
+nav a:nth-of-type(8)::before {
+  content: url("figures/icons8-suscription-20.png");
+}
+nav a:nth-of-type(8):hover::before {
+  content: url("figures/icons8-suscription-20-h.png");
+}
+
+nav a:nth-of-type(9)::before {
+  content: url("figures/icons8-playlist-20.png");
+}
+nav a:nth-of-type(9):hover::before {
+  content: url("figures/icons8-playlist-20-h.png");
+}
+
+nav a:nth-of-type(10)::before {
+  content: url("figures/icons8-create-20.png");
+}
+nav a:nth-of-type(10):hover::before {
+  content: url("figures/icons8-create-20-h.png");
+}
+
+hr {
+  border-color: #faedcd;
+}
+
+div a {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+div a :first-of-type {
+  padding-top: 30px;
+}
+div a:hover {
+  cursor: pointer;
+  color: #faedcd;
+}
+
+h1 {
+  color: white;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  font-size: 5vw;
+}
+
+content > p {
+  color: white;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  font-size: 3vw;
+  width: 30vw;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.play {
+  margin-left: 5vw;
+  background-color: orange;
+  margin: 1vw 1vw 1vw 5vw;
+}
+
+.more {
+  border-color: #faedcd;
+  background-color: transparent;
+  color: #faedcd;
+  margin: 1vw;
+}
+
+.play:hover {
+  cursor: pointer;
+}
+
+.more:hover {
+  cursor: alias;
+}
