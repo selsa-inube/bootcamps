@@ -16,7 +16,7 @@ nav {
   width: 300px;
   height: 100vh;
 }
-.parte-principal {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,10 +89,8 @@ img {
 
 .menu-1 {
   display: flex;
-  gap: 20px;
   flex-direction: column;
-  padding-bottom: 20px;
-  height: 350px;
+  padding: 10px 0px;
   border-bottom: 2px solid #383636;
   cursor: pointer;
 }
@@ -100,9 +98,12 @@ img {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 0px 20px;
+  padding: 10px 20px;
   color: #ffffff;
   font-size: 15px;
+}
+.menu-1 li:hover {
+  background-color: rgb(27, 27, 27);
 }
 .item-active {
   background-color: rgb(27, 27, 27);
@@ -117,7 +118,6 @@ img {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  height: 100vh;
   margin-top: 20px;
 }
 .menu-2 li:nth-child(1) {
@@ -127,7 +127,7 @@ img {
 .menu-2 li {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 25px;
   color: #747474;
   font-size: 12px;
   cursor: pointer;
