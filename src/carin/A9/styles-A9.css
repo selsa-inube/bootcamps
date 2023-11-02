@@ -1,30 +1,47 @@
-main {
+/* General */
+* {
+  font-family: sans-serif;
+  color: #d3d5d6;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
   background: url("figures/Earth-image.jpg");
   background-size: 100vw 100vh;
+  overflow: hidden;
 }
 
-sidebar {
+/* containers */
+
+.sidebar {
   float: left;
   background-color: #1a1c1e;
-  color: white;
-  height: 600px;
-}
-
-content {
-  float: left;
-  width: 79vw;
-  background-color: transparent;
+  color: #d3d5d6;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 250px;
 }
 
 main {
   float: left;
-  overflow: hidden;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5vw;
+  height: 100vh;
 }
+
+/* sidebar containers and elements */
 
 .profile {
   display: flex;
   padding: 10px;
-  color: white;
+  color: d3d5d6;
 }
 .profile:hover {
   cursor: pointer;
@@ -37,135 +54,148 @@ main {
   border-radius: 50%;
   margin-right: 10px;
   margin-left: 15px;
+  align-self: center;
 }
 
 nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 60%;
+  height: auto;
 }
 nav a {
   align-self: stretch;
-  width: 200px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   text-align: left;
-  padding-left: 20px;
+  margin-left: 20px;
+  line-height: 2em;
 }
-nav a:hover {
+
+nav li:hover {
   background-color: #111111;
   cursor: pointer;
 }
 
 nav a::before {
   font-size: 50%;
-  color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  vertical-align: center;
-  content: "0";
+  display: inline-block;
+  content: "";
   padding-right: 10px;
 }
 
-nav a:nth-of-type(1)::before {
+nav ul li:nth-of-type(1) a::before {
   content: url("figures/icons8-home-20.png");
 }
-nav a:nth-of-type(1):hover::before {
+nav ul li:nth-of-type(1) a:hover::before {
   content: url("figures/icons8-home-20-h.png");
 }
 
-nav a:nth-of-type(2)::before {
+nav ul li:nth-of-type(2) a::before {
   content: url("figures/icons8-category-20.png");
 }
-nav a:nth-of-type(2):hover::before {
+nav ul li:nth-of-type(2) a:hover::before {
   content: url("figures/icons8-category-20-h.png");
 }
 
-nav a:nth-of-type(3)::before {
+nav ul li:nth-of-type(3) a::before {
   content: url("figures/icons8-featured-20.png");
 }
-nav a:nth-of-type(3):hover::before {
+nav ul li:nth-of-type(3) a:hover::before {
   content: url("figures/icons8-featured-20-h.png");
 }
 
-nav a:nth-of-type(4)::before {
+nav ul li:nth-of-type(4) a::before {
   content: url("figures/icons8-cart-20.png");
 }
-nav a:nth-of-type(4):hover::before {
+nav ul li:nth-of-type(4) a:hover::before {
   content: url("figures/icons8-cart-20-h.png");
 }
 
-nav a:nth-of-type(5)::before {
+nav ul li:nth-of-type(5) a::before {
   content: url("figures/icons8-history-20.png");
 }
-nav a:nth-of-type(5):hover::before {
+nav ul li:nth-of-type(5) a:hover::before {
   content: url("figures/icons8-history-20-h.png");
 }
 
-nav a:nth-of-type(6)::before {
+nav ul li:nth-of-type(6) a::before {
   content: url("figures/icons8-favourites-20.png");
 }
-nav a:nth-of-type(6):hover::before {
+nav ul li:nth-of-type(6) a:hover::before {
   content: url("figures/icons8-favourites-20-h.png");
 }
 
-nav a:nth-of-type(7)::before {
+nav ul li:nth-of-type(7) a::before {
   content: url("figures/icons8-liked-20.png");
 }
-nav a:nth-of-type(7):hover::before {
+nav ul li:nth-of-type(7) a:hover::before {
   content: url("figures/icons8-liked-20-h.png");
 }
 
-nav a:nth-of-type(8)::before {
+nav ul li:nth-of-type(8) a::before {
   content: url("figures/icons8-suscription-20.png");
 }
-nav a:nth-of-type(8):hover::before {
+nav ul li:nth-of-type(8) a:hover::before {
   content: url("figures/icons8-suscription-20-h.png");
 }
 
-nav a:nth-of-type(9)::before {
+nav ul li:nth-of-type(9) a::before {
   content: url("figures/icons8-playlist-20.png");
 }
-nav a:nth-of-type(9):hover::before {
+nav ul li:nth-of-type(9) a:hover::before {
   content: url("figures/icons8-playlist-20-h.png");
 }
 
-nav a:nth-of-type(10)::before {
+nav ul li:nth-of-type(10) a::before {
   content: url("figures/icons8-create-20.png");
 }
-nav a:nth-of-type(10):hover::before {
+nav ul li:nth-of-type(10) a:hover::before {
   content: url("figures/icons8-create-20-h.png");
 }
 
-hr {
-  border-color: #faedcd;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-div a {
+hr {
+  border: 1px solid #5d5f61;
+}
+
+.sidebar-bottom-component a {
   display: block;
   margin-left: 20px;
   margin-bottom: 10px;
+  line-height: 2em;
+  font-size: 0.8em;
+  color: #5d5f61;
 }
 
-div a :first-of-type {
-  padding-top: 30px;
+.sidebar-bottom-component a:first-of-type {
+  margin-top: 20px;
 }
-div a:hover {
+
+.sidebar-bottom-component a:hover {
   cursor: pointer;
-  color: #faedcd;
+  color: #d3d5d6;
 }
 
+.sidebar-bottom-component a:visited {
+  color: #d3d5d6;
+}
+
+/* main containers and elements */
 h1 {
   color: white;
-  margin-top: 15vh;
-  margin-left: 5vw;
   font-size: 5vw;
 }
 
-content > p {
+main p {
   color: white;
-  margin-top: 10vh;
-  margin-left: 5vw;
-  font-size: 3vw;
+  font-size: 2.5vw;
   width: 30vw;
 }
 
@@ -178,7 +208,7 @@ button {
 .play {
   margin-left: 5vw;
   background-color: orange;
-  margin: 1vw 1vw 1vw 5vw;
+  margin: 1vw;
 }
 
 .more {
