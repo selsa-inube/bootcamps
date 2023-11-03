@@ -10,8 +10,8 @@ body {
 }
 
 #barra-menu {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   width: 60px;
   height: 100vh;
   background-color: #ffffff;
@@ -23,17 +23,17 @@ nav * {
   cursor: pointer;
 }
 nav {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 10px 90px 50px 1fr auto;
+  gap: 40px;
+  padding: 10px 0;
+  justify-items: center;
+}
+.inefrior-pagina {
+  display: grid;
   gap: 50px;
 }
-#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-#logo img {
+.icono-principal > img {
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -44,11 +44,7 @@ nav {
     rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-#perfil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 #perfil img {
   width: 40px;
   height: 40px;
@@ -66,6 +62,10 @@ nav {
   flex-direction: column;
   gap: 10px;
 }
+.search-separado li {
+  list-style: none;
+  color: #55525e;
+}
 
 .items li {
   display: flex;
@@ -75,13 +75,13 @@ nav {
 .items ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   list-style: none;
   gap: 10px;
   color: #55525e;
 }
-.buscador {
-  transform: translateY(-20px);
+.lista-widelab-hover li::before {
+  content: "⋮⋮";
+  font-size: 20px;
 }
 
 #container-widelab {
@@ -104,7 +104,7 @@ nav {
 }
 #container-widelab:hover .lista-widelab-hover {
   display: block;
-  transform: translate(60px, -20px);
+  transform: translate(60px, -10px);
 }
 
 #container-perfil {
