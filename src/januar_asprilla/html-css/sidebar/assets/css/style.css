@@ -120,6 +120,12 @@ body {
   border-radius: 10px;
   background-color: rgb(236, 236, 236);
 }
+.extras li:hover::before {
+  content: "⋮⋮";
+  color: gray;
+  font-size: 20px;
+  margin-right: 8px;
+}
 .extras i {
   color: gray;
   visibility: hidden;
