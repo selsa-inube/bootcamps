@@ -12,6 +12,7 @@ body {
   width: 60px;
   height: 100vh;
   border-radius: 15px;
+  position: fixed;
 }
 .icono {
   cursor: pointer;
@@ -71,19 +72,22 @@ body {
   cursor: pointer;
   margin-top: -10px;
   padding: 15px;
+  width: 100px;
 }
 .perfil img {
   width: 30px;
   height: 30px;
   border-radius: 20%;
 }
-
+.icono {
+  width: 100px;
+}
 .icono-principal:hover .extras {
   display: block;
   position: absolute;
   width: 250px;
   height: 220px;
-  transform: translate(-30px, -44px);
+  transform: translate(-20px, -44px);
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   top: 45px;
@@ -134,4 +138,93 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 20%;
+}
+
+.perfil-principal:hover .perfil-extras {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  transform: translate(-20px, 330px);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  top: 45px;
+  left: 90px;
+}
+.perfil-extras {
+  display: none;
+}
+.perfil-principal:hover .icono-hover:hover {
+  display: block;
+}
+.perfil-extras li {
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: start;
+}
+.perfil-extras li:nth-child(1):hover {
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+}
+
+.perfil-extras img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+}
+.informacion-perfil {
+  margin-left: 10px;
+  font-size: 10px;
+}
+.informacion-perfil p {
+  color: gray;
+  font-size: 12px;
+}
+#perfil-uno {
+  display: block;
+}
+.perfil-extras li:nth-child(1) {
+  margin-bottom: -5px;
+}
+.perfil-extras li:nth-child(2) p {
+  padding: 5px;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+}
+.perfil-extras li:nth-child(2) p:hover {
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+}
+.perfil-extras li:nth-child(2) i {
+  margin-right: 8px;
+}
+#perfil-dos {
+  display: block;
+}
+.perfil-extras li:nth-child(3) p {
+  padding: 5px;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+}
+.perfil-extras li:nth-child(3) p:nth-child(1):hover {
+  border-radius: 10px;
+  background-color: rgb(204, 226, 204);
+  color: rgb(0, 129, 0);
+}
+.perfil-extras li:nth-child(3) i {
+  margin-right: 10px;
+}
+.perfil-extras li:nth-child(3) p:nth-child(2):hover {
+  border-radius: 10px;
+  background-color: rgb(226, 204, 204);
+  color: rgb(129, 0, 0);
+}
+.perfil-extras li:nth-child(3) p:nth-child(3) {
+  font-size: 11px;
+  color: gray;
 }
