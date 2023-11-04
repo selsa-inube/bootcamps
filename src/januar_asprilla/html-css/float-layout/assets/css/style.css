@@ -5,7 +5,7 @@
 }
 body {
   background: url("../img/nasa-Q1p7bh3SHj8-unsplash.jpg");
-  background-repeat: no-repeat0;
+  background-repeat: no-repeat 0;
   background-size: 100vw 100vh;
 }
 
@@ -88,6 +88,9 @@ header nav a:hover {
   border-radius: 10px;
   margin-right: 50px;
   cursor: pointer;
+}
+#boton-uno i {
+  color: rgb(0, 0, 0);
 }
 #boton-dos {
   padding: 20px 30px 20px 30px;
