@@ -114,13 +114,13 @@ body {
   display: flex;
   align-items: center;
   padding: 5px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .extras li:hover {
   border-radius: 10px;
   background-color: rgb(236, 236, 236);
 }
-.extras li:hover::before {
+.extras li::before {
   content: "⋮⋮";
   color: gray;
   font-size: 20px;
