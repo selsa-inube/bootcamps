@@ -9,17 +9,17 @@ body {
   background-size: 100vw 100vh;
 }
 
-.menu {
+header {
   background-color: #191717;
   float: left;
   height: 100vh;
   min-width: 250px;
 }
 
-.menu nav a i {
+header nav a i {
   margin-right: 10px;
 }
-.menu nav a {
+header nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -27,7 +27,7 @@ body {
   font-size: 14px;
   padding: 10px;
 }
-.menu nav a:hover {
+header nav a:hover {
   background-color: rgb(0, 0, 0);
 }
 .nave {
@@ -35,6 +35,9 @@ body {
   margin: auto;
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(121, 121, 121);
+}
+.nave i {
+  color: #ffffff;
 }
 .perfil img {
   height: 35px;
@@ -51,18 +54,13 @@ body {
 .perfil:hover {
   background-color: rgb(0, 0, 0);
 }
-.otros a:nth-child(1) {
+.otros li a {
+  font-size: 12px;
   padding-top: 20px;
-  font-size: 12px;
-  color: rgb(255, 255, 255);
-}
-.otros a:nth-child(2) {
-  font-size: 12px;
   color: rgb(94, 94, 94);
 }
-.otros a:nth-child(3) {
-  font-size: 12px;
-  color: rgb(94, 94, 94);
+.otros li:nth-child(1) a:nth-child(1) {
+  color: white;
 }
 .content {
   float: left;
@@ -84,16 +82,18 @@ body {
   display: flex;
   margin-top: 90px;
 }
-#uno {
+#boton-uno {
   padding: 20px 40px 20px 40px;
   background-color: #ffc436;
   border-radius: 10px;
   margin-right: 50px;
+  cursor: pointer;
 }
-#dos {
+#boton-dos {
   padding: 20px 30px 20px 30px;
   border-radius: 10px;
   margin-right: 50px;
   border: 1px solid white;
   color: white;
+  cursor: pointer;
 }
