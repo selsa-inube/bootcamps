@@ -252,7 +252,7 @@ const activities = [
   },
   {
     title: "A21 - Freecodecamp - Technical Documentation Page",
-    body: `${URL}/html-css/a21-freecodecamp-tecnical-doc-page.md`,
+    body: `${URL}/html-css/a21-freecodecamp-technical-doc-page.md`,
     labels: ["exercise"],
     milestone: "html-css",
   },
