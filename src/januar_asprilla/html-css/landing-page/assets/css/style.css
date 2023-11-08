@@ -73,6 +73,10 @@ main {
   background-color: blue;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
+}
+#botones-extra-info p:nth-child(1):hover {
+  background-color: rgb(0, 0, 102);
 }
 #botones-extra-info p:nth-child(2) {
   padding: 12px 18px;
@@ -80,11 +84,56 @@ main {
   color: white;
   border-radius: 10px;
   font-weight: 600;
+  cursor: pointer;
+}
+#botones-extra-info p:nth-child(2):hover {
+  background-color: rgb(71, 71, 71);
 }
 
 figure img {
   margin: auto;
   width: 100%;
+  border-radius: 10px;
+}
+footer {
+  margin-top: 16vh;
+  background-color: white;
+  margin-top: 20vh;
+}
+footer p {
+  padding-top: 10vh;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(41, 41, 41);
+}
+.imagenes-marcas {
+  margin: auto 0;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagenes-marcas img {
+  margin-top: 10px;
+  width: 90px;
+  filter: grayscale(100%);
+}
+.imagenes-marcas img:nth-of-type(1) {
+  order: 4;
+}
+.imagenes-marcas img:nth-of-type(2) {
+  order: 5;
+}
+.imagenes-marcas img:nth-of-type(3) {
+  order: 1;
+}
+.imagenes-marcas img:nth-of-type(4) {
+  height: 25px;
+  order: 2;
+}
+.imagenes-marcas img:nth-of-type(5) {
+  order: 3;
 }
 /*Version Computadora*/
 @media only screen and (min-width: 500px) {
@@ -115,6 +164,7 @@ figure img {
     background-color: red;
     color: white;
     border-radius: 50px;
+    cursor: default;
   }
   #boton-nav {
     visibility: visible;
@@ -125,7 +175,51 @@ figure img {
     border-radius: 8px;
     cursor: pointer;
   }
+  #boton-nav:hover {
+    background-color: rgb(0, 0, 102);
+  }
   #barra-icon {
     display: none;
+  }
+  .informacion-contenedor {
+    display: flex;
+    gap: 100px;
+  }
+  #introduccion-info {
+    width: 70%;
+  }
+  #introduccion-info p {
+    font-size: 15px;
+  }
+  #introduccion-info h2 {
+    font-size: 60px;
+  }
+  #introduccion-info i {
+    font-size: 42px;
+  }
+  #extras-info {
+    width: 30%;
+  }
+  #extras-info p {
+    font-size: 19px;
+  }
+  .imagenes-marcas {
+    justify-content: center;
+    gap: 50px;
+  }
+  .imagenes-marcas img:nth-of-type(1) {
+    order: 1;
+  }
+  .imagenes-marcas img:nth-of-type(2) {
+    order: 2;
+  }
+  .imagenes-marcas img:nth-of-type(3) {
+    order: 3;
+  }
+  .imagenes-marcas img:nth-of-type(4) {
+    order: 4;
+  }
+  .imagenes-marcas img:nth-of-type(5) {
+    order: 5;
   }
 }
