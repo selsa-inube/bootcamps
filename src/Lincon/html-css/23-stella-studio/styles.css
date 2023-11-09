@@ -25,6 +25,7 @@ header > i {
   border: 1px solid #212b33;
   padding: 10px;
   border-radius: 2px;
+  cursor: pointer;
 }
 .logo {
   display: flex;
@@ -44,12 +45,6 @@ header > i {
 .logo i:nth-child(2) {
   transform: translateX(-10px);
   z-index: 1;
-}
-.imagen-escalera img {
-  width: 60px;
-}
-.datos-perfil img {
-  width: 60px;
 }
 .section-1 {
   display: flex;
@@ -83,6 +78,7 @@ header > i {
   border: none;
   padding: 20px 35px;
   border-radius: 40px;
+  cursor: pointer;
 }
 .botones button:nth-child(2) {
   background-color: #dddfdf;
@@ -90,6 +86,7 @@ header > i {
   border: none;
   padding: 20px 35px;
   border-radius: 40px;
+  cursor: pointer;
 }
 .section-1 nav ul {
   display: flex;
@@ -98,6 +95,7 @@ header > i {
   font-size: 12px;
   color: #212b33;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 .section-1 nav li::before {
   content: " / ";
@@ -105,6 +103,7 @@ header > i {
 
 .section-2 {
   background-color: #212b33;
+  height: 490px;
 }
 .datos-perfil {
   display: none;
@@ -135,6 +134,7 @@ header > i {
   border-radius: 40px;
   border: none;
   color: #000000;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 961px) {
@@ -176,5 +176,68 @@ header > i {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 70px;
+  }
+  .perfil-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos-perfil {
+    display: block;
+  }
+  .imagen-escalera {
+    display: block;
+  }
+  .imagen-escalera img {
+    margin-top: 50px;
+    width: 350px;
+    margin-bottom: 30px;
+    height: 520px;
+  }
+  .datos-perfil img {
+    width: 60px;
+  }
+  .section-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 90px;
+    height: 600px;
+    gap: 60px;
+  }
+  .texto-perfil {
+    width: 50%;
+  }
+  .texto-perfil p {
+    line-height: 25px;
+  }
+  .texto-perfil h2 {
+    margin: 0;
+    font-size: 70px;
+  }
+  .texto-perfil button {
+    width: 200px;
+  }
+  .datos-perfil {
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    gap: 10px;
+  }
+  .datos-perfil img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .nombre {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .nombre p:nth-child(1) {
+    font-size: 20px;
+    color: #fff;
+  }
+  .nombre p:nth-child(2) {
+    font-size: 15px;
+    color: #737374;
   }
 }
