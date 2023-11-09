@@ -13,9 +13,8 @@ nav {
   height: 100vh;
   border-radius: 15px;
   position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .icono {
   cursor: pointer;
@@ -29,6 +28,8 @@ nav {
 .navegacion {
   padding: 20px;
   color: rgb(88, 88, 88);
+  width: 60px;
+  box-sizing: border-box;
 }
 .navegacion li {
   cursor: pointer;
@@ -76,6 +77,10 @@ nav {
 #cinco {
   display: grid;
   justify-items: center;
+  box-sizing: border-box;
+  width: 60px;
+  border-bottom: 1px solid rgb(193 193 193);
+  color: rgb(88, 88, 88);
 }
 #cinco i {
   padding-bottom: 10px;
@@ -158,17 +163,16 @@ nav {
   border-radius: 20%;
 }
 .perfil-principal {
-  border-top: 1px solid rgb(193 193 193);
+  position: relative;
 }
 .perfil-principal:hover .perfil-extras {
   display: block;
   position: absolute;
   width: 200px;
   height: 250px;
-  transform: translate(-20px, 330px);
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
-  top: 45px;
+  bottom: 0;
   left: 90px;
 }
 .perfil-extras {
