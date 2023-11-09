@@ -8,10 +8,11 @@ body {
   background-color: gray;
   margin: 0px;
   padding: 0px;
+  height: 200vh;
 }
 
 .brands {
-  height: 50px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -25,10 +26,18 @@ body {
 }
 
 .shared {
-  height: 30px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-content: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .projects {
@@ -42,7 +51,7 @@ body {
   height: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .account {
   height: 30px;
@@ -56,21 +65,29 @@ body {
 .sidebar {
   background-color: white;
   position: fixed;
-  height: 100vh;
+  height: 97vh;
   width: 50px;
   border-radius: 10px;
   top: 10px;
   left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .dropdown {
   position: relative;
+  width: 200%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
 }
 
 .dropdown > span {
   z-index: 4;
   position: relative;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 .brands-menu li:hover {
@@ -115,6 +132,7 @@ button {
   border-radius: 5px;
   height: 20px;
   width: 20px;
+  border-style: solid;
 }
 
 .project1 {
@@ -140,7 +158,8 @@ button {
 }
 
 hr {
-  border: 1px solid #5d5f61;
+  border: 0.1px solid #f5f4f5;
+  width: 90%;
 }
 
 /* plan menu */
@@ -163,17 +182,16 @@ hr {
   border-radius: 5px;
   align-self: center;
 }
-
 .dropdown:hover .brands-menu {
   display: flex; /* Leave everything else alone */
   flex-direction: column;
   background: white;
   position: absolute;
-  top: -13px;
+  top: -2vh;
   left: 55px;
   z-index: 1;
   width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .brands-menu {
@@ -184,10 +202,11 @@ hr {
   height: 40px;
   display: flex;
   align-items: center;
-}
-
-.brands-menu i {
-  margin-left: 10px;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5px;
+  width: 97%;
+  border-radius: 10px;
 }
 
 .brands-menu li:hover {
@@ -247,17 +266,18 @@ hr {
   flex-direction: column;
   background: white;
   position: absolute;
-  bottom: -13px;
+  bottom: -2vh;
   left: 55px;
   z-index: 1;
   width: 150px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .profile-menu > li {
   height: 25px;
   display: flex;
   align-items: left;
+  border-radius: 10px;
 }
 
 .profile-menu > li:first-child {
