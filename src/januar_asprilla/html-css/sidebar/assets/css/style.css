@@ -7,12 +7,15 @@ body {
   height: 200vh;
   background-color: rgb(193 193 193);
 }
-.menu {
+nav {
   background-color: white;
   width: 60px;
   height: 100vh;
   border-radius: 15px;
   position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 .icono {
   cursor: pointer;
@@ -61,6 +64,15 @@ body {
 #cuatro i {
   padding-bottom: 10px;
 }
+#cuatro i:nth-of-type(1) {
+  color: #90eec7;
+}
+#cuatro i:nth-of-type(2) {
+  color: #bc90ee;
+}
+#cuatro i:nth-of-type(3) {
+  color: #ee90af;
+}
 #cinco {
   display: grid;
   justify-items: center;
@@ -102,7 +114,7 @@ body {
 .informacion-icono {
   margin-left: 10px;
   margin-right: 15px;
-  height: 30px;
+  height: 5vh;
   font-size: 10px;
 }
 .informacion-icono p {
@@ -145,7 +157,9 @@ body {
   height: 30px;
   border-radius: 20%;
 }
-
+.perfil-principal {
+  border-top: 1px solid rgb(193 193 193);
+}
 .perfil-principal:hover .perfil-extras {
   display: block;
   position: absolute;
@@ -163,6 +177,7 @@ body {
 .perfil-principal:hover .icono-hover:hover {
   display: block;
 }
+
 .perfil-extras li {
   cursor: pointer;
   margin: 10px;
