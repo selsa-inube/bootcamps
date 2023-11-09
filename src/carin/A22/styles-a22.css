@@ -1,0 +1,239 @@
+/* General */
+* {
+  font-family: sans-serif;
+  color: black;
+}
+
+:root {
+  --size: 400px;
+  --coltext: #fefefe;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* body components */
+header {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+
+main {
+  background: linear-gradient(black 0%, black 50%, white 50%, white 100%);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 auto 0 auto;
+  overflow: hidden;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main components */
+
+#title {
+  width: 50vw;
+  margin: 0 auto 0 auto;
+}
+
+#intro {
+  text-transform: uppercase;
+  color: var(--coltext);
+  font-size: min(1.5vw, 3vh);
+}
+
+h1 {
+  color: var(--coltext);
+  font-weight: normal;
+  font-size: min(3vw, 6vh);
+}
+
+h1 a {
+  font-weight: bold;
+  color: var(--coltext);
+}
+
+h1 a:hover {
+  cursor: pointer;
+}
+
+h1 i {
+  color: var(--coltext);
+}
+
+#call-to-action {
+  width: 30vw;
+  margin: 0 auto 0 auto;
+}
+
+#call-to-action p {
+  color: var(--coltext);
+  font-size: min(1.5vw, 3vh);
+  line-height: 2em;
+}
+
+.fa-long-arrow-right {
+  transform: rotate(-45deg);
+}
+
+#call-to-action button {
+  color: var(--coltext);
+  border-radius: 5px;
+  border: none;
+  margin: 2%;
+  padding: 2%;
+  font-size: min(1vw, 2vh);
+}
+
+#call-to-action button:first-of-type {
+  background-color: #0061ff;
+}
+
+#call-to-action button:last-of-type {
+  background-color: #282828;
+}
+
+#call-to-action i {
+  color: var(--coltext);
+}
+
+@media screen and (max-width: 400px) {
+  #title {
+    width: 80vw;
+  }
+  #call-to-action {
+    width: 80vw;
+  }
+  #intro {
+    font-size: min(3vw, 6vh);
+  }
+
+  h1 {
+    color: var(--coltext);
+    font-weight: normal;
+    font-size: min(6vw, 12vh);
+  }
+
+  #call-to-action p {
+    font-size: min(3vw, 6vh);
+  }
+
+  #call-to-action button {
+    font-size: min(2vw, 4vh);
+  }
+}
+/* image styles */
+
+img {
+  width: 60%;
+  margin: 5vw;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 50px;
+  margin: 1vw;
+  height: 50px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ul hr {
+  width: min(3vw, 4vh);
+  transform: rotate(90deg);
+}
+
+nav li a {
+  color: var(--coltext);
+  font-size: min(2vw, 3vh);
+  margin: 1vw;
+}
+
+#new-button {
+  color: var(--coltext);
+  border-radius: 1vw;
+  border: none;
+  margin: 2%;
+  padding: 1% 3% 1% 3%;
+  font-size: min (0.8vw, 1.6vh);
+  background-color: red;
+}
+
+#sign-up-button {
+  color: var(--coltext);
+  border-radius: 5px;
+  border: none;
+  margin: 2%;
+  padding: 0.5% 3% 0.5% 3%;
+  font-size: min(1vw, 2vh);
+  cursor: pointer;
+  background-color: #0061ff;
+}
+
+#toggle {
+  position: absolute;
+}
+
+#toggle i {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  nav ul,
+  nav > button {
+    display: none;
+  }
+
+  #toggle {
+    right: 5vw;
+    top: 5vw;
+  }
+
+  #toggle i {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+}
+/* footer components */
+
+footer p {
+  width: 100%;
+  text-align: center;
+}
+
+footer img {
+  width: 100px;
+  margin: 1vw;
+  height: auto;
+  filter: grayscale(100%);
+}
