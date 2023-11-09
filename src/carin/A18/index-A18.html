@@ -18,13 +18,13 @@
   <body>
     <nav>
       <h1>Calendar</h1>
-      <input list="options" type="text" placeholder="All Meeting" multiple></input>
+      <input list="options" type="text" placeholder="All Meeting" multiple />
       <datalist id="options">
-        <option value="All Meeting">
-        <option value="Canceled">
-        <option value="Active">
-        <option value="Not accepted">
-        <option value="Finished">
+        <option value="All Meeting"></option>
+        <option value="Canceled"></option>
+        <option value="Active"></option>
+        <option value="Not accepted"></option>
+        <option value="Finished"></option>
       </datalist>
       <button>Create a Meeting</button>
     </nav>
@@ -81,16 +81,45 @@
       </div>
       <main>
         <div class="day">
-          <div id="meet1" class="event active">
-            <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
+          <div class="event">
+            <div id="meet1" class="event active">
+              <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+            <div id="meet1-shadow" class="event shadow"></div>
+          </div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+        </div>
+        <div class="day">
+          <div class="event">
+            <div id="meet2" class="event active">
+              <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+            <div id="meet2-shadow" class="event shadow"></div>
+          </div>
 
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-check" aria-hidden="true"></i>
+          <div class="event">
+            <div id="meet3" class="event active">
+              <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet3-shadow" class="event shadow"></div>
           </div>
-          <div id="meet1-shadow" class="event active"></div>
-          <div class="event"></div>
-          <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
@@ -101,22 +130,58 @@
           <div class="event"></div>
         </div>
         <div class="day">
-          <div id="meet2" class="event active">
-            <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-          </div>
-          <div id="meet2-shadow" class="event active"></div>
-          <div id="meet3" class="event active">
-            <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </div>
-          <div id="meet3-shadow" class="event active"></div>
           <div class="event"></div>
           <div class="event"></div>
+          <div class="event"></div>
+          <div class="event">
+            <button id="new" class="event">+</button>
+          </div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+        </div>
+        <div class="day">
+          <div class="event">
+            <div id="meet4" class="event active">
+              <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet4-shadow" class="event active"></div>
+          </div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event">
+            <div id="meet5" class="event active">
+              <img src="imgs/foto-carnet-1.jpg" alt="photo 1" width="50" />
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet5-shadow" class="event shadow"></div>
+          </div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+          <div class="event"></div>
+        </div>
+        <div class="day">
+          <div class="event"></div>
+          <div class="event">
+            <div id="meet6" class="event active">
+              <img src="imgs/foto-carnet-3.jpg" alt="photo 1" width="50" />
+              <p class="start-h">6:30 AM</p>
+              <p class="description">Launch with Carla</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet6-shadow" class="event shadow"></div>
+          </div>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
@@ -127,77 +192,20 @@
           <div class="event"></div>
         </div>
         <div class="day">
-          <button id="new" class="event">+</button>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-        </div>
-        <div class="day">
-          <div id="meet4" class="event active">
-            <img src="imgs/foto-carnet-2.jpg" alt="photo 1" width="50" />
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </div>
-          <div id="meet4-shadow" class="event active"></div>
-          <div id="meet5" class="event active">
-            <img src="imgs/foto-carnet-1.jpg" alt="photo 1" width="50" />
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </div>
-          <div id="meet5-shadow" class="event active"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-        </div>
-        <div class="day">
-          <div id="meet6" class="event active">
-            <img src="imgs/foto-carnet-3.jpg" alt="photo 1" width="50" />
-            <p class="start-h">6:30 AM</p>
-            <p class="description">Launch with Carla</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </div>
-          <div id="meet6-shadow" class="event active"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-        </div>
-        <div class="day">
-          <div id="meet7" class="event active">
-            <img src="imgs/foto-carnet-3.jpg" alt="photo 3" width="50" />
+          <div class="event">
+            <div id="meet7" class="event active">
+              <img src="imgs/foto-carnet-3.jpg" alt="photo 3" width="50" />
 
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet7-shadow" class="event shadow"></div>
           </div>
-          <div id="meet7-shadow" class="event active"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
-          <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
@@ -205,15 +213,16 @@
           <div class="event"></div>
         </div>
         <div class="day">
-          <div id="meet8" class="event active">
-            <img src="imgs/foto-carnet-2.jpg" alt="photo 2" width="50" />
+          <div class="event">
+            <div id="meet8" class="event active">
+              <img src="imgs/foto-carnet-2.jpg" alt="photo 2" width="50" />
 
-            <p class="start-h">7:30 AM</p>
-            <p class="description">Meeting with Sam</p>
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              <p class="start-h">7:30 AM</p>
+              <p class="description">Meeting with Sam</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <div id="meet8-shadow" class="event shadow"></div>
           </div>
-          <div id="meet8-shadow" class="event active"></div>
-          <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>
           <div class="event"></div>

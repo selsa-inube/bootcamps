@@ -168,11 +168,15 @@ main {
 }
 
 .event {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 9vw;
-  height: 10vh;
+  height: 15vh;
   margin: 0;
   padding: 0;
   border: 1px solid lightgray;
+  position: relative;
 }
 
 .active {
@@ -182,30 +186,37 @@ main {
   justify-content: flex-start;
 
   position: absolute;
-  height: auto;
-  z-index: 1;
+  z-index: 2;
+  width: 7vw;
+  height: 15vh;
+  border-radius: 10%;
+}
+
+.shadow {
+  position: absolute;
+  display: flex;
+  z-index: 0.5;
   width: 7vw;
   height: 15vh;
   border-radius: 10%;
 }
 
 .active:hover {
-  position: fixed;
-  top: 0 !important;
-  left: 0;
+  position: absolute !important;
+  top: -10% !important;
+  left: -10%;
 }
 
 .start-h {
-  font-size: min(0.8vw, 1.6vh);
+  font-size: min(0.6vw, 1.2vh);
   height: 1.5em;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 5%;
   font-weight: bold;
 }
 .description {
   font-size: min(1vw, 2vh);
   height: 1.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   font-weight: bold;
 }
 
@@ -214,26 +225,23 @@ main {
 }
 
 img {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  margin-left: 10%;
-  margin-top: 10%;
+  margin: 5%;
 }
 
 i {
   position: absolute;
-  left: 80%;
-  top: 5%;
+  left: 70%;
+  top: 10%;
 }
 /* mettings */
 #meet1 {
-  top: 15%;
   background-color: #f6f8fa;
 }
 
 #meet1-shadow {
-  top: 15%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
@@ -247,12 +255,10 @@ i {
 }
 
 #meet2 {
-  top: 15%;
   background-color: #f6f8fa;
 }
 
 #meet2-shadow {
-  top: 15%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
@@ -267,12 +273,10 @@ i {
 }
 
 #meet3 {
-  top: 35%;
   background-color: #fcf0e4;
 }
 
 #meet3-shadow {
-  top: 35%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
@@ -287,7 +291,6 @@ i {
 }
 
 #meet4 {
-  top: 15%;
   background-color: #e4eef8;
 }
 
@@ -299,14 +302,12 @@ i {
   color: #91c1e1;
 }
 #meet4-shadow {
-  top: 15%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
 }
 
 #meet5 {
-  top: 55%;
   background-color: #f6f8fa;
 }
 #meet5 .start-h {
@@ -318,14 +319,12 @@ i {
 }
 
 #meet5-shadow {
-  top: 55%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
 }
 
 #meet6 {
-  top: 35%;
   background-color: #ecf5e7;
 }
 #meet6 .start-h {
@@ -337,14 +336,12 @@ i {
 }
 
 #meet6-shadow {
-  top: 35%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
 }
 
 #meet7 {
-  top: 60%;
   background-color: #fceeec;
 }
 #meet7 .start-h {
@@ -356,14 +353,12 @@ i {
 }
 
 #meet7-shadow {
-  top: 60%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
 }
 
 #meet8 {
-  top: 15%;
   background-color: #ecf5f4;
 }
 #meet8 .start-h {
@@ -375,7 +370,6 @@ i {
 }
 
 #meet8-shadow {
-  top: 15%;
   background-color: transparent;
   border-style: dashed;
   border-color: #b8aecc;
@@ -396,10 +390,10 @@ i {
   height: auto;
   z-index: 1;
   width: 7vw;
-  height: 15vh;
+  height: 13vh;
+  margin-top: 1vh;
   border-radius: 10%;
 
-  top: 50%;
   background-color: #f6f8fa;
   color: #4a5261;
 }
