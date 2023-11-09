@@ -8,4 +8,4 @@ Create the next mockup.
 4. When hovering a card, it should move up and left and be on top of the elements.
 5. Each row in the table should is an interval of an hour (the image doesn’t respect that).
 
-Image: https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/
+Image: https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/calendar.png
