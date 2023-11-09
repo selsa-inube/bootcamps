@@ -24,17 +24,36 @@ body {
   font-weight: bold;
 }
 
-.c9 {
-  grid-column: 9;
-  grid-row: 2/6;
-}
 .iconos-calendario {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+.iconos-calendario:nth-child(1) {
+  border: none;
 }
 .iconos-calendario i {
   font-size: 15px;
+}
+.iconos-calendario button {
+  border: none;
+  background-color: #eeeeee;
+  padding: 20px 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.iconos-calendario button:active {
+  background-color: rgba(190, 190, 190, 0.815);
+}
+.principal {
+  border-top: 1px solid #c7c6c6;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  color: #575656;
 }
 
 .texto-calendario {
@@ -42,6 +61,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  border: none;
 }
 .texto-calendario h2 {
   font-size: 15px;
@@ -57,6 +77,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #575656;
+  border: none;
 }
 .carta-azul {
   background-color: rgb(102, 218, 218);
