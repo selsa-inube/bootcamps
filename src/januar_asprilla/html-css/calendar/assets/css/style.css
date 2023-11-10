@@ -20,7 +20,21 @@ body {
   justify-items: center;
   position: relative;
 }
+#dia {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
 
+#dia i {
+  justify-items: center;
+  background-color: rgb(241, 241, 241);
+  padding: 18px;
+  border-radius: 50%;
+}
 #dias {
   height: 90px;
   width: 50px;
@@ -372,4 +386,9 @@ body {
   font-size: 15px;
   font-weight: bold;
   color: rgb(190, 132, 65);
+}
+.celdas1 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(235, 235, 235);
 }
