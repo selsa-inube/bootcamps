@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  height: 48px;
+}
+ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: end;
+  margin-right: 10px;
+  align-content: center;
+  text-align: center;
+}
+li {
+  cursor: pointer;
+  list-style-type: none;
+}
+header li a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+.extras {
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  border-radius: 50%;
+}
+.extras:hover {
+  background-color: rgb(228, 228, 228);
+}
+.perfil {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  border-radius: 50%;
+}
+.perfil:hover {
+  background-color: rgb(228, 228, 228);
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+figure img {
+  min-height: 92px;
+  min-width: 210px;
+  max-width: 400px;
+  max-height: 281px;
+}
+
+form {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  transform: translateY(-150%);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+input:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(185, 185, 185);
+  z-index: 1;
+}
+form img:nth-of-type(1) {
+  width: 15px;
+  height: 21px;
+}
+form img:nth-of-type(2) {
+  width: 25px;
+  height: 25px;
+}
+
+.derecha {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.derechas {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+.botones {
+  transform: translateY(-180%);
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.botones button {
+  background-color: rgb(242, 242, 242);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+.botones button:hover {
+  border: 1px solid rgb(173, 173, 173);
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(242, 242, 242);
+}
+footer p {
+  font-size: 15px;
+  padding: 15px 30px;
+}
+footer li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+.info-extra {
+  border-top: 1px solid #dadce0;
+  font-size: font-size 14pxpx;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
