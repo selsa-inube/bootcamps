@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 140px;
+}
+li{
+    list-style-type: none;
+}
+header a {
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration:underline ;
+}
+.navbar-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.navbar-up ul {
+    display: flex;
+    gap: 2rem;
+}
+.navbar-up li{
+    cursor: pointer;
+}
+.navbar-up img{
+    width: 130px;
+    cursor: pointer;
+}
+#botones-navbar-up{
+    display: flex;
+    gap: 5px;
+}
+#botones-navbar-up button{
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+#botones-navbar-up button:hover{
+    border: 1px solid rgb(185, 185, 185)
+}
+.navbar-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(185, 185, 185);
+    padding: 0 1rem ;
+}
+#date-container, #button-extra {
+    width: 10%;
+}
+#date-container p {
+    font-size: 14px;
+    margin-top:5px;
+}
+#date-container span {
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar-down ul {
+    display: flex;
+    gap: 10px;
+    width: 85%;
+    justify-content: space-between;
+}
+.navbar-down a{
+    font-size: 15px;
+    color: gray;
+}
+.navbar-down a:hover{
+    text-decoration:underline ;
+}
+#button-extra p{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.navbar-info ul {
+    display: flex;
+    padding: 0 1rem ;
+    gap: 20px;
+    align-items: baseline;
+}
+.navbar-info li:nth-of-type(1) {
+    font-size: 25px;
+    font-weight: 550;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar-info a {
+    color: gray;
+}
