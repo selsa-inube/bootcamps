@@ -5,25 +5,32 @@
   font-family: sans-serif;
 }
 body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-width: 320px;
+  height: inherit;
+  background: rgb(0, 167, 241);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  height: inherit;
-  width: 100%;
-  background: rgb(0, 167, 241);
+  color: #fff;
 }
 main {
-  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
   width: 500px;
-  min-width: 320px;
+
   height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 50px;
 }
 .clima {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(0, 167, 241);
   box-shadow:
@@ -32,7 +39,8 @@ main {
     rgba(0, 0, 0, 0.2) 0px -12px 0px inset;
   border-radius: 50px;
   height: 75%;
-  margin: 10px 10px 0px 10px;
+  width: 95%;
+  margin-top: 10px;
 }
 
 .Minsk {
@@ -40,17 +48,19 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  height: 20%;
+  padding-top: 10px;
 }
 
 .Minsk ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin-top: 10px;
 }
 .clima li:nth-child(3) {
   color: #fff;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .prueba i {
@@ -61,6 +71,7 @@ main {
   outline: 1px solid;
   border-radius: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 .updating {
   display: flex;
@@ -98,14 +109,17 @@ main {
 }
 
 p {
+  font-size: 2vh;
   color: aliceblue;
+}
+.datos p:nth-child(3) {
+  color: #c9bdbd;
 }
 .nube-clima {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 60%;
 }
 .nube-clima img {
   width: 30%;
@@ -142,10 +156,9 @@ p {
   width: 90%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 20%;
   border-top: 1px solid #c9bdbd;
-  gap: 50px;
+  text-align: center;
+  padding: 20px 0;
 }
 .datos {
   display: flex;
@@ -160,7 +173,7 @@ p {
 .dias-climas {
   display: flex;
   flex-direction: column;
-
+  width: 90%;
   align-items: center;
   margin-top: 10px;
 }
@@ -186,7 +199,6 @@ p {
 }
 .contenedores-days {
   display: flex;
-  padding-top: 20px;
   width: 90%;
   justify-content: space-around;
 }
@@ -198,8 +210,10 @@ p {
   border: none;
   outline: 1px solid #4d4c4c;
   border-radius: 30px;
-  padding: 20px;
+  width: 25%;
+  margin: 10px;
   cursor: pointer;
+  padding: 3vh 0px;
 }
 .datos-days:hover {
   background-color: rgb(0, 153, 255);
