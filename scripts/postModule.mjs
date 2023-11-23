@@ -8,9 +8,10 @@ import { getMilestoneId } from "../.github/issues/milestones.mjs";
 
 // Modules
 // import { prework } from "../content/meta/prework.mjs";
-import { htmlCSS } from "../content/meta/html-css.mjs";
+// import { htmlCSS } from "../content/meta/html-css.mjs";
+import { js } from "../content/meta/js.mjs";
 
-const issues = htmlCSS;
+const issues = js;
 const assignees = ["wfercanas"];
 
 try {
