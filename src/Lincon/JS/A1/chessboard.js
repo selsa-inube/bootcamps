@@ -1,15 +1,34 @@
-//Chessboard
-console.log("----Chessboard----");
-let board = "";
-let FilaUno = "# # # # ";
-let FilaDos = " # # # #";
+const char1 = "#";
+const char2 = " ";
+const size = 8;
 
-for (let num = 0; num < 8; num += 1) {
-  if (num % 2 == 0) {
-    board += FilaDos + "\n";
+function changeChar(oldChar) {
+  if (oldChar === char1) {
+    return char2;
   } else {
-    board += FilaUno + "\n";
+    return char1;
   }
 }
 
-console.log(board);
+function createRow(size, char) {
+  let row = "";
+  let currentChar = char;
+  for (let i = 0; i < size; i++) {
+    row = row + currentChar;
+    currentChar = changeChar(currentChar);
+  }
+  row = row + "\n";
+  return row;
+}
+
+function createChessboard(size) {
+  let chessboard = "";
+  let currentChar = char2;
+  for (let i = 0; i < size; i++) {
+    chessboard = chessboard + createRow(size, currentChar);
+    currentChar = changeChar(currentChar);
+  }
+  return chessboard;
+}
+
+console.log(createChessboard(size));

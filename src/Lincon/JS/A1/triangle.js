@@ -1,8 +1,8 @@
 // Looping a triangle
 console.log("----Looping a triangle----");
-let numeral = "#";
+let hashtag = "#";
 
-for (let lista = 0; lista < 7; lista += 1) {
-  console.log(numeral);
-  numeral = numeral + "#";
+for (let list = 0; list < 7; list += 1) {
+  console.log(hashtag);
+  hashtag = hashtag + "#";
 }
