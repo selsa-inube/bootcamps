@@ -8,34 +8,38 @@ while (a.length <= 7) {
 
 //FizzBuzz
 console.log("########### FizzBuzz ############");
-var a = 1;
+let a = 1;
 while (a <= 100) {
-  if (a % 3 == 0 && a % 5 == 0) {
-    console.log("FizzBuzz");
-  } else if (a % 3 == 0) {
-    console.log("Fizz");
-  } else if (a % 5 == 0) {
-    console.log("Buzz");
-  } else {
-    console.log(a);
+  let toPrint = a;
+  if (a % 3 == 0) {
+    toPrint += "Fizz";
   }
+  if (a % 5 == 0) {
+    toPrint += "Buzz";
+  }
+  if (a != toPrint) {
+    toPrint = toPrint.split(a)[1];
+  }
+  console.log(toPrint);
   a += 1;
 }
 
 //Chessboard
 console.log("########### Chessboard ############");
-const c = 8;
+const size = 8;
 
-let b = "";
-for (let a = 1; a <= Math.pow(c, 2); a++) {
-  if (a % 2 == 1) {
-    b += " ";
+let toPrint = "";
+let row = 0;
+for (let a = 1; a <= Math.pow(size, 2); a++) {
+  if ((a + row * ((size + 1) % 2)) % 2 == 1) {
+    toPrint += " ";
   } else {
-    b += "#";
+    toPrint += "#";
   }
 
-  if (a % c == 0) {
-    console.log(b);
-    b = "";
+  if (a % size == 0) {
+    toPrint += "\n";
+    row++;
   }
 }
+console.log(toPrint);
