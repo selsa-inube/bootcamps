@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(to bottom, black 55%, white 45%);
 }
 
 header {
@@ -25,10 +25,10 @@ nav {
 nav ul {
   visibility: hidden;
 }
-#boton-nav {
+nav button {
   visibility: hidden;
 }
-#logo {
+nav i {
   color: blue;
 }
 #barra-icon {
@@ -68,25 +68,31 @@ main {
   gap: 50px;
   margin-bottom: 5vh;
 }
-#botones-extra-info p:nth-child(1) {
-  padding: 12px 18px;
+#botones-extra-info button {
+  border: none;
+  font-size: 0.8em;
+}
+#botones-extra-info button:nth-child(1) {
+  padding: 1em 2em;
   background-color: blue;
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  white-space: nowrap;
 }
-#botones-extra-info p:nth-child(1):hover {
+#botones-extra-info button:nth-child(1):hover {
   background-color: rgb(0, 0, 102);
 }
-#botones-extra-info p:nth-child(2) {
-  padding: 12px 18px;
+#botones-extra-info button:nth-child(2) {
+  padding: 1em 2em;
   background-color: gray;
   color: white;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
-#botones-extra-info p:nth-child(2):hover {
+#botones-extra-info button:nth-child(2):hover {
   background-color: rgb(71, 71, 71);
 }
 
@@ -155,7 +161,10 @@ footer p {
     margin: 30px;
     color: gray;
   }
-  nav ul li:hover {
+  nav ul li a {
+    text-decoration: none;
+  }
+  nav ul li a:hover {
     color: white;
   }
   nav ul p {
@@ -166,7 +175,7 @@ footer p {
     border-radius: 50px;
     cursor: default;
   }
-  #boton-nav {
+  nav button {
     visibility: visible;
     font-size: 15px;
     color: white;
@@ -174,8 +183,9 @@ footer p {
     padding: 8px 20px;
     border-radius: 8px;
     cursor: pointer;
+    border: none;
   }
-  #boton-nav:hover {
+  nav button:hover {
     background-color: rgb(0, 0, 102);
   }
   #barra-icon {
