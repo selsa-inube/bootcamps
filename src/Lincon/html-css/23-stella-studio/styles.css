@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body {
+  min-width: 360px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -48,45 +52,45 @@ header > i {
 }
 .section-1 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+
   margin-top: 40px;
-  width: 100%;
+  width: 80%;
 }
 .section-1 h1 {
+  max-width: 60%;
+  min-width: 300px;
   font-weight: 100;
   font-size: 39px;
-  padding: 0 20px;
+  padding: 0;
   color: #212b33;
 }
 .datos-eneabling {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  align-items: center;
   width: 100%;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
 }
+
 .botones {
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
 }
+.botones button {
+  border: none;
+  padding: 20px 10vw;
+  border-radius: 40px;
+  cursor: pointer;
+}
 .botones button:nth-child(1) {
   background-color: #212b33;
   color: #fff;
-  border: none;
-  padding: 20px 35px;
-  border-radius: 40px;
-  cursor: pointer;
 }
 .botones button:nth-child(2) {
   background-color: #dddfdf;
   color: #212b33;
-  border: none;
-  padding: 20px 35px;
-  border-radius: 40px;
-  cursor: pointer;
 }
 .section-1 nav ul {
   display: flex;
@@ -102,6 +106,8 @@ header > i {
 }
 
 .section-2 {
+  display: flex;
+  justify-content: center;
   background-color: #212b33;
   height: 490px;
 }
@@ -115,7 +121,7 @@ header > i {
 .texto-perfil {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  width: 80%;
 }
 .texto-perfil h2 {
   margin-top: 30px;
@@ -164,11 +170,12 @@ header > i {
   }
   .section-1 {
     width: 90%;
-    align-items: center;
   }
   .section-1 h1 {
     font-weight: 100;
-    font-size: 100px;
+    font-size: 10vh;
+    max-width: 60%;
+    padding: 0;
   }
   .datos-eneabling {
     display: flex;
@@ -212,7 +219,8 @@ header > i {
   }
   .texto-perfil h2 {
     margin: 0;
-    font-size: 70px;
+    max-width: 70%;
+    font-size: 10vh;
   }
   .texto-perfil button {
     width: 200px;
@@ -239,5 +247,11 @@ header > i {
   .nombre p:nth-child(2) {
     font-size: 15px;
     color: #737374;
+  }
+  .botones button {
+    border: none;
+    padding: 20px 50px;
+    border-radius: 40px;
+    cursor: pointer;
   }
 }
