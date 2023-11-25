@@ -142,9 +142,9 @@ footer p {
   order: 3;
 }
 /*Version Computadora*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   nav {
-    width: 80%;
+    width: 90%;
     gap: 50px;
   }
   nav ul {
@@ -167,13 +167,21 @@ footer p {
   nav ul li a:hover {
     color: white;
   }
-  nav ul p {
-    margin-left: -20px;
-    padding: 5px 8px;
+  nav ul li:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0.4em;
+    text-align: center;
+    align-items: center;
+    justify-items: start;
+  }
+  nav ul li p {
+    padding: 0.5em;
     background-color: red;
     color: white;
     border-radius: 50px;
     cursor: default;
+    font-size: 8px;
   }
   nav button {
     visibility: visible;
@@ -184,6 +192,8 @@ footer p {
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    display: flex;
+    flex-wrap: wrap;
   }
   nav button:hover {
     background-color: rgb(0, 0, 102);
