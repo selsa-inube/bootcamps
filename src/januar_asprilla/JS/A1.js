@@ -11,14 +11,17 @@ for (let i = 1; i <= 7; i++) {
 console.log("//FizzBuzz//");
 
 for (let i = 1; i <= 100; i++) {
+  let fizz = i % 3 === 0;
+  let buzz = i % 5 === 0;
+
   switch (true) {
-    case i % 3 === 0 && i % 5 === 0:
+    case fizz && buzz:
       console.log("FizzBuzz");
       break;
-    case i % 3 === 0:
+    case fizz:
       console.log("Fizz");
       break;
-    case i % 5 === 0:
+    case buzz:
       console.log("Buzz");
       break;
     default:
