@@ -35,8 +35,8 @@ article {
   flex-direction: column;
   color: #ffffff;
   width: 100%;
-  margin-top: 90px;
-  margin-bottom: 60px;
+  max-width: 65%;
+  margin: 40px auto;
   padding: 0 20px;
 }
 .imagen-fondo {
@@ -109,6 +109,11 @@ footer p {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 450px) {
+  article {
+    max-width: 90%;
+  }
+}
 @media only screen and (min-width: 961px) {
   header {
     justify-content: space-around;
