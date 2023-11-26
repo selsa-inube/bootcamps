@@ -69,16 +69,17 @@ section:nth-of-type(1) {
   justify-content: space-between;
 }
 
-#botones p {
-  padding: 15px 35px;
+#botones button {
+  padding: 10px 20px;
   border-radius: 30px;
   cursor: pointer;
+  border: none;
 }
-#botones p:nth-of-type(1) {
+#botones button:nth-of-type(1) {
   background-color: #242e32;
   color: white;
 }
-#botones p:nth-of-type(2) {
+#botones button:nth-of-type(2) {
   background-color: #bbc5c9;
   color: #242e32;
 }
@@ -154,20 +155,22 @@ section:nth-of-type(2) {
   margin-bottom: 30px;
   line-height: 24px;
 }
-.contenido-founder p:nth-of-type(2) {
-  padding: 15px 35px;
+.contenido-founder button {
+  padding: 10px 20px;
   text-align: center;
   background-color: #ffffff;
   border-radius: 35px;
   cursor: pointer;
+  border: none;
 }
 
 @media only screen and (min-width: 500px) {
   main {
-    margin: 0 11vmax;
+    margin: 0;
     height: 200vh;
   }
   header {
+    margin: 0 5vmax;
     height: 10vh;
   }
   nav {
@@ -230,7 +233,8 @@ section:nth-of-type(2) {
     border-radius: 2px;
   }
   section:nth-of-type(1) {
-    margin: 80px auto;
+    margin: 0 5vmax;
+    margin: 80px;
   }
   #titulo-principal h1 {
     color: #242e32;
@@ -279,12 +283,18 @@ section:nth-of-type(2) {
   }
   section:nth-of-type(2) {
     background-color: #242e32;
-    padding: 50px 30px;
+    padding: 50px 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
     justify-items: center;
     align-items: start;
     position: relative;
+  }
+  .info-founder {
+    order: 1;
+    padding: 0 50px;
+    justify-self: start;
   }
   .founder {
     display: flex;
@@ -295,25 +305,25 @@ section:nth-of-type(2) {
   }
 
   .founder p:nth-of-type(1) {
-    font-size: 15px;
+    font-size: 23px;
     color: white;
     position: relative;
   }
   .founder p:nth-of-type(2) {
-    font-size: 10px;
+    font-size: 18px;
     color: gray;
     position: relative;
   }
   .info-founder img {
-    width: 300px;
-    height: 450px;
+    width: 500px;
+    height: 550px;
     display: block;
     position: absolute;
-    bottom: -95px;
+    bottom: -140px;
   }
   .founder img:nth-of-type(1) {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: relative;
     top: 0;
@@ -323,7 +333,7 @@ section:nth-of-type(2) {
   }
   .contenido-founder h2 {
     color: white;
-    font-size: 50px;
+    font-size: 66px;
     font-weight: lighter;
     margin-bottom: 30px;
   }
