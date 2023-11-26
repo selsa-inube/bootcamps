@@ -86,7 +86,7 @@ console.log(listToArray(arrayToList([10, 20, 30])));
 console.log(prependToList(10, prependToList(20, null)));
 console.log(nthFromList(arrayToList([10, 20, 30]), 1));
 
-console.log("/////Deep comparison/////");
+console.log("//////Deep comparison//////");
 
 function deepEquality(objA, objB) {
   if (objA === objB) return true;
