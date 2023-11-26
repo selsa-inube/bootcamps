@@ -60,11 +60,13 @@ figure img {
 }
 
 form {
-  position: relative;
   max-width: 600px;
   margin: 0 auto 30px;
   display: grid;
-  grid-template-columns: repeat(3, 80% 10% 10%);
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 8px;
+  position: relative;
 }
 
 input {
@@ -74,43 +76,31 @@ input {
   border: 1px solid rgb(228, 228, 228);
   border-radius: 20px;
   box-sizing: border-box;
-  padding-left: 40px;
 }
+
 input:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form i {
-  position: relative;
-  top: 50%;
-  left: 15px;
   color: rgb(185, 185, 185);
-  z-index: 1;
 }
+
 form img:nth-of-type(1) {
   width: 15px;
   height: 21px;
 }
+
 form img:nth-of-type(2) {
   width: 25px;
   height: 25px;
 }
 
-.derecha {
-  position: absolute;
-  top: 50%;
-  right: 60px;
-  transform: translateY(-50%);
+.derecha,
+.derechas {
   cursor: pointer;
 }
 
-.derechas {
-  position: absolute;
-  top: -5px;
-  right: 15px;
-  transform: translateY(50%);
-  cursor: pointer;
-}
 .botones {
   display: flex;
   justify-content: center;
@@ -124,6 +114,7 @@ form img:nth-of-type(2) {
   cursor: pointer;
   font-size: 14px;
   text-align: center;
+  border: 1px solid rgba(173, 173, 173, 0);
 }
 .botones button:hover {
   border: 1px solid rgb(173, 173, 173);
@@ -153,4 +144,5 @@ footer li a:hover {
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
