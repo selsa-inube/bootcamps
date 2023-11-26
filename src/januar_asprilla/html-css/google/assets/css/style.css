@@ -62,8 +62,9 @@ figure img {
 form {
   position: relative;
   max-width: 600px;
-  margin: 50px auto;
-  transform: translateY(-150%);
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 80% 10% 10%);
 }
 
 input {
@@ -80,10 +81,9 @@ input:hover {
 }
 
 form i {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 15px;
-  transform: translateY(-50%);
   color: rgb(185, 185, 185);
   z-index: 1;
 }
@@ -112,7 +112,6 @@ form img:nth-of-type(2) {
   cursor: pointer;
 }
 .botones {
-  transform: translateY(-180%);
   display: flex;
   justify-content: center;
   gap: 3%;
