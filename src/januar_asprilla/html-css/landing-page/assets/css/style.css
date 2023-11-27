@@ -64,9 +64,10 @@ main {
 }
 #botones-extra-info {
   display: flex;
-  justify-content: start;
   gap: 50px;
   margin-bottom: 5vh;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 #botones-extra-info button {
   border: none;
@@ -218,11 +219,11 @@ footer p {
     display: none;
   }
   .informacion-contenedor {
-    display: flex;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   #introduccion-info {
-    width: 70%;
+    max-width: 700px;
   }
   #introduccion-info p {
     font-size: 15px;
@@ -234,10 +235,18 @@ footer p {
     font-size: 42px;
   }
   #extras-info {
-    width: 30%;
+    max-width: 400px;
+    max-height: 230px;
+    display: grid;
+    align-items: start;
+    justify-self: center;
   }
   #extras-info p {
-    font-size: 19px;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  #botones-extra-info {
+    margin-bottom: 0;
   }
   .imagenes-marcas {
     justify-content: center;
