@@ -1,9 +1,7 @@
 console.log("###############The sum of a range########");
-const range = (a, b, step) => {
+const range = (a, b, step = 1) => {
   let result = [];
-  if (!step) {
-    step = 1;
-  }
+
   for (let i = a; Math.min(a, b) <= i && i <= Math.max(a, b); i += step) {
     result.push(i);
   }
@@ -11,11 +9,7 @@ const range = (a, b, step) => {
 };
 
 const sum = (numbersToSum) => {
-  let result = 0;
-  numbersToSum.forEach((element) => {
-    result += element;
-  });
-  return result;
+  return numbersToSum.reduce((cum, value) => cum + value);
 };
 
 console.log(range(1, 10));

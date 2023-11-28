@@ -27,3 +27,6 @@ console.log(deepEqual(obj, { here: 1, object: 2 }));
 // → false
 console.log(deepEqual(obj, { here: { is: "an" }, object: 2 }));
 // → true
+console.log(deepEqual(2, 2));
+console.log(deepEqual([1, 2], [1, 2]));
+console.log(deepEqual(null, null));

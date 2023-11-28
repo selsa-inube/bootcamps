@@ -1,8 +1,13 @@
 console.log("###############A list########");
+require("./reversing_an_array.js");
 const prepend = (element, myList) => {
   myList = JSON.stringify(myList);
   let result = `{"value": ${element}, "rest": ${myList}}`;
   return JSON.parse(result);
+};
+
+const prepend2 = (element, myList) => {
+  return { value: element, rest: myList };
 };
 
 const nth = (myList, index) => {
@@ -39,6 +44,7 @@ console.log(arrayToList([10, 20]));
 console.log(listToArray(arrayToList([10, 20, 30])));
 // → [10, 20, 30]
 console.log(prepend(10, prepend(20, null)));
+console.log(prepend2(10, prepend2(20, null)));
 // → {value: 10, rest: {value: 20, rest: null}}
 console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
