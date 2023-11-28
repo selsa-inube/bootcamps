@@ -18,11 +18,11 @@ body {
 header {
   background-color: black;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 }
 
 main {
-  background: linear-gradient(black 0%, black 50%, white 50%, white 100%);
+  background: linear-gradient(black 0%, black 70%, white 70%, white 100%);
   width: 100vw;
   height: auto;
   display: flex;
@@ -48,13 +48,13 @@ footer {
 
 #title {
   width: 50vw;
-  margin: 0 auto 0 auto;
+  margin: 10vh auto 0 auto;
 }
 
 #intro {
   text-transform: uppercase;
   color: #535353;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 h1 {
@@ -79,12 +79,12 @@ h1 i {
 
 #call-to-action {
   width: 30vw;
-  margin: 0 auto 0 auto;
+  margin: 8vh auto 0 auto;
 }
 
 #call-to-action p {
-  color: #535353;
-  font-size: 18px;
+  color: lightgray;
+  font-size: 12px;
   line-height: 1.5em;
 }
 
@@ -113,35 +113,40 @@ h1 i {
   color: var(--coltext);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   #title {
     width: 80vw;
   }
   #call-to-action {
     width: 80vw;
+    margin-top: 0;
   }
   #intro {
-    font-size: 36px;
+    font-size: 9px;
   }
 
   h1 {
     color: var(--coltext);
     font-weight: normal;
-    font-size: 48px;
+    font-size: 24px;
   }
 
   #call-to-action p {
-    font-size: 36px;
+    font-size: 12px;
   }
 
   #call-to-action button {
-    font-size: 24px;
+    font-size: 12px;
+  }
+
+  main {
+    background: linear-gradient(black 0%, black 80%, white 80%, white 100%);
   }
 }
 /* image styles */
 
 img {
-  width: 60%;
+  width: 70%;
   margin: 5vw;
 }
 
@@ -160,11 +165,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 nav img {
-  width: 50px;
+  width: 30px;
   margin: 1vw;
-  height: 50px;
+  height: auto;
 }
 ul {
   display: flex;
@@ -178,9 +184,14 @@ ul hr {
 }
 
 nav li a {
-  color: var(--coltext);
-  font-size: 24px;
+  color: gray;
+  font-size: 12px;
   margin: 1vw;
+  text-decoration: none;
+}
+
+nav li:first-of-type a {
+  color: white;
 }
 
 #new-button {
@@ -212,7 +223,7 @@ nav li a {
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
   nav ul,
   nav > button {
     display: none;
@@ -241,4 +252,13 @@ footer img {
   margin: 1vw;
   height: auto;
   filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 700px) {
+  footer img {
+    width: 75px;
+    margin: 1vw;
+    height: auto;
+    filter: grayscale(100%);
+  }
 }
