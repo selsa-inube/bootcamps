@@ -4,13 +4,11 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-main {
-  margin: 0 20px;
-}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
 a {
   text-decoration: none;
@@ -45,6 +43,7 @@ a {
 }
 section:nth-of-type(1) {
   margin: 40px auto;
+  padding: 10px 30px;
 }
 #titulo-principal h1 {
   color: #242e32;
@@ -248,14 +247,14 @@ section:nth-of-type(2) {
   }
   .extras {
     margin: 50px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #botones {
     display: flex;
     gap: 50px;
+    justify-content: start;
   }
 
   #botones p {
@@ -274,9 +273,10 @@ section:nth-of-type(2) {
   #info-extra {
     color: #708086;
     display: flex;
-    gap: 35px;
+    gap: 20px;
     font-size: 10px;
     font-weight: 600;
+    justify-content: end;
   }
   #info-extra p::before {
     content: "/ ";
