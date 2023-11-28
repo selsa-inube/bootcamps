@@ -163,7 +163,7 @@ section:nth-of-type(2) {
   border: none;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   main {
     margin: 0;
     height: 200vh;
@@ -247,36 +247,42 @@ section:nth-of-type(2) {
   }
   .extras {
     margin: 50px auto;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   #botones {
-    display: flex;
-    gap: 50px;
-    justify-content: start;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto 1fr;
   }
 
-  #botones p {
+  #botones button {
     padding: 12px 30px;
     border-radius: 30px;
     cursor: pointer;
+    white-space: nowrap;
   }
-  #botones p:nth-of-type(1) {
+  #botones button:nth-of-type(1) {
     background-color: #242e32;
     color: white;
   }
-  #botones p:nth-of-type(2) {
+  #botones button:nth-of-type(2) {
     background-color: #bbc5c9;
     color: #242e32;
   }
   #info-extra {
     color: #708086;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 20px;
     font-size: 10px;
     font-weight: 600;
     justify-content: end;
+  }
+  #info-extra p {
+    white-space: nowrap;
   }
   #info-extra p::before {
     content: "/ ";
@@ -302,6 +308,7 @@ section:nth-of-type(2) {
     align-items: center;
     margin-bottom: 20px;
     position: relative;
+    justify-content: flex-start;
   }
 
   .founder p:nth-of-type(1) {
@@ -316,10 +323,10 @@ section:nth-of-type(2) {
   }
   .info-founder img {
     width: 500px;
-    height: 550px;
+    height: 613px;
     display: block;
-    position: absolute;
-    bottom: -140px;
+    position: relative;
+    bottom: -105px;
   }
   .founder img:nth-of-type(1) {
     width: 50px;
@@ -330,6 +337,7 @@ section:nth-of-type(2) {
   }
   .contenido-founder {
     max-width: 400px;
+    justify-self: end;
   }
   .contenido-founder h2 {
     color: white;
