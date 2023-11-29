@@ -12,14 +12,17 @@ header {
 }
 nav {
   padding: 10px 30px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   align-items: center;
 }
 
 nav ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   gap: 30px;
+  justify-self: start;
 }
 nav li {
   list-style-type: none;
@@ -44,23 +47,26 @@ nav button {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  justify-self: end;
 }
 figure img {
   width: 400px;
   height: 400px;
 }
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   margin: 40px 0;
   justify-content: space-evenly;
 }
 .information-container {
-  width: 600px;
-  text-align: center;
+  max-width: 600px;
   display: grid;
   text-align: center;
   align-content: space-evenly;
   justify-items: center;
+  justify-self: center;
+  gap: 30px;
 }
 .information-container h1 {
   font-size: 68px;
