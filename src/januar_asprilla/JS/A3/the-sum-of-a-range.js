@@ -12,11 +12,7 @@ function generateRange(start, end, step = 1) {
 }
 
 function calculateSum(arr) {
-  var total = 0;
-  for (var i = 0; i < arr.length; i++) {
-    total = total + arr[i];
-  }
-  return total;
+  return arr.reduce((total, current) => total + current, 0);
 }
 
 console.log(generateRange(1, 10));

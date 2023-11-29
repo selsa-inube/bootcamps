@@ -4,21 +4,23 @@ function deepEquality(objA, objB) {
   if (objA === objB) return true;
 
   if (
-    objA == null ||
-    typeof objA != "object" ||
-    objB == null ||
-    typeof objB != "object"
-  )
+    objA === null ||
+    typeof objA !== "object" ||
+    objB === null ||
+    typeof objB !== "object"
+  ) {
     return false;
+  }
 
   let keysA = Object.keys(objA),
     keysB = Object.keys(objB);
 
-  if (keysA.length != keysB.length) return false;
+  if (keysA.length !== keysB.length) return false;
 
   for (let key of keysA) {
-    if (!keysB.includes(key) || !deepEquality(objA[key], objB[key]))
+    if (!keysB.includes(key) || !deepEquality(objA[key], objB[key])) {
       return false;
+    }
   }
   return true;
 }
