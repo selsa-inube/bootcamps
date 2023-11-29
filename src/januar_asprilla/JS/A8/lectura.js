@@ -1,4 +1,4 @@
-console.log("////////Measuring a Robot////////");
+//Meadowfield
 
 const roads = [
   "Alice's House-Bob's House",
@@ -32,7 +32,10 @@ function buildGraph(edges) {
   }
   return graph;
 }
+
 const roadGraph = buildGraph(roads);
+
+//The task
 
 class VillageState {
   constructor(place, parcels) {
@@ -59,14 +62,22 @@ let first = new VillageState("Post Office", [
   { place: "Post Office", address: "Alice's House" },
 ]);
 let next = first.move("Alice's House");
+
 console.log(next.place);
-
+// → Alice's House
 console.log(next.parcels);
-
+// → []
 console.log(first.place);
+// → Post Office
+
+//Persistent data
+//pendiente
 let object = Object.freeze({ value: 5 });
 object.value = 10;
 console.log(object.value);
+// → 5
+
+//Simulation
 
 function runRobot(state, robot, memory) {
   for (let turn = 0; ; turn++) {
@@ -104,6 +115,12 @@ VillageState.random = function (parcelCount = 5) {
 };
 
 runRobot(VillageState.random(), randomRobot);
+// → Moved to Marketplace
+// → Moved to Town Hall
+// → …
+// → Done in 63 turns
+
+//The mail truck’s route
 const mailRoute = [
   "Alice's House",
   "Cabin",
@@ -119,14 +136,21 @@ const mailRoute = [
   "Marketplace",
   "Post Office",
 ];
+
 function routeRobot(state, memory) {
-  //preguntar q hace state
+  // Asegurarse de que memory sea un array
+  if (!Array.isArray(memory)) {
+    memory = [];
+  }
+
   if (memory.length == 0) {
     memory = mailRoute;
   }
+
   return { direction: memory[0], memory: memory.slice(1) };
 }
-runRobot(VillageState.random(), routeRobot, []);
+
+//Pathfinding
 
 function findRoute(graph, from, to) {
   let work = [{ at: from, route: [] }];
@@ -153,25 +177,4 @@ function goalOrientedRobot({ place, parcels }, route) {
   return { direction: route[0], memory: route.slice(1) };
 }
 
-runRobot(VillageState.random(), goalOrientedRobot, []);
-
-// definicion de la función compareRobots
-function compareRobots(robot1, memory1, robot2, memory2) {
-  const numTasks = 100;
-  let totalStepsRobot1 = 0;
-  let totalStepsRobot2 = 0;
-
-  for (let i = 0; i < numTasks; i++) {
-    const task = generateTask();
-
-    // Utilizar funciones anónimas para medir los pasos que toma cada robot
-    totalStepsRobot1 += (({ steps }) => steps)(robot1(memory1, task));
-    totalStepsRobot2 += (({ steps }) => steps)(robot2(memory2, task));
-  }
-
-  const avgStepsRobot1 = totalStepsRobot1 / numTasks;
-  const avgStepsRobot2 = totalStepsRobot2 / numTasks;
-
-  console.log(`Promedio de pasos para Robot 1: ${avgStepsRobot1}`);
-  console.log(`Promedio de pasos para Robot 2: ${avgStepsRobot2}`);
-}
+runRobotAnimation(VillageState.random(), goalOrientedRobot, []);
