@@ -11,11 +11,7 @@ function range(star, end, step = 1) {
 }
 
 function sum(array) {
-  var total = 0;
-  for (var i = 0; i < array.length; i++) {
-    total = total + array[i];
-  }
-  return total;
+  return array.reduce((total, currentValue) => total + currentValue, 0);
 }
 
 console.log(range(1, 10));
