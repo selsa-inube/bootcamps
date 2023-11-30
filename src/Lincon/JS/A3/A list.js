@@ -1,8 +1,11 @@
 function arrayToList(array) {
+  const reversedArr = array.slice().reverse();
   let list = null;
-  array.reverse().forEach((value) => {
+
+  reversedArr.forEach((value) => {
     list = { value, rest: list };
   });
+
   return list;
 }
 function listToArray(list) {
