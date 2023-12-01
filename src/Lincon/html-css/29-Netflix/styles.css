@@ -177,10 +177,11 @@ section {
 }
 
 .imagenes-overflow img {
-  width: 200px;
+  width: 180px;
   height: 100px;
   border-radius: 20px;
   cursor: pointer;
+  object-fit: cover;
 }
 .actores-perfil {
   display: flex;
