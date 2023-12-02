@@ -74,7 +74,6 @@ main {
   gap: 53px;
   color: rgb(241, 242, 246);
   align-items: baseline;
-  object-fit: cover;
 }
 #qualification-movie {
   font-size: 16px;
@@ -149,6 +148,7 @@ main {
 #posters-container ul {
   display: flex;
   gap: 20px;
+  object-fit: cover;
 }
 #posters-container img {
   height: 80px;
@@ -163,6 +163,7 @@ main {
   align-items: baseline;
   text-align: center;
   max-width: 250px;
+  object-fit: cover;
 }
 #actors-container li {
   margin: 0 10px;
