@@ -175,7 +175,10 @@ function compareRobots(robot1, memory1, robot2, memory2) {
   let average2 = average(resultsRobot2);
   let winner = average1 < average2 ? "robot1" : "robot2";
   console.log(
-    `The best robot is ${winner}, its average was ${average1} and its competitors had an average of ${average2}`
+    `The best robot is ${winner}, its average was ${Math.min(
+      average1,
+      average2
+    )} and its competitors had an average of ${Math.max(average1, average2)}`
   );
 }
 compareRobots(routeRobot, [], goalOrientedRobot, []);
