@@ -137,6 +137,69 @@ function goalOrientedRobot({ place, parcels }, route) {
   }
   return { direction: route[0], memory: route.slice(1) };
 }
+
+function compareRobots(robot1, memory1, robot2, memory2) {
+  //Function to count steps in each simulation
+  function stepsPerTask(state, robotFunction, memory) {
+    let steps = 0;
+    while (true) {
+      if (state.parcels.length == 0) {
+        return steps;
+      }
+      //Defining action
+      let action = robotFunction(state, memory);
+      //Actualizing state
+      state = state.move(action.direction);
+      //Actualizing memory
+      memory = action.memory;
+      //Actualizing number of steps
+      steps++;
+    }
+  }
+  //Function for averaging steps
+  const average = (array) => array.reduce((a, b) => a + b) / array.length;
+  // Looping 100 tasks
+  // Array that contains steps for each task
+  const resultsRobot1 = [];
+  const resultsRobot2 = [];
+  for (let task = 0; task < 100; task++) {
+    // Randomly generated village
+    let state = VillageState.random();
+    resultsRobot1.push(stepsPerTask(state, robot1, memory1));
+    resultsRobot2.push(stepsPerTask(state, robot2, memory2));
+  }
+  let average1 = average(resultsRobot1);
+  let average2 = average(resultsRobot2);
+  let winner = average1 < average2 ? "robot1" : "robot2";
+  console.log(
+    `The best robot is ${winner}, its average was ${average1} and its competitors had an average of ${average2}`
+  );
+}
+
 //   Robot environment above this comment
 
-const { compareRobots } = require("./measuring_a_robot.js");
+// efficiency solution below this comment
+// Shortest path -> Inmediate returns = steps
+// Structure base on goal Oriented Robot
+function exhaustiveRobot({ place, parcels }, route) {
+  let routes = [];
+  if (route.length == 0) {
+    routes = parcels.map((parcel) => {
+      if (parcel.place != place) {
+        return findRoute(roadGraph, place, parcel.place);
+      } else {
+        return findRoute(roadGraph, place, parcel.address);
+      }
+    });
+  }
+  //shortest path
+  if (routes.length) {
+    route = routes.reduce((a, b) => (a.length < b.length ? a : b));
+  }
+
+  return { direction: route[0], memory: route.slice(1) };
+}
+
+compareRobots(routeRobot, [], goalOrientedRobot, []);
+compareRobots(routeRobot, [], exhaustiveRobot, []);
+compareRobots(goalOrientedRobot, [], exhaustiveRobot, []);
