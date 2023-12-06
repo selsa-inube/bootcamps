@@ -155,40 +155,49 @@ runRobot(VillageState.random(), goalOrientedRobot, []);
 console.log("////////Measuring a Robot////////");
 function compareRobots(robot1, memory1, robot2, memory2) {
   const numTasks = 100;
-  let totalStepsRobot1 = 0;
-  let totalStepsRobot2 = 0;
+  const tasks = []; // arreeglo donde se almacenan las 100 tareas
 
+  // se crean las 100 tareas y almacenarlas en el arreglo 'tasks'
   for (let i = 0; i < numTasks; i++) {
-    let task = VillageState.random(); // aqui se esta generando una nueva tarea por cada iteracion
-
-    // Ejecicion del robot1
-    let state1 = task;
-    let steps1 = 0;
-    while (state1.parcels.length > 0) {
-      let action = robot1(state1, memory1);
-      state1 = state1.move(action.direction);
-      memory1 = action.memory;
-      steps1++;
-    }
-    totalStepsRobot1 += steps1;
-
-    // Ejecicion del robot2
-    let state2 = task;
-    let steps2 = 0;
-    while (state2.parcels.length > 0) {
-      let action = robot2(state2, memory2);
-      state2 = state2.move(action.direction);
-      memory2 = action.memory;
-      steps2++;
-    }
-    totalStepsRobot2 += steps2;
+    tasks.push(VillageState.random());
   }
 
-  const avgStepsRobot1 = totalStepsRobot1 / numTasks;
-  const avgStepsRobot2 = totalStepsRobot2 / numTasks;
+  const resultsRobot1 = runRobots(robot1, memory1, tasks); // Ejecutar robot1
+  const resultsRobot2 = runRobots(robot2, memory2, tasks); // Ejecutar robot2
+
+  const avgStepsRobot1 = calculateAverage(resultsRobot1);
+  const avgStepsRobot2 = calculateAverage(resultsRobot2);
 
   console.log(`Promedio de pasos para Robot 1: ${avgStepsRobot1}`);
   console.log(`Promedio de pasos para Robot 2: ${avgStepsRobot2}`);
 }
 
+// Función donde un robot ejecuta una serie de tareas  al igual que devuelve los resultados
+function runRobots(robot, memory, tasks) {
+  const results = [];
+
+  tasks.forEach((task) => {
+    let state = task;
+    let steps = 0;
+
+    while (state.parcels.length > 0) {
+      const action = robot(state, memory);
+      state = state.move(action.direction);
+      memory = action.memory;
+      steps++;
+    }
+
+    results.push(steps);
+  });
+
+  return results;
+}
+
+// Función en la cual se calcula el promedio de un array de resultados
+function calculateAverage(results) {
+  const totalSteps = results.reduce((acc, steps) => acc + steps, 0);
+  return totalSteps / results.length;
+}
+
+// Ejemplo de uso
 compareRobots(routeRobot, [], goalOrientedRobot, []);
