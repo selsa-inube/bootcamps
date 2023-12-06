@@ -1,8 +1,8 @@
 console.log("////////Persistent Groups////////");
 
 class PGroup {
-  constructor(members) {
-    this.members = members || [];
+  constructor(members = []) {
+    this.members = members;
   }
 
   add(value) {
