@@ -30,6 +30,7 @@ header {
 #header-1 ul {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   list-style: none;
   gap: 20px;
   font-weight: 700;
