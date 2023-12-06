@@ -9,14 +9,14 @@ class PGroup {
     if (!this.has(value)) {
       return new PGroup([...this.members, value]);
     }
-    return new PGroup([...this.members]); // Devuelve una nueva instancia en lugar de la referencia actual
+    return new PGroup([...this.members]); // se devolvera una nueva instancia en lugar de la referencia actual
   }
 
   delete(value) {
     if (this.has(value)) {
       return new PGroup(this.members.filter((member) => member !== value));
     }
-    return new PGroup([...this.members]); // Devuelva una nueva instancia en lugar de la referencia actual
+    return new PGroup([...this.members]); // se devolvera una nueva instancia en lugar de la referencia actual
   }
 
   has(value) {
@@ -24,7 +24,7 @@ class PGroup {
   }
 
   static empty() {
-    return new PGroup(); // Retorna una nueva instancia en lugar de usar una propiedad estática
+    return new PGroup(); // Retornará a una nueva instancia en lugar de usar una propiedad estática
   }
 }
 
