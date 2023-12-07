@@ -75,7 +75,7 @@ function runRobot(state, robot, memory) {
   for (let turn = 0; ; turn++) {
     if (state.parcels.length == 0) {
       console.log(`Done in ${turn} turns`);
-      break;
+      return turn;
     }
     let action = robot(state, memory);
     state = state.move(action.direction);
@@ -171,31 +171,22 @@ runRobot(VillageState.random(), goalOrientedRobot, []);
 
 //Measuring a robot
 console.log("---Measuring a robot---");
-function compareRobots(robot1, memory1, robot2, memory2) {
-  const tasks = Array.from({ length: 100 }, () => VillageState.random()); //longitud
 
-  const runTask = (robot, state, memory) => {
-    let value = 0;
-    while (state.parcels.length > 0) {
-      const { direction, memory: newMemory } = robot(state, memory);
-      state = state.move(direction);
-      memory = newMemory;
-      value++;
-    }
-    return value;
+function compareRobots(robot1, memory1, robot2, memory2) {
+  const tasks = Array.from({ length: 100 }, () => VillageState.random());
+
+  const getRobotAverage = (robot, memory) => {
+    const totalSteps = tasks.map((task) => runRobot(task, robot, memory));
+    const avgMoves =
+      totalSteps.reduce((total, steps) => total + steps, 0) / tasks.length;
+    return avgMoves;
   };
 
-  const getTotalSteps = (robot, memory) =>
-    tasks.reduce((total, task) => total + runTask(robot, task, memory), 0);
+  const avgMovesRobot1 = getRobotAverage(robot1, memory1);
+  const avgMovesRobot2 = getRobotAverage(robot2, memory2);
 
-  const stepsRobot1 = getTotalSteps(robot1, memory1);
-  const stepsRobot2 = getTotalSteps(robot2, memory2);
-
-  const avgMovesRobotA = stepsRobot1 / tasks.length; //100 longitud
-  const avgMovesRobotB = stepsRobot2 / tasks.length;
-
-  console.log(`Average Robot 1: ${avgMovesRobotA}`);
-  console.log(`Average Robot 2: ${avgMovesRobotB}`);
+  console.log(`Average Robot 1: ${avgMovesRobot1}`);
+  console.log(`Average Robot 2: ${avgMovesRobot2}`);
 }
 
 compareRobots(routeRobot, [], goalOrientedRobot, []);

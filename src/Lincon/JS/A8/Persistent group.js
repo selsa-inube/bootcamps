@@ -1,5 +1,5 @@
 class PGroup {
-  constructor(members) {
+  constructor(members = []) {
     this.members = members;
   }
 
@@ -9,16 +9,7 @@ class PGroup {
   }
 
   delete(parameter) {
-    const p = this.members.indexOf(parameter);
-
-    if (p === -1) {
-      return this;
-    }
-
-    const newMembers = this.members.slice();
-    newMembers.splice(p, 1);
-
-    return new PGroup(newMembers);
+    return new PGroup(this.members.filter((member) => member !== parameter));
   }
 
   has(parameter) {
@@ -26,15 +17,14 @@ class PGroup {
   }
 }
 
-PGroup.empty = new PGroup([]);
+PGroup.empty = new PGroup();
 
 let a = PGroup.empty.add("a");
-let ab = a.add("b");
-let b = ab.delete("a");
+let b = a.add("a");
+console.log(a === b); // true
 
-console.log(b.has("b"));
-// → true
-console.log(a.has("b"));
-// → false
-console.log(b.has("a"));
-// → false
+let ab = a.add("b");
+let bWithoutA = ab.delete("a");
+console.log(bWithoutA.has("b")); // true
+console.log(a.has("b")); // false
+console.log(bWithoutA.has("a")); // false
