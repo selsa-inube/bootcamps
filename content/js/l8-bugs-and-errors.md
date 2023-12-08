@@ -3,3 +3,5 @@
 Read the chapter 8 of Eloquent JavaScript:
 
 [Bugs and Errors :: Eloquent JavaScript](https://eloquentjavascript.net/08_error.html)
+
+Quiz: https://forms.office.com/r/mTttENq0T3
