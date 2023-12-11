@@ -4,8 +4,9 @@ class PGroup {
   }
 
   add(parameter) {
-    if (this.has(parameter)) return this;
-    return new PGroup(this.members.concat([parameter]));
+    return this.has(parameter)
+      ? this
+      : new PGroup([...this.members, parameter]);
   }
 
   delete(parameter) {
