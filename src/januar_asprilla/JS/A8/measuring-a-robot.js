@@ -1,5 +1,5 @@
 console.log("////////Reading////////");
-//Meadowfield
+
 const roads = [
   "Alice's House-Bob's House",
   "Alice's House-Cabin",
@@ -16,8 +16,10 @@ const roads = [
   "Marketplace-Town Hall",
   "Shop-Town Hall",
 ];
+
 function buildGraph(edges) {
   let graph = Object.create(null);
+
   function addEdge(from, to) {
     if (graph[from] == null) {
       graph[from] = [to];
@@ -25,15 +27,17 @@ function buildGraph(edges) {
       graph[from].push(to);
     }
   }
+
   for (let [from, to] of edges.map((r) => r.split("-"))) {
     addEdge(from, to);
     addEdge(to, from);
   }
+
   return graph;
 }
 
 const roadGraph = buildGraph(roads);
-//The task
+
 class VillageState {
   constructor(place, parcels) {
     this.place = place;
@@ -61,24 +65,20 @@ let first = new VillageState("Post Office", [
 let next = first.move("Alice's House");
 
 console.log(next.place);
-// → Alice's House
 console.log(next.parcels);
-// → []
 console.log(first.place);
-// → Post Office
-//Persistent data
+
 function runRobot(state, robot, memory) {
-  for (let turn = 0; ; turn++) {
-    if (state.parcels.length == 0) {
-      console.log(`Done in ${turn} turns`);
-      break;
-    }
+  let turn;
+  for (turn = 0; state.parcels.length > 0; turn++) {
     let action = robot(state, memory);
     state = state.move(action.direction);
     memory = action.memory;
     console.log(`Moved to ${action.direction}`);
   }
+  return turn;
 }
+
 function randomPick(array) {
   let choice = Math.floor(Math.random() * array.length);
   return array[choice];
@@ -118,6 +118,7 @@ const mailRoute = [
   "Marketplace",
   "Post Office",
 ];
+
 function routeRobot(state, memory) {
   if (memory.length == 0) {
     memory = mailRoute;
@@ -150,54 +151,35 @@ function goalOrientedRobot({ place, parcels }, route) {
   }
   return { direction: route[0], memory: route.slice(1) };
 }
-runRobot(VillageState.random(), goalOrientedRobot, []);
 
 console.log("////////Measuring a Robot////////");
+
 function compareRobots(robot1, memory1, robot2, memory2) {
   const numTasks = 100;
-  const tasks = []; // arreeglo donde se almacenan las 100 tareas
+  const tasks = [];
 
-  // se crean las 100 tareas y almacenarlas en el arreglo 'tasks'
   for (let i = 0; i < numTasks; i++) {
     tasks.push(VillageState.random());
   }
 
-  const resultsRobot1 = runRobots(robot1, memory1, tasks); // Ejecutar robot1
-  const resultsRobot2 = runRobots(robot2, memory2, tasks); // Ejecutar robot2
+  let totalTurnsRobot1 = 0;
+  let totalTurnsRobot2 = 0;
 
-  const avgStepsRobot1 = calculateAverage(resultsRobot1);
-  const avgStepsRobot2 = calculateAverage(resultsRobot2);
+  for (let i = 0; i < numTasks; i++) {
+    totalTurnsRobot1 += runRobot(tasks[i], robot1, memory1);
+    totalTurnsRobot2 += runRobot(tasks[i], robot2, memory2);
+  }
 
-  console.log(`Promedio de pasos para Robot 1: ${avgStepsRobot1}`);
-  console.log(`Promedio de pasos para Robot 2: ${avgStepsRobot2}`);
+  const avgTurnsRobot1 = totalTurnsRobot1 / numTasks;
+  const avgTurnsRobot2 = totalTurnsRobot2 / numTasks;
+
+  console.log(`Promedio de turnos para Robot 1: ${avgTurnsRobot1}`);
+  console.log(`Promedio de turnos para Robot 2: ${avgTurnsRobot2}`);
 }
 
-// Función donde un robot ejecuta una serie de tareas  al igual que devuelve los resultados
-function runRobots(robot, memory, tasks) {
-  const results = [];
-
-  tasks.forEach((task) => {
-    let state = task;
-    let steps = 0;
-
-    while (state.parcels.length > 0) {
-      const action = robot(state, memory);
-      state = state.move(action.direction);
-      memory = action.memory;
-      steps++;
-    }
-
-    results.push(steps);
-  });
-
-  return results;
-}
-
-// Función en la cual se calcula el promedio de un array de resultados
 function calculateAverage(results) {
   const totalSteps = results.reduce((acc, steps) => acc + steps, 0);
   return totalSteps / results.length;
 }
 
-// Ejemplo de uso
 compareRobots(routeRobot, [], goalOrientedRobot, []);
