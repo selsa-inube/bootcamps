@@ -5,7 +5,7 @@ class PGroup {
 
   add(parameter) {
     return this.has(parameter)
-      ? this
+      ? new PGroup([...this.members])
       : new PGroup([...this.members, parameter]);
   }
 
