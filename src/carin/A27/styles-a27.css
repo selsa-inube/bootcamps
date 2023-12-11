@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  color: black;
+  color: #3c4043;
 }
 
 /* Main components */
@@ -11,7 +11,8 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  justify-content: space-around;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 /* Nav-header */
@@ -19,15 +20,18 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  height: 10vh;
 }
 
 #nav-header a {
   text-decoration: none;
-  height: 5vh;
   padding: 2vh 1vw;
   font-size: 0.8em;
+}
+
+#nav-header a:hover {
+  text-decoration: underline;
 }
 
 /* google sign */
@@ -49,16 +53,71 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 #search {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 1hv;
+  align-items: center;
+  border-radius: 50px;
   border: 1px solid #dfe1e5;
+  width: auto;
+  max-width: 600px;
+  margin: 0 50px;
+  height: 40px;
 }
 
+#search:hover {
+  box-shadow: 0 1px 1px 1px #dfe1e5;
+}
+
+#search img {
+  height: 20px;
+  width: auto;
+  padding: 10px auto;
+  margin: 5px 10px;
+}
+#search-img {
+  margin-left: 20px !important;
+  height: 15px !important;
+}
+#cam-img {
+  margin-right: 20px !important;
+}
+input[type="search"]:focus {
+  outline: none;
+}
+input[type="search"] {
+  min-width: 300px;
+  max-width: 450px;
+  width: 50vw;
+  width: 400px;
+  border: none;
+}
+
+#button-div {
+  margin: 40px 0;
+}
+
+#button-div button {
+  margin: 5px;
+  border: none;
+  background-color: #f8f9fa;
+  height: 30px;
+  color: #3c4043;
+  border-radius: 5px;
+}
+
+#button-div button:hover {
+  box-shadow: 1px 1px 1px 1px #dfe1e5;
+  cursor: pointer;
+}
+
+#button-div button:visited {
+  border: solid blue;
+}
 /* under form */
 
 /* footer */
@@ -66,22 +125,42 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 0.9em;
 }
 
+#country,
+#nav-footer {
+  height: 50px;
+  background-color: #f2f2f2;
+  color: #3c4043;
+}
+
+#country {
+  border-bottom: solid 2px #e6e7e9;
+  display: flex;
+  align-items: center;
+}
+#country p {
+  margin-left: 30px;
+}
 #nav-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+#nav-footer a {
+  text-decoration: none;
+  padding: 2vh 1vw;
 }
 
-#nav-footer-l {
-  width: 20vw;
-  background-color: red;
-  height: 20px;
+#nav-footer a:hover {
+  text-decoration: underline;
+}
+
+#nav-footer-l ul {
+  padding-left: 35px;
 }
 
 #nav-footer-r {
-  width: 20vw;
-  background-color: blue;
-  height: 20px;
 }
