@@ -174,15 +174,19 @@ function compareRobots(robot1, memory1, robot2, memory2) {
   let average1 = average(resultsRobot1);
   let average2 = average(resultsRobot2);
   let winner = average1 < average2 ? "robot1" : "robot2";
-  console.log(
-    `The best robot is ${winner}, its average was ${Math.min(
-      average1,
-      average2
-    )} and its competitors had an average of ${Math.max(average1, average2)}`
-  );
-}
-compareRobots(routeRobot, [], goalOrientedRobot, []);
 
+  return { robot1: average1, robot2: average2, winner: winner };
+}
+let results = compareRobots(routeRobot, [], goalOrientedRobot, []);
+console.log(
+  `The best robot is ${results.winner}, its average was ${Math.min(
+    results.average1,
+    results.average2
+  )} and its competitors had an average of ${Math.max(
+    results.average1,
+    results.average2
+  )}`
+);
 if (
   typeof module != "undefined" &&
   module.exports &&

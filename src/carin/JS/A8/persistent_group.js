@@ -1,30 +1,20 @@
 // persistent group below this comment
 class PGroup {
-  constructor() {
-    this.content = [];
+  constructor(initialArray = []) {
+    this.content = [...initialArray];
   }
   add(element) {
+    let newPGroup = PGroup.from(this.content);
     if (!this.has(element)) {
-      let newPGroup = PGroup.from(this.content);
       newPGroup.content.push(element);
       return newPGroup;
-      // return new PGroup(this.content);
-    } else return this;
+    } else return newPGroup;
   }
   delete(element) {
-    if (this.has(element)) {
-      let newPGroup = PGroup.from(this.content);
-      newPGroup.content.splice(this.content.indexOf(element), 1);
-      return newPGroup;
-      // return new PGroup(this.content);
-    } else return this;
+    return new PGroup(this.content.filter((e) => !(e === element)));
   }
   has(element) {
-    if (this.content.indexOf(element) >= 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.content.includes(element);
   }
 
   static from(iterableObject) {
