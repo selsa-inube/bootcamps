@@ -22,7 +22,7 @@ PGroup.empty = new PGroup();
 
 let a = PGroup.empty.add("a");
 let b = a.add("a");
-console.log(a === b); // true
+console.log(a === b); //false
 
 let ab = a.add("b");
 let bWithoutA = ab.delete("a");
