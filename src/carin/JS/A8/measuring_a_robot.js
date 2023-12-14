@@ -58,13 +58,11 @@ var VillageState = class VillageState {
 function runRobot(state, robot, memory) {
   for (let turn = 0; ; turn++) {
     if (state.parcels.length == 0) {
-      console.log(`Done in ${turn} turns`);
-      break;
+      return turn;
     }
     let action = robot(state, memory);
     state = state.move(action.direction);
     memory = action.memory;
-    console.log(`Moved to ${action.direction}`);
   }
 }
 
@@ -142,23 +140,6 @@ function goalOrientedRobot({ place, parcels }, route) {
 // measuring a robot solution below this comment
 
 function compareRobots(robot1, memory1, robot2, memory2) {
-  //Function to count steps in each simulation
-  function stepsPerTask(state, robotFunction, memory) {
-    let steps = 0;
-    while (true) {
-      if (state.parcels.length == 0) {
-        return steps;
-      }
-      //Defining action
-      let action = robotFunction(state, memory);
-      //Actualizing state
-      state = state.move(action.direction);
-      //Actualizing memory
-      memory = action.memory;
-      //Actualizing number of steps
-      steps++;
-    }
-  }
   //Function for averaging steps
   const average = (array) => array.reduce((a, b) => a + b) / array.length;
   // Looping 100 tasks
@@ -168,8 +149,8 @@ function compareRobots(robot1, memory1, robot2, memory2) {
   for (let task = 0; task < 100; task++) {
     // Randomly generated village
     let state = VillageState.random();
-    resultsRobot1.push(stepsPerTask(state, robot1, memory1));
-    resultsRobot2.push(stepsPerTask(state, robot2, memory2));
+    resultsRobot1.push(runRobot(state, robot1, memory1));
+    resultsRobot2.push(runRobot(state, robot2, memory2));
   }
   let average1 = average(resultsRobot1);
   let average2 = average(resultsRobot2);
@@ -180,11 +161,11 @@ function compareRobots(robot1, memory1, robot2, memory2) {
 let results = compareRobots(routeRobot, [], goalOrientedRobot, []);
 console.log(
   `The best robot is ${results.winner}, its average was ${Math.min(
-    results.average1,
-    results.average2
+    results.robot1,
+    results.robot2
   )} and its competitors had an average of ${Math.max(
-    results.average1,
-    results.average2
+    results.robot1,
+    results.robot2
   )}`
 );
 if (
