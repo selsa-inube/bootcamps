@@ -38,6 +38,9 @@ const createTable = (data_set) => {
     headNames.forEach((headName) => {
       let bodyCell = document.createElement("td");
       bodyCell.appendChild(document.createTextNode(rowData[headName]));
+      if (typeof rowData[headName] == "number") {
+        bodyCell.style.textAlign = "right";
+      }
       body.appendChild(bodyCell);
     });
     return body;
