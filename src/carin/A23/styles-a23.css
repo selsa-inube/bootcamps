@@ -2,6 +2,7 @@
 * {
   font-family: sans-serif;
   color: #22282e;
+  box-sizing: border-box;
 }
 
 :root {
@@ -16,20 +17,18 @@ body {
 /* body components */
 header {
   background-color: #fcfeff;
-  width: 90vw;
+  width: 100%;
   height: 8vh;
-  margin: 0 auto;
 }
 
 main {
-  width: 90vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
 }
 
 footer {
@@ -52,7 +51,7 @@ footer {
 
 #title {
   margin: 10vh auto 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 #intro {
@@ -75,35 +74,34 @@ h1 {
 }
 
 #call-to-action {
-  width: 100%;
+  width: 90%;
   margin: 0 auto 100px auto;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#call-to-action-l,
-#call-to-action-r {
+#call-to-action-l {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  min-width: 0;
 }
 
 #call-to-action-l a {
-  width: auto;
-  margin: 5%;
+  width: max-content;
+
+  display: contents;
 }
 
 #call-to-action-l button {
   border-radius: 20px;
   border: none;
-  margin: 10%;
   padding: 2%;
   font-size: 10px;
-  width: 100px;
+  width: 120px;
   height: 30px;
+  margin: 10px;
 }
 
 #call-to-action-l button:hover {
@@ -126,18 +124,17 @@ h1 {
   background-color: #282828;
 }
 
-#call-to-action-r {
-  padding-right: 50px;
-}
-#call-to-action-r a {
+#call-to-action ul a {
   text-wrap: nowrap;
-  cursor: pointer;
-  width: auto;
+  text-decoration: none;
+  margin: 10px;
 }
 
-#call-to-action-r li {
-  margin: 3%;
+#call-to-action li {
   font-size: 0.8rem;
+}
+#call-to-action ul a:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
@@ -158,7 +155,7 @@ h1 {
     margin: 0;
   }
 
-  #call-to-action-r li {
+  #call-to-action li {
     font-size: 0.7rem;
   }
 
@@ -187,11 +184,13 @@ h1 {
 
 /* nav */
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #brand {
@@ -215,6 +214,8 @@ ul {
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  padding-left: 0;
+  align-self: center;
 }
 
 header nav ul li:nth-of-type(2) a:after {
@@ -234,7 +235,12 @@ nav li a {
 nav li:first-of-type a {
   color: var(--coltext);
 }
-
+nav hr {
+  height: 1rem;
+}
+#toggle {
+  justify-self: end;
+}
 #toggle:hover {
   cursor: pointer;
 }
@@ -244,6 +250,10 @@ nav li:first-of-type a {
   }
   #brand p {
     font-size: 0.8rem;
+  }
+
+  nav {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* footer components */
