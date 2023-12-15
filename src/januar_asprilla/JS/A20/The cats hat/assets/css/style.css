@@ -1,0 +1,11 @@
+body {
+  min-height: 200px;
+}
+p {
+  text-align: center;
+}
+
+#cat,
+#hat {
+  position: absolute;
+}
