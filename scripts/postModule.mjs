@@ -9,10 +9,11 @@ import { getMilestoneId } from "../.github/issues/milestones.mjs";
 // Modules
 // import { prework } from "../content/meta/prework.mjs";
 // import { htmlCSS } from "../content/meta/html-css.mjs";
-import { js } from "../content/meta/js.mjs";
+// import { js } from "../content/meta/js.mjs";
+import { react } from "../content/meta/react.mjs";
 
-const issues = js;
-const assignees = ["wfercanas"];
+const issues = react;
+const assignees = ["carin91"];
 
 try {
   const checkedAssignees = getAssignees(assignees);
