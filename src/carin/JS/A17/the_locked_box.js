@@ -15,13 +15,15 @@ const box = {
 
 function withBoxUnlocked(body) {
   // Your code here.
-  if (box.locked) {
+  let locked_before = box.locked;
+  if (locked_before) {
     box.unlock();
   }
 
-  body(box);
-  box.lock();
-  return box;
+  body();
+  if (locked_before) {
+    box.lock();
+  }
 }
 
 withBoxUnlocked(function () {
@@ -36,4 +38,5 @@ try {
   console.log("Error raised: " + e);
 }
 console.log(box.locked);
+console.log(box.content);
 // → true
