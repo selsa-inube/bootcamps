@@ -15,6 +15,8 @@ const box = {
 };
 
 function withBoxUnlocked(body) {
+  var wasLocked = box.locked;
+
   box.unlock(); // Desbloqueamos la caja
 
   try {
@@ -23,7 +25,9 @@ function withBoxUnlocked(body) {
     // Manejamos el error aquí con el catch
     console.error("Error detectado:", error.message);
   } finally {
-    box.lock(); // Volvemos a bloquear la caja al final, independientemente de su estado original
+    if (wasLocked) {
+      box.lock(); // Volvemos a bloquear la caja solo si estaba cerrada originalmente
+    }
   }
 }
 
