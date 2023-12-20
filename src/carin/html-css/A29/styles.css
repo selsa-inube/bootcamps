@@ -9,7 +9,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #2f434e;
+  background: linear-gradient(to bottom, #2f434e, black);
   color: var(--coltext);
 }
 /* body components */
@@ -21,7 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 auto 0 auto;
+  padding: 0 auto;
   margin: 50px;
   overflow: hidden;
   border-radius: 20px;
@@ -30,7 +30,7 @@ main {
 
 header {
   width: 100%;
-  height: 10h;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,9 +85,9 @@ nav a:hover {
   align-items: center;
   margin-left: 30px;
 }
-header i {
+header .fa {
   color: var(--coltext);
-  font-size: 0.7rem !important;
+  font-size: 0.7rem;
 }
 
 header p {
@@ -227,6 +227,7 @@ section {
   height: 40px;
   border-radius: 50%;
   filter: grayscale(100%);
+  object-fit: cover;
 }
 
 #actors figcaption {
