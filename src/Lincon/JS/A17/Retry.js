@@ -15,8 +15,7 @@ function reliableMultiply(a, b) {
 
       return result;
     } catch (error) {
-      if (error instanceof MultiplicatorUnitFailure) {
-      } else {
+      if (!(error instanceof MultiplicatorUnitFailure)) {
         throw error;
       }
     }

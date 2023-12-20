@@ -14,15 +14,18 @@ const box = {
 };
 
 function withBoxUnlocked(body) {
+  let wasLocked = box.locked;
   try {
     if (box.locked) {
       box.unlock();
-      body();
     }
+    body();
   } catch (e) {
     console.log("Error generado: " + e);
   } finally {
-    box.lock();
+    if (wasLocked) {
+      box.lock();
+    }
   }
 }
 
