@@ -15,17 +15,15 @@ const box = {
 };
 
 function withBoxUnlocked(body) {
-  const wasLocked = box.locked; // aqui se almacena el estado actual de la cerradura
-  if (wasLocked) {
-    box.unlock(); // aqui desbloqueamos la caja solo si la misma está cerrada
-  }
+  box.unlock(); // Desbloqueamos la caja
 
   try {
-    body(); // ejecutamos la función proporcionada
+    body(); // Ejecutamos la función proporcionada
+  } catch (error) {
+    // Manejamos el error aquí con el catch
+    console.error("Error detectado:", error.message);
   } finally {
-    if (wasLocked) {
-      box.lock(); // Vuelve a bloquear la caja solo si estaba cerrada originalmente
-    }
+    box.lock(); // Volvemos a bloquear la caja al final, independientemente de su estado original
   }
 }
 
