@@ -1,0 +1,44 @@
+<!doctype html>
+<div id="trailElement" class="trail"></div>
+
+<style>
+  .trail {
+    /* className for the trail elements */
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    background: teal;
+  }
+  body {
+    height: 300px;
+  }
+</style>
+
+<script>
+  // Your code here.
+  let trailElement = document.getElementById("trailElement");
+
+  let posX = 200;
+  let posY = 200;
+
+  trailElement.style.left = posX + "px";
+  trailElement.style.top = posY + "px";
+
+  function setPosX(newX) {
+    x = newX;
+    trailElement.style.left = newX - trailElement.style.width / 2 + "px";
+  }
+
+  function setPosY(newY) {
+    Y = newY;
+    trailElement.style.top = newY - trailElement.style.height / 2 + "px";
+  }
+
+  window.addEventListener("mousemove", (e) => {
+    posX = e.pageX;
+    posY = e.pageY;
+    setPosX(posX);
+    setPosY(posY);
+  });
+</script>
