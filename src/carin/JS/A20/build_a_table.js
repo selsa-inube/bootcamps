@@ -7,21 +7,32 @@ const MOUNTAINS = [
   { name: "Popocatepetl", height: 5465, place: "Mexico" },
   { name: "Mont Blanc", height: 4808, place: "Italy/France" },
 ];
+let colNames = (data) => {
+  let headNames = [];
 
-// Your code here
-const createTable = (data_set) => {
-  let colNames = (data) => {
-    let headNames = [];
-
-    data.forEach((element) => {
-      Object.keys(element).forEach((e) => {
-        if (!headNames.includes(e)) {
-          headNames.push(e);
-        }
-      });
+  data.forEach((element) => {
+    Object.keys(element).forEach((e) => {
+      if (!headNames.includes(e)) {
+        headNames.push(e);
+      }
     });
-    return headNames;
-  };
+  });
+  return headNames;
+};
+//body
+let rowBody = (rowData, headNames) => {
+  let body = document.createElement("tr");
+  headNames.forEach((headName) => {
+    let bodyCell = document.createElement("td");
+    bodyCell.appendChild(document.createTextNode(rowData[headName]));
+    if (typeof rowData[headName] == "number") {
+      bodyCell.className = "class1";
+    }
+    body.appendChild(bodyCell);
+  });
+  return body;
+};
+const createTable = (data_set) => {
   let table = document.createElement("table");
   let headNames = colNames(data_set);
   // head
@@ -32,19 +43,7 @@ const createTable = (data_set) => {
     head.appendChild(headCell);
   });
   table.appendChild(head);
-  //body
-  let rowBody = (rowData, headNames) => {
-    let body = document.createElement("tr");
-    headNames.forEach((headName) => {
-      let bodyCell = document.createElement("td");
-      bodyCell.appendChild(document.createTextNode(rowData[headName]));
-      if (typeof rowData[headName] == "number") {
-        bodyCell.style.textAlign = "right";
-      }
-      body.appendChild(bodyCell);
-    });
-    return body;
-  };
+
   data_set.forEach((dataEntry) => {
     table.appendChild(rowBody(dataEntry, headNames));
   });
