@@ -24,8 +24,8 @@
             result.push(currentNode);
           }
 
-          for (var i = 0; i < currentNode.childNodes.length; i++) {
-            findElements(currentNode.childNodes[i]);
+          for (let childNode of currentNode.childNodes) {
+            findElements(childNode);
           }
         }
 

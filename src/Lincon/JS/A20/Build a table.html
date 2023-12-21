@@ -13,6 +13,10 @@
       th {
         border: 1px solid #000;
       }
+
+      .numeric-cell {
+        text-align: right;
+      }
     </style>
   </head>
 
@@ -50,7 +54,7 @@
             const num = document.createElement("td");
             num.textContent = value;
             if (typeof value === "number") {
-              num.style.textAlign = "right";
+              num.classList.add("numeric-cell");
             }
             row.appendChild(num);
           });
