@@ -18,10 +18,10 @@ function buildTable(mountains) {
   var firstRow = document.createElement("tr");
   table.appendChild(firstRow);
   var attributes = Object.keys(mountains[0]); // Cambié 'keys' a 'attributes'
-  for (var i = 0; i < attributes.length; i++) {
+  for (let attribute of attributes) {
     // Crear celdas de encabezado y agregar el texto correspondiente
-    var heading = document.createTextNode(attributes[i]);
-    var firstRowCell = document.createElement("th");
+    let heading = document.createTextNode(attribute);
+    let firstRowCell = document.createElement("th");
     firstRowCell.appendChild(heading);
     firstRow.appendChild(firstRowCell);
   }
