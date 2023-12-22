@@ -10,38 +10,40 @@ var MOUNTAINS = [
 ];
 
 // Función para construir una tabla HTML a partir de un array de objetos
-function buildTable(arrayOfObjects) {
+function buildTable(mountains) {
   // Crear un elemento de tabla
   var table = document.createElement("table");
 
   // Crear la primera fila de encabezados de tabla
   var firstRow = document.createElement("tr");
   table.appendChild(firstRow);
-  var keys = Object.keys(arrayOfObjects[0]);
-  for (var i = 0; i < keys.length; i++) {
+  var attributes = Object.keys(mountains[0]); // Cambié 'keys' a 'attributes'
+  for (var i = 0; i < attributes.length; i++) {
     // Crear celdas de encabezado y agregar el texto correspondiente
-    var heading = document.createTextNode(keys[i]);
+    var heading = document.createTextNode(attributes[i]);
     var firstRowCell = document.createElement("th");
     firstRowCell.appendChild(heading);
     firstRow.appendChild(firstRowCell);
   }
 
   // Iterar sobre los objetos y construir las filas de datos
-  for (var ii = 0; ii < arrayOfObjects.length; ii++) {
-    var row = document.createElement("tr");
+  for (const object of mountains) {
+    const row = document.createElement("tr");
     table.appendChild(row);
-    for (var iii = 0; iii < keys.length; iii++) {
+
+    for (const attribute of attributes) {
       // Obtener el valor de la propiedad actual del objeto
-      var data = arrayOfObjects[ii][keys[iii]];
+      const data = object[attribute];
+
       // Crear un nodo de texto con el valor y una celda correspondiente
-      var dataNode = document.createTextNode(data);
-      var cell = document.createElement("td");
+      const dataNode = document.createTextNode(data);
+      const cell = document.createElement("td");
       cell.appendChild(dataNode);
       row.appendChild(cell);
 
       // Alinear el texto a la derecha si el valor es un número
-      if (typeof data == "number") {
-        cell.style.textAlign = "right";
+      if (typeof data === "number") {
+        cell.classList.add("align-right");
       }
     }
   }
