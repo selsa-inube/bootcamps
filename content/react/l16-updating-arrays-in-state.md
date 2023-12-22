@@ -2,4 +2,4 @@
 
 Read this guide of React Docs: https://react.dev/learn/updating-arrays-in-state
 
-Quiz: https://forms.office.com/r/ZtUTMQcUtH
+**This lecture doesn't have a quiz**
