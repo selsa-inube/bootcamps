@@ -29,7 +29,6 @@ function buildTable(mountains) {
   // Iterar sobre los objetos y construir las filas de datos
   for (const object of mountains) {
     const row = document.createElement("tr");
-    table.appendChild(row);
 
     for (const attribute of attributes) {
       // Obtener el valor de la propiedad actual del objeto
@@ -46,6 +45,9 @@ function buildTable(mountains) {
         cell.classList.add("align-right");
       }
     }
+
+    // Ahora, después de haber agregado todas las celdas a la fila, agregamos la fila a la tabla
+    table.appendChild(row);
   }
 
   // Devolver la tabla construida
