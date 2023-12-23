@@ -2,4 +2,4 @@
 
 Read this chapter of TypeScript Handbook: https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html
 
-Quiz:
+**This lecture doesn't have quiz**
