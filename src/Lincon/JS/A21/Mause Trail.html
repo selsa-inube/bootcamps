@@ -24,7 +24,7 @@
 
   <body>
     <script>
-      const numTrails = 1;
+      const numTrails = 5; // Modificado a 5 para generar una cola de rastros
 
       const trails = Array.from({ length: numTrails }, createTrail);
 
@@ -34,12 +34,14 @@
         document.body.appendChild(trail);
         return trail;
       }
+      trails.forEach((trail, index) => {
+        trail.style.transitionDuration = `${index * 50}ms`;
+      });
 
       function updateTrail(event) {
         trails.forEach((trail, index) => {
-          const offset = index;
-          const deltaX = event.pageX - offset;
-          const deltaY = event.pageY - offset;
+          const deltaX = event.pageX;
+          const deltaY = event.pageY;
           trail.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
         });
       }
