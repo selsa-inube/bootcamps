@@ -2,4 +2,4 @@
 
 Read this chapter of TypeScript Handbook: https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html
 
-Quiz:
+**This lecture doesn't have quiz**
