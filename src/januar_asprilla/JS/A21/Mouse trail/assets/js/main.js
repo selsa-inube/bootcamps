@@ -1,5 +1,5 @@
 // tengo el numero de elementos de rastro
-const numTrails = 10;
+const numTrails = 5;
 
 // creo y ademas agrego los elementos que van en el body
 const trails = Array.from({ length: numTrails }, () => {
@@ -8,13 +8,16 @@ const trails = Array.from({ length: numTrails }, () => {
   document.body.appendChild(trail);
   return trail;
 });
+trails.forEach((trail, index) => {
+  trail.style.transitionDuration = `${index * 50}ms`;
+});
 
 // con esta funcion estoy actualizando el rastro
 function updateTrail(event) {
-  trails.forEach((trail, index) => {
-    const offset = index * 2; // aumento el espacio entre los elementos
-    trail.style.left = event.pageX - offset + "px";
-    trail.style.top = event.pageY - offset + "px";
+  trails.forEach((trail) => {
+    trail.style.transform = `translateX(${event.pageX - 3}px) translateY(${
+      event.pageY - 3
+    }px)`;
   });
 }
 
