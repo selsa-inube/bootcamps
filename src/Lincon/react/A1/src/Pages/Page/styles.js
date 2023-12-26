@@ -16,6 +16,14 @@ const Container2 = styled.div`
   padding: 10px 30px;
   gap: 20px;
 `;
+const PageContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 320px;
+  gap: 100px;
+  height: 100vh;
+`;
 const Button = styled.button`
   border: none;
   color: #505050;
@@ -41,4 +49,4 @@ const ContainerDatos = styled.div`
     border-bottom: 1px solid #919191;
   }
 `;
-export { Container, Container2, Button, ContainerDatos };
+export { Container, Container2, Button, ContainerDatos, PageContainer };

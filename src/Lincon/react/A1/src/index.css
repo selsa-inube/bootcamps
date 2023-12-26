@@ -4,17 +4,6 @@
   box-sizing: border-box;
   font-family: arial, sans-serif;
 }
-body,
-html {
-  height: 100vh;
-}
-body {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-width: 320px;
-  gap: 100px;
-}
 
 header {
   display: flex;
