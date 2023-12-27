@@ -1,5 +1,4 @@
 <!doctype html>
-<div id="trailElement" class="trail"></div>
 
 <style>
   .trail {
@@ -15,30 +14,35 @@
   }
 </style>
 
-<script>
-  // Your code here.
-  let trailElement = document.getElementById("trailElement");
+<body>
+  <script>
+    let trailElements = [];
 
-  let posX = 200;
-  let posY = 200;
+    // Your code here.
+    function setPos(newX, newY, trailElement) {
+      trailElement.style.transform = `translate(${
+        newX - trailElement.style.width / 2
+      }px,${newY - trailElement.style.height / 2}px)`;
+    }
 
-  trailElement.style.left = posX + "px";
-  trailElement.style.top = posY + "px";
+    if (trailElements.length > 100) {
+      window.removeEventListener("click");
+    }
 
-  function setPosX(newX) {
-    x = newX;
-    trailElement.style.left = newX - trailElement.style.width / 2 + "px";
-  }
+    let current = 0;
+    window.addEventListener("mousemove", (e) => {
+      let trailElement = trailElements[current];
+      setPos(e.pageX, e.pageY, trailElement);
+      current = (current + 1) % trailElements.length;
+    });
 
-  function setPosY(newY) {
-    Y = newY;
-    trailElement.style.top = newY - trailElement.style.height / 2 + "px";
-  }
+    window.addEventListener("click", (e) => {
+      const trailElement = document.createElement("div");
+      trailElement.className = "trail";
 
-  window.addEventListener("mousemove", (e) => {
-    posX = e.pageX;
-    posY = e.pageY;
-    setPosX(posX);
-    setPosY(posY);
-  });
-</script>
+      document.body.appendChild(trailElement);
+      trailElements.push(trailElement);
+      console.log(trailElements);
+    });
+  </script>
+</body>
