@@ -10,6 +10,8 @@ function getMilestoneId(milestone) {
       return "7";
     case "git":
       return "8";
+    case "typescript":
+      return "9";
     default:
       throw new Error(`Milestone "${milestone}" not found`);
   }

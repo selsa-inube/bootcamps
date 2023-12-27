@@ -10,9 +10,10 @@ import { getMilestoneId } from "../.github/issues/milestones.mjs";
 // import { prework } from "../content/meta/prework.mjs";
 // import { htmlCSS } from "../content/meta/html-css.mjs";
 // import { js } from "../content/meta/js.mjs";
-import { react } from "../content/meta/react.mjs";
+// import { react } from "../content/meta/react.mjs";
+import { ts } from "../content/meta/ts.mjs";
 
-const issues = react;
+const issues = ts;
 const assignees = ["carin91"];
 
 try {
