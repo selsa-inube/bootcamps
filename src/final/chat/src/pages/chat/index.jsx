@@ -1,9 +1,9 @@
 import { StyledChat } from "./styles.js";
-import ChatSpace from "../../components/chatSpace/index";
-import GroupsWindow from "../../components/groupsWindow/index";
-import SearchBar from "../../components/searchBar/index.jsx";
-import ChatsWindow from "../../components/chatsWindow/index";
-import UserNav from "../../components/userNav/index";
+import ChatSpace from "../../components/chatSpace";
+import GroupsWindow from "../../components/groupsWindow";
+import SearchBar from "../../components/searchBar";
+import ChatsWindow from "../../components/chatsWindow";
+import UserNav from "../../components/userNav";
 import { useState } from "react";
 
 const Chat = () => {
@@ -11,11 +11,11 @@ const Chat = () => {
 
   return (
     <StyledChat>
-      <ChatsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
       <UserNav />
       <SearchBar />
       <ChatSpace activeChat={activeChat} setActiveChat={setActiveChat} />
       <GroupsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
+      <ChatsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
     </StyledChat>
   );
 };

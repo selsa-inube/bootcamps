@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import AppContextProvider from "./context";
-import Chat from "./pages/chat/index.jsx";
-import { GlobalStyles } from "./design/styles/index";
+import Chat from "./pages/chat";
+import { GlobalStyles } from "./design/styles";
 
 function App() {
   return (

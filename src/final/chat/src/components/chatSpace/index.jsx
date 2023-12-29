@@ -1,6 +1,6 @@
 import { StyledChatSpace } from "./styles.js";
 import { useContext, useState, useEffect } from "react";
-import { AppContext } from "../../context/index";
+import { AppContext } from "../../context";
 import { StyledChatWindow } from "./styles.js";
 
 const chatSpace = ({ activeChat, setActiveChat }) => {
