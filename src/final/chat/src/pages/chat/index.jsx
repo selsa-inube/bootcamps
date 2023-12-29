@@ -11,11 +11,11 @@ const Chat = () => {
 
   return (
     <StyledChat>
+      <ChatsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
       <UserNav />
       <SearchBar />
       <ChatSpace activeChat={activeChat} setActiveChat={setActiveChat} />
       <GroupsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
-      <ChatsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
     </StyledChat>
   );
 };

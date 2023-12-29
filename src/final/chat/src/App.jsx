@@ -6,12 +6,10 @@ import { GlobalStyles } from "./design/styles/index";
 
 function App() {
   return (
-    <>
-      <AppContextProvider>
-        <GlobalStyles />
-        <Chat />
-      </AppContextProvider>
-    </>
+    <AppContextProvider>
+      <GlobalStyles />
+      <Chat />
+    </AppContextProvider>
   );
 }
 
