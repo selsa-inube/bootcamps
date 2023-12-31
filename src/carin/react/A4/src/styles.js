@@ -1,13 +1,6 @@
-button {
-  background-color: #0c80f3;
-  border: 6px solid #0ff166;
-  border-radius: 10px;
-  font-size: 2rem;
-  line-height: 1em;
-  padding: 0;
-}
+import styled from "styled-components";
 
-.game-board {
+const GameBoard = styled.div`
   width: 600px;
   height: 600px;
   margin: 0 auto;
@@ -19,9 +12,9 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   font-size: 2rem;
-}
+`;
 
-.grid-row {
+const GridRow = styled.div`
   border: 6px solid #739dc7;
   border-radius: 6px;
   font-family: Helvetica;
@@ -31,24 +24,16 @@ button {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgb(175, 70, 70);
-}
+`;
 
-.block {
-  background-color: rgb(219, 28, 28);
-  border: 2px solid green;
-  border-radius: 2px;
-  font-family: Helvetica;
-  font-weight: bold;
-}
+const Button = styled.button`
+  background-color: #0c80f3;
+  border: 6px solid #0ff166;
+  border-radius: 10px;
+  font-size: 2rem;
+  line-height: 1em;
+  padding: 0;
+  color: ${(props) => props.$inputColor || "red"};
+`;
 
-.red {
-  color: red;
-}
-
-.blue {
-  color: blue;
-}
-
-.black {
-  color: black;
-}
+export { GameBoard, GridRow, Button };

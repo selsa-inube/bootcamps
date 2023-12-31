@@ -1,10 +1,15 @@
 import { useState } from "react";
-import "./App.css";
+import { GameBoard, GridRow, Button } from "./styles.js";
+import { faStepForward } from "@fortawesome/free-solid-svg-icons";
 
 const Board = () => {
   const [player, setPlayer] = useState(1);
   const [gameState, setGameState] = useState([]);
-  let status = `Winner is ${checkForWinner(gameState)}`;
+  const [finished, setFinished] = useState(false);
+  let status = `Winner is ${checkForWinner(gameState).player}`;
+  if (checkForWinner(gameState).finished && !finished) {
+    setFinished(true);
+  }
 
   let playerTurn = `Next Player: ${player == "0" ? "Player O" : "Player X"}`;
 
@@ -14,43 +19,43 @@ const Board = () => {
     return player;
   };
   function renderSquare(i) {
-    return <Square takeTurn={takeTurn} id={i}></Square>;
+    return <Square takeTurn={takeTurn} id={i} finished={finished}></Square>;
   }
 
   return (
-    <div className="game-board">
-      <div className="grid-row">
+    <GameBoard>
+      <GridRow>
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
-      </div>
-      <div className="grid-row">
+      </GridRow>
+      <GridRow>
         {renderSquare(3)}
         {renderSquare(4)}
         {renderSquare(5)}
-      </div>
-      <div className="grid-row">
+      </GridRow>
+      <GridRow>
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
-      </div>
+      </GridRow>
       <div id="info">
         <p id="turn">{playerTurn}</p>
         <p>{status}</p>
       </div>
-    </div>
+    </GameBoard>
   );
 };
 
-const Square = ({ takeTurn, id }) => {
+const Square = ({ takeTurn, id, finished }) => {
   const mark = ["O", "X", "+"];
   const [filled, setFilled] = useState(false);
   const [tik, setTik] = useState(2);
 
   return (
-    <button
-      className={tik == "1" ? "red" : tik == "0" ? "blue" : "black"}
-      disabled={filled}
+    <Button
+      $inputColor={tik == "1" ? "red" : tik == "0" ? "blue" : "black"}
+      disabled={finished || filled}
       onClick={() => {
         setTik(takeTurn(id));
         setFilled(true);
@@ -58,13 +63,13 @@ const Square = ({ takeTurn, id }) => {
       }}
     >
       <p>{mark[tik]}</p>
-    </button>
+    </Button>
   );
 };
 
 const App = () => {
   return (
-    <div className="game">
+    <div>
       <Board></Board>
     </div>
   );
@@ -103,11 +108,11 @@ const checkForWinner = (gameState) => {
     });
   }
   if (win0.length > 0) {
-    return "Player O ";
+    return { player: "Player O ", finished: true };
   } else if (winX.length > 0) {
-    return "Player X ";
+    return { player: "Player X ", finished: true };
   }
-  return "No Winner Yet";
+  return { player: "No Winner Yet", finished: false };
 };
 
 function isSuperset(set, subset) {
