@@ -1,6 +1,40 @@
 import { useState } from "react";
 import { GameBoard, GridRow, Button } from "./styles.js";
-import { faStepForward } from "@fortawesome/free-solid-svg-icons";
+
+const colorForSquare = (tik) => {
+  switch (tik) {
+    case 1:
+      return "red";
+    case 0:
+      return "blue";
+    default:
+      return "black";
+  }
+};
+
+const Square = ({ takeTurn, id, finished }) => {
+  const mark = ["O", "X", "+"];
+  const [filled, setFilled] = useState(false);
+  const [tik, setTik] = useState(2);
+
+  return (
+    <Button
+      $inputColor={colorForSquare(tik)}
+      disabled={finished || filled}
+      onClick={() => {
+        setTik(takeTurn(id));
+        setFilled(true);
+        console.log(`Square: ${id} filled by player : ${tik}`);
+      }}
+    >
+      <p>{mark[tik]}</p>
+    </Button>
+  );
+};
+
+function renderSquare(i, takeTurn, finished) {
+  return <Square takeTurn={takeTurn} id={i} finished={finished}></Square>;
+}
 
 const Board = () => {
   const [player, setPlayer] = useState(1);
@@ -18,52 +52,29 @@ const Board = () => {
     setPlayer((player + 1) % 2);
     return player;
   };
-  function renderSquare(i) {
-    return <Square takeTurn={takeTurn} id={i} finished={finished}></Square>;
-  }
 
   return (
     <GameBoard>
       <GridRow>
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
+        {renderSquare(0, takeTurn, finished)}
+        {renderSquare(1, takeTurn, finished)}
+        {renderSquare(2, takeTurn, finished)}
       </GridRow>
       <GridRow>
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
+        {renderSquare(3, takeTurn, finished)}
+        {renderSquare(4, takeTurn, finished)}
+        {renderSquare(5, takeTurn, finished)}
       </GridRow>
       <GridRow>
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
+        {renderSquare(6, takeTurn, finished)}
+        {renderSquare(7, takeTurn, finished)}
+        {renderSquare(8, takeTurn, finished)}
       </GridRow>
       <div id="info">
         <p id="turn">{playerTurn}</p>
         <p>{status}</p>
       </div>
     </GameBoard>
-  );
-};
-
-const Square = ({ takeTurn, id, finished }) => {
-  const mark = ["O", "X", "+"];
-  const [filled, setFilled] = useState(false);
-  const [tik, setTik] = useState(2);
-
-  return (
-    <Button
-      $inputColor={tik == "1" ? "red" : tik == "0" ? "blue" : "black"}
-      disabled={finished || filled}
-      onClick={() => {
-        setTik(takeTurn(id));
-        setFilled(true);
-        console.log(`Square: ${id} filled by player : ${tik}`);
-      }}
-    >
-      <p>{mark[tik]}</p>
-    </Button>
   );
 };
 
