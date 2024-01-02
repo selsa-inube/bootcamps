@@ -29,6 +29,16 @@ const contactMocks = [
     active: true,
     lastConnection: new Date("9/8/2023 7:37:08 AM"), //d.toLocaleString();
   },
+  {
+    id: "c00003",
+    name: "Bessie Cooper",
+    status: "How are you, my friend.",
+    avatar: "/src/mocks/contacts/imgs/contact00003.jpg",
+    username: "bessiecoop",
+    phone: "+625184691789",
+    active: false,
+    lastConnection: new Date("10/8/2023 7:37:08 AM"), //d.toLocaleString();
+  },
 ];
 
 export { contactMocks };

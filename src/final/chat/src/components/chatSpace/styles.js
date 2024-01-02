@@ -176,6 +176,8 @@ const StyledContactStamp = styled.section`
 `;
 
 const StyledContactStampYou = styled(StyledContactStamp)`
+  margin-left: 0px;
+  margin-right: 15px;
   > div {
     justify-content: flex-end;
   }
