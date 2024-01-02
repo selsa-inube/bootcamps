@@ -1,14 +1,17 @@
 import { useState } from "react";
 import "./App.css";
 import AppContextProvider from "./context";
+import DataContextProvider from "./context/data.mocks.jsx";
 import Chat from "./pages/chat";
 import { GlobalStyles } from "./design/styles";
 
 function App() {
   return (
     <AppContextProvider>
-      <GlobalStyles />
-      <Chat />
+      <DataContextProvider>
+        <GlobalStyles />
+        <Chat />
+      </DataContextProvider>
     </AppContextProvider>
   );
 }

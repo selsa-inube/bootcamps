@@ -5,5 +5,6 @@ const StyledChat = styled.section`
   grid-template-rows: 1fr 3fr 3fr;
   grid-template-columns: 1fr 2fr 1fr;
   border: solid green 5px;
+  width: 100%;
 `;
 export { StyledChat };

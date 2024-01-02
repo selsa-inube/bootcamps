@@ -7,7 +7,7 @@ import UserNav from "../../components/userNav";
 import { useState } from "react";
 
 const Chat = () => {
-  const [activeChat, setActiveChat] = useState("");
+  const [activeChat, setActiveChat] = useState("c00002");
 
   return (
     <StyledChat>
