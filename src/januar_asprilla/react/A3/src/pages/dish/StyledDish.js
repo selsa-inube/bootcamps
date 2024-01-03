@@ -2,13 +2,61 @@ import styled from "styled-components";
 const BackgroundContainer = styled.div`
   background-color: #f2f2f6;
   margin: 0;
-  padding: 20vh 4vw;
+  padding: 15vh 10vw;
   height: 100vh;
 `;
+
 const DishContainer = styled.div`
   margin: 0 auto;
-  background-color: red;
+  background-color: white;
   border-radius: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  box-shadow: 16px 0px 53px 39px #fdebe4;
 `;
 
-export { BackgroundContainer, DishContainer };
+const InfoContainer = styled.div`
+  display: grid;
+  grid-template-columns: 15% 85%;
+`;
+
+const ExtraContainer = styled.div`
+  padding: 30px 0px;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d4d4d4;
+`;
+
+const OptionContainer = styled.div`
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-bottom: 10px;
+  border-right: ${(props) =>
+    props.barRight === "true" ? "3px solid orange" : "transparent"};
+`;
+
+const IconContainer = styled.div`
+  margin: 0 auto;
+`;
+
+const OptionsCard = styled.div`
+  margin: 30px auto;
+`;
+const ContainerInformation = styled.div`
+  font-family: Helvetica;
+`;
+const TitleContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+`;
+
+export {
+  OptionsCard,
+  OptionContainer,
+  IconContainer,
+  BackgroundContainer,
+  DishContainer,
+  InfoContainer,
+  ExtraContainer,
+};
