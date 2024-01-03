@@ -21,7 +21,6 @@ const InfoContainer = styled.div`
 `;
 
 const ExtraContainer = styled.div`
-  padding: 30px 0px;
   margin-left: 15px;
   justify-content: center;
   align-items: center;
@@ -49,6 +48,7 @@ const ContainerInformation = styled.div`
 const TitleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
+  margin: 30px 20px;
 `;
 
 export {
@@ -59,4 +59,6 @@ export {
   DishContainer,
   InfoContainer,
   ExtraContainer,
+  ContainerInformation,
+  TitleContainer,
 };

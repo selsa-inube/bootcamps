@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
-const TitleInformation = styled.h1`
-  font-size: ${(props) => (props.size === "little" ? "20px" : "25px")};
+const TitleStyled = styled.h1`
+  font-size: ${(props) => (props.size === "big" ? "22px" : "17px")};
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: semibold;
+  color: #616161;
 `;
-const IconInformation = styled.i`
+const IconStyled = styled.i`
   color: #d4d4d4;
   font-size: 20px;
 `;
 
-const TextInformation = styled.p`
+const TextStyled = styled.p`
   color: #d4d4d4;
   font-size: 18px;
 `;
 
-const SpanInformation = styled.span``;
+const hyperlinkStyled = styled.a``;
+
+export { TitleStyled, IconStyled, TextStyled, hyperlinkStyled };
