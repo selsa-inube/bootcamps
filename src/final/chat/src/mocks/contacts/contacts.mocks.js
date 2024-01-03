@@ -3,11 +3,11 @@ const contactMocks = [
     id: "c00001",
     name: "Jane Cooper",
     status: "Hello, don't forget to find me",
-    avatar: "/src/mocks/contacts/imgs/contact00001.jpg", // Verify the paths definitions
+    avatar: "/src/mocks/contacts/imgs/contact00001.jpg",
     username: "janecooper",
     phone: "+6288888888",
     active: false,
-    lastConnection: "9/8/2023 7:37:08 AM", //d.toLocaleString();
+    lastConnection: new Date("9/8/2023 7:37:08 AM"),
   },
   {
     id: "c00002",
@@ -17,7 +17,7 @@ const contactMocks = [
     username: "jennywi",
     phone: "+6288888888",
     active: true,
-    lastConnection: new Date("9/8/2023 7:37:08 AM"), //do not change until the next toggle
+    lastConnection: new Date("1/2/2023 5:37:08 PM"),
   },
   {
     id: "c00010",
@@ -27,7 +27,7 @@ const contactMocks = [
     username: "savannah",
     phone: "+628452341283",
     active: true,
-    lastConnection: new Date("9/8/2023 7:37:08 AM"), //d.toLocaleString();
+    lastConnection: new Date("9/8/2023 7:37:08 AM"),
   },
   {
     id: "c00003",
@@ -37,7 +37,37 @@ const contactMocks = [
     username: "bessiecoop",
     phone: "+625184691789",
     active: false,
-    lastConnection: new Date("10/8/2023 7:37:08 AM"), //d.toLocaleString();
+    lastConnection: new Date("10/2/2023 4:37:08 PM"),
+  },
+  {
+    id: "c00004",
+    name: "Guy Hawkins",
+    status: "Where  are you right now ",
+    avatar: "/src/mocks/contacts/imgs/contact00004.jpg",
+    username: "guyhawkins",
+    phone: "+625121321211",
+    active: false,
+    lastConnection: new Date("11/8/2023 8:37:08 PM"),
+  },
+  {
+    id: "c00005",
+    name: "Ralph Hawkins",
+    status: "Hellow, im loking for ",
+    avatar: "/src/mocks/contacts/imgs/contact00005.jpg",
+    username: "ralphhawkins",
+    phone: "+62663213321",
+    active: false,
+    lastConnection: new Date("9/2/2023 6:37:08 AM"),
+  },
+  {
+    id: "c00006",
+    name: "Fernando Cañas",
+    status: "Hellow, im looking for ",
+    avatar: "/src/mocks/contacts/imgs/contact00006.jpg",
+    username: "fernandocañas",
+    phone: "+65030030030",
+    active: false,
+    lastConnection: new Date("2/8/2023 4:37:08 PM"),
   },
 ];
 
