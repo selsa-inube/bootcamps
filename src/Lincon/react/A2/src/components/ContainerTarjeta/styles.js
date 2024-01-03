@@ -33,7 +33,7 @@ const StyledNum = styled.p`
   font-size: 13px;
   background-color: ${(props) => props.background};
 `;
-const StyleClock = styled.p`
+const StyledClock = styled.p`
   color: #fff;
   font-size: 15px;
   background-color: ${(props) => props.background};
@@ -44,5 +44,5 @@ export {
   StyledTitle,
   StyledNum,
   StyledParagraph,
-  StyleClock,
+  StyledClock,
 };

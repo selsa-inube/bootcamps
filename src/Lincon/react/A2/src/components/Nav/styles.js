@@ -7,7 +7,7 @@ const StyledContainer = styled.div`
   margin-top: 30px;
 `;
 
-const StyledParrafo = styled.p`
+const StyledParagraph = styled.p`
   font-size: 23px;
   font-weight: 800;
   border-bottom: none;
@@ -17,4 +17,4 @@ const StyledListOne = styled.div`
   width: 400px;
 `;
 
-export { StyledContainer, StyledParrafo, StyledListOne };
+export { StyledContainer, StyledParagraph, StyledListOne };

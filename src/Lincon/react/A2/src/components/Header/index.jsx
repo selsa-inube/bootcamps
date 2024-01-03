@@ -13,19 +13,19 @@ import { Lists } from "../Lists";
 import { Title } from "../Title";
 
 const navItemsHeader = [
-  { label: "World", link: "#" },
-  { label: "Politics", link: "#" },
-  { label: "Business", link: "#" },
-  { label: "Opinion", link: "#" },
-  { label: "Tech", link: "#" },
-  { label: "Science", link: "#" },
-  { label: "Sports", link: "#" },
-  { label: "Arts", link: "#" },
-  { label: "Books", link: "#" },
-  { label: "Style", link: "#" },
-  { label: "Food", link: "#" },
-  { label: "Travel", link: "#" },
-  { label: "Magazine", link: "#" },
+  { id: "1", label: "World", link: "#" },
+  { id: "2", label: "Politics", link: "#" },
+  { id: "3", label: "Business", link: "#" },
+  { id: "4", label: "Opinion", link: "#" },
+  { id: "5", label: "Tech", link: "#" },
+  { id: "6", label: "Science", link: "#" },
+  { id: "7", label: "Sports", link: "#" },
+  { id: "8", label: "Arts", link: "#" },
+  { id: "9", label: "Books", link: "#" },
+  { id: "10", label: "Style", link: "#" },
+  { id: "11", label: "Food", link: "#" },
+  { id: "12", label: "Travel", link: "#" },
+  { id: "13", label: "Magazine", link: "#" },
 ];
 
 function Header() {

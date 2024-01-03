@@ -3,10 +3,10 @@ import {
   StyledImage,
   StyledCategory,
   StyledDate,
-  StyledContenedorOne,
-  StyledContenedorTwo,
-  StyleTitle,
-  StyleSubtitle,
+  StyledContainerOne,
+  StyledContainerTwo,
+  StyledTitle,
+  StyledSubtitle,
   StyledButton,
 } from "./styles";
 function Article(props) {
@@ -14,14 +14,14 @@ function Article(props) {
   return (
     <StyledArticle size={size}>
       {size === "large" && img && <StyledImage src={img} alt="Foto" />}
-      <StyledContenedorOne>
+      <StyledContainerOne>
         <StyledCategory>{category}</StyledCategory>
         <StyledDate>{date}</StyledDate>
-      </StyledContenedorOne>
-      <StyledContenedorTwo>
-        <StyleTitle size={size}>{title}</StyleTitle>
-        {size === "large" && <StyleSubtitle>{subtitle}</StyleSubtitle>}
-      </StyledContenedorTwo>
+      </StyledContainerOne>
+      <StyledContainerTwo>
+        <StyledTitle size={size}>{title}</StyledTitle>
+        {size === "large" && <StyledSubtitle>{subtitle}</StyledSubtitle>}
+      </StyledContainerTwo>
       <StyledButton>Continue Reading</StyledButton>
     </StyledArticle>
   );

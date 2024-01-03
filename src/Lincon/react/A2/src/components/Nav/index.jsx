@@ -1,16 +1,16 @@
-import { StyledContainer, StyledParrafo, StyledListOne } from "./styles";
+import { StyledContainer, StyledParagraph, StyledListOne } from "./styles";
 import { Lists } from "../Lists";
 function Nav() {
   const navItemsHeader = [
-    { link: "#", label: "Tech" },
-    { link: "#", label: "Econ" },
-    { link: "#", label: "Media" },
-    { link: "#", label: "Money" },
-    { link: "#", label: "DealBook" },
+    { id: "tech", link: "#", label: "Tech" },
+    { id: "econ", link: "#", label: "Econ" },
+    { id: "media", link: "#", label: "Media" },
+    { id: "money", link: "#", label: "Money" },
+    { id: "dealBook", link: "#", label: "DealBook" },
   ];
   return (
     <StyledContainer>
-      <StyledParrafo>Business</StyledParrafo>
+      <StyledParagraph>Business</StyledParagraph>
       <StyledListOne>
         {/* Usa el componente Lists para la lista-1 */}
         <Lists items={navItemsHeader} />

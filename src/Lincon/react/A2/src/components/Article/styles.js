@@ -11,7 +11,7 @@ const StyledImage = styled.img`
   /* Estilos para la imagen, si es necesario */
   width: 35%;
 `;
-const StyledContenedorOne = styled.div`
+const StyledContainerOne = styled.div`
   /* Estilos para la categoría, si es necesario */
   display: flex;
   align-items: center;
@@ -32,17 +32,17 @@ const StyledDate = styled.p`
   font-weight: 700;
 `;
 
-const StyledContenedorTwo = styled.div`
+const StyledContainerTwo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
 `;
-const StyleTitle = styled.h2`
+const StyledTitle = styled.h2`
   font-size: ${(props) => (props.size === "large" ? "25px" : "19px")};
   max-width: 350px;
 `;
 
-const StyleSubtitle = styled.p`
+const StyledSubtitle = styled.p`
   color: #7a7a7a;
   max-width: 500px;
 `;
@@ -58,9 +58,9 @@ export {
   StyledImage,
   StyledCategory,
   StyledDate,
-  StyledContenedorOne,
-  StyledContenedorTwo,
-  StyleTitle,
-  StyleSubtitle,
+  StyledContainerOne,
+  StyledContainerTwo,
+  StyledTitle,
+  StyledSubtitle,
   StyledButton,
 };
