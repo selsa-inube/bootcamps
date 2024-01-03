@@ -43,7 +43,7 @@ const OtherMessage = styled(MyMessage)`
   color: black;
   left: 15px;
   justify-content: space-between;
-  
+
   padding-right: 0px;
   padding-left: 15px;
   > p {
@@ -51,7 +51,6 @@ const OtherMessage = styled(MyMessage)`
   }
   > i {
     color: #8f47ff;
-    font-size
   }
 `;
 
@@ -90,6 +89,7 @@ const StyledForm = styled.form`
     background-color: transparent;
     line-height: 2em;
     padding-left: 5px;
+    color: #000;
   }
   div button {
     width: 7%;
