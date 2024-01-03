@@ -2,7 +2,7 @@ import {
   TitleStyled,
   IconStyled,
   TextStyled,
-  hyperlinkStyled,
+  HyperlinkStyled,
 } from "./StyledInformation";
 
 function TitleInformation(props) {
@@ -15,4 +15,14 @@ function IconInformation(props) {
   return <IconStyled className={className}></IconStyled>;
 }
 
-export { TitleInformation, IconInformation };
+function Paragraph(props) {
+  const { label } = props;
+  return <TextStyled>{label}</TextStyled>;
+}
+
+function Hyperlink(props) {
+  const { label } = props;
+  return <HyperlinkStyled>{label}</HyperlinkStyled>;
+}
+
+export { TitleInformation, IconInformation, Paragraph, Hyperlink };

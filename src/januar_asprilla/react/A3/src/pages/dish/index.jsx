@@ -8,10 +8,21 @@ import {
   OptionsCard,
   ContainerInformation,
   TitleContainer,
+  Content,
 } from "./StyledDish";
 import { Image } from "./Components/BannerImage";
 import { Text, Icon } from "./Components/OptionInfo";
-import { TitleInformation, IconInformation } from "./Components/Information";
+import {
+  TitleInformation,
+  IconInformation,
+  Paragraph,
+  Hyperlink,
+} from "./Components/Information";
+
+function ContainerText(props) {
+  const { children, direction = "row" } = props;
+  return <Content direction={direction}>{children}</Content>;
+}
 
 function BarRight(props) {
   const { children, barRight = false } = props;
@@ -39,6 +50,21 @@ function DishCard() {
                 </BarRight>
                 <Text label="details" />
               </OptionsCard>
+            </ExtraContainer>
+            <ContainerInformation>
+              <TitleContainer>
+                <TitleInformation
+                  label="Three Topping Pizza - Large"
+                  size="big"
+                />
+                <IconInformation className="fa-solid fa-list"></IconInformation>
+              </TitleContainer>
+              <ContainerText>
+                <Paragraph label="By" />
+                <Hyperlink label="Pizza Company" />
+              </ContainerText>
+            </ContainerInformation>
+            <ExtraContainer>
               <OptionsCard>
                 <OptionContainer>
                   <IconContainer>
@@ -50,12 +76,16 @@ function DishCard() {
             </ExtraContainer>
             <ContainerInformation>
               <TitleContainer>
-                <TitleInformation
-                  label="Three Topping Pizza - Large"
-                  size="big"
-                />
-                <IconInformation className="fa-solid fa-list"></IconInformation>
+                <TitleInformation label="Information" />
+                <IconInformation className="fa-solid fa-pen"></IconInformation>
               </TitleContainer>
+              <ContainerText direction="column">
+                <Paragraph label="147 N Robertson Blvd, West Hollywood, CA 90048" />
+                <ContainerText>
+                  <Paragraph label="Amanda Torres  " />{" "}
+                  <Paragraph label=" (949)123-4567  " />
+                </ContainerText>
+              </ContainerText>
             </ContainerInformation>
           </InfoContainer>
         </DishContainer>

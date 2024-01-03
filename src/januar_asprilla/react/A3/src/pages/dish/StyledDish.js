@@ -18,6 +18,7 @@ const DishContainer = styled.div`
 const InfoContainer = styled.div`
   display: grid;
   grid-template-columns: 15% 85%;
+  grid-template-rows: auto 1fr;
 `;
 
 const ExtraContainer = styled.div`
@@ -45,13 +46,23 @@ const OptionsCard = styled.div`
 const ContainerInformation = styled.div`
   font-family: Helvetica;
 `;
+const Content = styled.div`
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  margin: 0px 20px;
+  flex-direction: ${(props) =>
+    props.direction === "column" ? "column" : "row"};
+`;
 const TitleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
-  margin: 30px 20px;
+  margin: 30px 20px 8px;
+  align-items: center;
 `;
 
 export {
+  Content,
   OptionsCard,
   OptionContainer,
   IconContainer,
