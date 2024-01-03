@@ -1,7 +1,4 @@
 import styled from "styled-components";
-function color() {
-  return "red";
-}
 
 const ButtonStyled = styled.button`
   text-transform: uppercase;
@@ -42,4 +39,45 @@ const FooterExtras = styled.button`
     font-weight: bolder;
   }
 `;
-export { ButtonStyled, ButtonNotice, CategoryStyled, FooterExtras };
+const CategoryContainers = styled.div`
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 10px;
+`;
+const TitleNoticeCenter = styled.h3`
+  font-family: "Times New Roman", Times, serif;
+  max-width: 400px;
+  font-size: 20px;
+`;
+const NoticeRightContainer = styled.div`
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+  margin-bottom: 10px;
+`;
+const InfoNoticeContainer = styled.div`
+  max-width: 250px;
+`;
+const TitleNoticeRight = styled.h4`
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  margin-bottom: 10px;
+`;
+const InformationNoticeRight = styled.p`
+  font-size: 12px;
+  color: gray;
+`;
+
+export {
+  TitleNoticeCenter,
+  CategoryContainers,
+  ButtonStyled,
+  ButtonNotice,
+  CategoryStyled,
+  FooterExtras,
+  NoticeRightContainer,
+  InfoNoticeContainer,
+  TitleNoticeRight,
+  InformationNoticeRight,
+};

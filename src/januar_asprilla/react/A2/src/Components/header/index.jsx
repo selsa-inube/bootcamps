@@ -8,12 +8,27 @@ import {
   DateContainer,
   ListNav,
   ButtonNavDown,
-} from "./headerStyle";
-import { Logo } from "../logoComponent";
-import { Button } from "../buttonComponents";
+} from "./StyledHeader.js";
+import { Logo } from "../logo";
+import { Button } from "../button";
 import { TextDate } from "../textDate";
 import { ItemList } from "../itemList";
 
+const NavItems = [
+  { id: 1, label: "World" },
+  { id: 2, label: "Politics" },
+  { id: 3, label: "Business" },
+  { id: 4, label: "Opinion" },
+  { id: 5, label: "Tech" },
+  { id: 6, label: "Science" },
+  { id: 7, label: "Sports" },
+  { id: 8, label: "Arts" },
+  { id: 9, label: "Books" },
+  { id: 10, label: "Style" },
+  { id: 11, label: "Food" },
+  { id: 12, label: "Travel" },
+  { id: 13, label: "Magazine" },
+];
 function Header() {
   return (
     <HeaderStyled>
@@ -34,19 +49,9 @@ function Header() {
           <TextDate label="May 21, 2020" />
         </DateContainer>
         <ListNav>
-          <ItemList href="#" label="World" />
-          <ItemList href="#" label="Politics" />
-          <ItemList href="#" label="Business" />
-          <ItemList href="#" label="Opinion" />
-          <ItemList href="#" label="Tech" />
-          <ItemList href="#" label="Science" />
-          <ItemList href="#" label="Sports" />
-          <ItemList href="#" label="Arts" />
-          <ItemList href="#" label="Books" />
-          <ItemList href="#" label="Style" />
-          <ItemList href="#" label="Food" />
-          <ItemList href="#" label="Travel" />
-          <ItemList href="#" label="Magazine" />
+          {NavItems.map((item) => (
+            <ItemList key={item.id} href="#" label={item.label} />
+          ))}
         </ListNav>
         <ButtonNavDown>...</ButtonNavDown>
       </NavbarDown>

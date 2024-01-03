@@ -1,4 +1,4 @@
-import { LogoStyled, ImageStyled } from "./logoStyle";
+import { LogoStyled, ImageStyled } from "./StyledLogo.js";
 
 function Logo() {
   return (

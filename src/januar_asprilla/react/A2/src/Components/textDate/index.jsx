@@ -1,4 +1,4 @@
-import { DateDay } from "./textDateStyle";
+import { DateDay } from "./StyledTextDate";
 
 function TextDate(props) {
   const { label, shape = false, size = false } = props;

@@ -1,4 +1,4 @@
-import { ItemContainer, ItemStyled } from "./itemStyle";
+import { ItemContainer, ItemStyled } from "./StyledItem";
 
 function ItemList(props) {
   const { label, href } = props;

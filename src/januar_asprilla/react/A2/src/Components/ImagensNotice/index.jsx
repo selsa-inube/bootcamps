@@ -3,7 +3,7 @@ import {
   ImageStyled,
   ImagePreviwStyled,
   ImageCard,
-} from "./imgNoticeStyle";
+} from "./StyledImgNotice";
 
 function ImagensNotice(props) {
   const { src, alt } = props;
