@@ -71,6 +71,7 @@ header a:hover {
 #date-container,
 #button-extra {
   width: 10%;
+  font-weight: lighter;
 }
 #date-container p {
   font-size: 14px;
