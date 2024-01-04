@@ -5,55 +5,13 @@ import {
   OtherMessage,
   StyledForm,
   StyledChatInfo,
-  StyledContactInfo,
   StyledDateMessage,
-  StyledContactStamp,
-  StyledContactStampYou,
 } from "./styles.js";
 import { useContext, useState, useEffect } from "react";
-import { AppContext } from "../../context";
-import { DataContext } from "../../context/data.mocks.jsx";
-
-const ContactInfo = ({ activeChat, contactMocks, groupMocks }) => {
-  let chatSource = {};
-  if (activeChat[0] === "g") {
-    chatSource = groupMocks.filter((group) => group.id === activeChat)[0];
-  } else if (activeChat[0] === "c") {
-    chatSource = contactMocks.filter((contact) => contact.id === activeChat)[0];
-  }
-
-  return (
-    <StyledContactInfo>
-      <img src={chatSource.avatar} alt="Chat Pic" />
-      <p>{chatSource.name}</p>
-      <p>MinutesAgo</p>
-    </StyledContactInfo>
-  );
-};
-
-const ContactStamp = ({ contactID, contactMocks, hour, you }) => {
-  let contactInfo = contactMocks.filter(
-    (contact) => contact.id === contactID
-  )[0];
-  let contatLog = you ? (
-    <StyledContactStampYou>
-      <div>
-        <img src={contactInfo.avatar} alt="Chat Pic" />
-        <p>you</p>
-      </div>
-      <p>{hour}</p>
-    </StyledContactStampYou>
-  ) : (
-    <StyledContactStamp>
-      <div>
-        <img src={contactInfo.avatar} alt="Chat Pic" />
-        <p>{contactInfo.name}</p>
-      </div>
-      <p>{hour}</p>
-    </StyledContactStamp>
-  );
-  return contatLog;
-};
+import { AppContext } from "../../../context/index.jsx";
+import { DataContext } from "../../../context/data.mocks.jsx";
+import { ContactInfo } from "../contactInfo";
+import { ContactStamp } from "../contactStamp";
 
 const chatSpace = ({ activeChat, setActiveChat }) => {
   const [newMessage, setNewMessage] = useState("");

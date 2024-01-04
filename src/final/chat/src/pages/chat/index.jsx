@@ -1,5 +1,5 @@
 import { StyledChat } from "./styles.js";
-import ChatSpace from "../../components/chatSpace";
+import ChatSpace from "../../components/chatSpace/main/index.jsx";
 import GroupsWindow from "../../components/groupsWindow";
 import SearchBar from "../../components/searchBar";
 import ChatsWindow from "../../components/chatsWindow";

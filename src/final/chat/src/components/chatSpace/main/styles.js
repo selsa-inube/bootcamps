@@ -7,8 +7,8 @@ const StyledChatSpace = styled.section`
 
 const StyledChatWindow = styled.section`
   background: #f5f5f5;
-  height: 60vh;
   overflow: auto;
+  height: calc(100% - 120px);
 `;
 
 const MyMessage = styled.div`
@@ -59,6 +59,7 @@ const StyledForm = styled.form`
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 20px;
+
   > button {
     background-color: #8f47ff;
     border-radius: 50%;
@@ -75,7 +76,7 @@ const StyledForm = styled.form`
     font-size: 1.3rem;
   }
   div {
-    width: 90%;
+    width: calc(100% - 50px);
     background-color: #f9f9f9;
     border-radius: 40px;
     overflow: hidden;
@@ -84,7 +85,8 @@ const StyledForm = styled.form`
     align-items: center;
   }
   div input[type="text"] {
-    width: 80%;
+    min-width: 300px;
+    width: calc(100% - 80px);
     border: none;
     background-color: transparent;
     line-height: 2em;
@@ -92,12 +94,12 @@ const StyledForm = styled.form`
     color: #000;
   }
   div button {
-    width: 7%;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px;
-    height: 80%;
+    border-radius: 50%;
+    height: 30px;
     margin: 0 5px;
   }
   div button i {
@@ -130,60 +132,11 @@ const StyledChatInfo = styled.section`
     align-items: center;
     background-color: white;
     padding: 15px;
+    border: none;
   }
 
   button i {
     font-size: 0.8rem;
-  }
-`;
-
-const StyledContactInfo = styled.section`
-  width: 40%;
-  > img {
-    float: left;
-    width: 50px;
-  }
-  > p {
-    color: #988f8f;
-    font-size: 0.7rem;
-    text-align: left;
-  }
-  > p:first-of-type {
-    color: black;
-    font-size: 1rem;
-  }
-`;
-
-const StyledContactStamp = styled.section`
-  margin-left: 10px;
-  > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  > div img {
-    width: 30px;
-  }
-  > div p {
-    font-weight: bold;
-    font-size: 0.8rem;
-  }
-  > p {
-    text-align: left;
-    font-size: 0.8rem;
-    color: #988f8f;
-  }
-`;
-
-const StyledContactStampYou = styled(StyledContactStamp)`
-  margin-left: 0px;
-  margin-right: 15px;
-  > div {
-    justify-content: flex-end;
-  }
-
-  > p {
-    text-align: right;
   }
 `;
 
@@ -194,8 +147,5 @@ export {
   OtherMessage,
   StyledForm,
   StyledChatInfo,
-  StyledContactInfo,
   StyledDateMessage,
-  StyledContactStamp,
-  StyledContactStampYou,
 };
