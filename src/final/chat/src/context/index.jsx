@@ -1,15 +1,8 @@
 import { createContext } from "react";
+import { contactMocks } from "../mocks/contacts/contacts.mocks.js";
 
-const authUser = {
-  id: "c00010",
-  name: "Savannah Nguyen",
-  status: "Product Designer",
-  avatar: "../src/mocks/contacts/imgs/contact00010.jpg",
-  username: "savannah",
-  phone: "+628452341283",
-  active: true,
-  lastConnection: "9/8/2023 7:37:08 AM", //d.toLocaleString();
-};
+let userAuthId = "c00010";
+const authUser = contactMocks.filter((user) => user.id === userAuthId)[0];
 
 const darkMode = false;
 const language = "english";

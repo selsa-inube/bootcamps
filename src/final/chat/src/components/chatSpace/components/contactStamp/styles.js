@@ -9,6 +9,7 @@ const StyledContactStamp = styled.section`
   }
   > div img {
     width: 30px;
+    border-radius: 50%;
   }
   > div p {
     font-weight: bold;

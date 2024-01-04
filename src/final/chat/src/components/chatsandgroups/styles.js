@@ -9,6 +9,11 @@ const StyledContainerButton = styled.button`
   padding: 15px 0 15px 10px;
   width: 100%;
   text-align: left;
+
+  &:hover {
+    cursor: pointer;
+    border: solid black 1px;
+  }
 `;
 
 const StiledImg = styled.img`

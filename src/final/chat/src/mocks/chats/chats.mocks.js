@@ -21,7 +21,7 @@ const chatMocks = [
     from: "c00002",
     to: "g00001",
     content: "hi",
-    read: true, //in groups this will be the first view, should we change that?
+    read: true,
     timeStamp: new Date("9/8/2023 11:00:00 AM"),
   },
   {
@@ -30,7 +30,7 @@ const chatMocks = [
     to: "c00002",
     content:
       "Hi there, nice to meet you too. I'm Savannah Nguyen from Banding, pleased to meet you",
-    read: true, //in groups this will be the first view, should we change that?
+    read: true,
     timeStamp: new Date("9/8/2023 11:10:00 AM"),
   },
   {
@@ -40,6 +40,62 @@ const chatMocks = [
     content: "Hi",
     read: true,
     timeStamp: new Date("9/9/2023 11:00:00 AM"),
+  },
+  {
+    id: "chat000000025",
+    from: "c00002",
+    to: "g00001",
+    content: "how are you?",
+    read: true,
+    timeStamp: new Date("9/8/2023 11:10:00 AM"),
+  },
+  {
+    id: "chat001200025",
+    from: "c00001",
+    to: "g00001",
+    content: "i'm GOOD  !",
+    read: true,
+    timeStamp: new Date("9/8/2023 11:18:20 AM"),
+  },
+  {
+    id: "chat001212025",
+    from: "c00010",
+    to: "g00001",
+    content: "how is it gooing guys",
+    read: true,
+    timeStamp: new Date("9/8/2023 1:18:20 PM"),
+  },
+  {
+    id: "chat001213825",
+    from: "c00002",
+    to: "g00001",
+    content: "Will we meet tomorrow?",
+    read: true,
+    timeStamp: new Date("9/8/2023 9:18:20 PM"),
+  },
+  {
+    id: "chat021213825",
+    from: "c00003",
+    to: "g00002",
+    content: "Hi",
+    read: true,
+    timeStamp: new Date("12/8/2023 9:18:20 AM"),
+  },
+  {
+    id: "chat021853825",
+    from: "c00010",
+    to: "g00002",
+    content: "Hi",
+    read: true,
+    timeStamp: new Date("14/8/2023 9:35:20 AM"),
+  },
+  {
+    id: "chat021753825",
+    from: "c00004",
+    to: "g00002",
+    content: "Hi",
+    read: true,
+    timeStamp: new Date("14/8/2023 11:35:20 AM"),
   },
 ];
 

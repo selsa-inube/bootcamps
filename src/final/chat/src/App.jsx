@@ -1,4 +1,3 @@
-import { useState } from "react";
 import AppContextProvider from "./context";
 import DataContextProvider from "./context/data.mocks.jsx";
 import Chat from "./pages/chat";

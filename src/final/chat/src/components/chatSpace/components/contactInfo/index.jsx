@@ -10,9 +10,15 @@ const ContactInfo = ({ activeChat, contactMocks, groupMocks }) => {
 
   return (
     <StyledContactInfo>
-      <img src={chatSource.avatar} alt="Chat Pic" />
-      <p>{chatSource.name}</p>
-      <p>MinutesAgo</p>
+      {activeChat.length > 0 ? (
+        <>
+          <img src={chatSource.avatar} alt="Chat Pic" />
+          <p>{chatSource.name}</p>
+          <p>MinutesAgo</p>
+        </>
+      ) : (
+        <p> Select a chat</p>
+      )}
     </StyledContactInfo>
   );
 };
