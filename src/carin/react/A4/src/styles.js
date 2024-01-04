@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const GameBoard = styled.div`
+const StyledGameBoard = styled.div`
   width: 600px;
   height: 600px;
   margin: 0 auto;
@@ -14,7 +14,7 @@ const GameBoard = styled.div`
   font-size: 2rem;
 `;
 
-const GridRow = styled.div`
+const StyledGridRow = styled.div`
   border: 6px solid #739dc7;
   border-radius: 6px;
   font-family: Helvetica;
@@ -26,7 +26,7 @@ const GridRow = styled.div`
   background-color: rgb(175, 70, 70);
 `;
 
-const Button = styled.button`
+const StyledButton = styled.button`
   background-color: #0c80f3;
   border: 6px solid #0ff166;
   border-radius: 10px;
@@ -36,4 +36,4 @@ const Button = styled.button`
   color: ${(props) => props.$inputColor || "red"};
 `;
 
-export { GameBoard, GridRow, Button };
+export { StyledGameBoard, StyledGridRow, StyledButton };

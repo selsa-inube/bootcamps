@@ -1,138 +1,129 @@
 import { useState } from "react";
-import { GameBoard, GridRow, Button } from "./styles.js";
+import { StyledGameBoard, StyledGridRow, StyledButton } from "./styles.js";
 
-const colorForSquare = (tik) => {
-  switch (tik) {
-    case 1:
+const colorForSquare = (value) => {
+  switch (value) {
+    case "X":
       return "red";
-    case 0:
+    case "O":
       return "blue";
     default:
       return "black";
   }
 };
 
-const Square = ({ takeTurn, id, finished }) => {
-  const mark = ["O", "X", "+"];
-  const [filled, setFilled] = useState(false);
-  const [tik, setTik] = useState(2);
-
+function Square({ value, onSquareClick }) {
   return (
-    <Button
-      $inputColor={colorForSquare(tik)}
-      disabled={finished || filled}
-      onClick={() => {
-        setTik(takeTurn(id));
-        setFilled(true);
-        console.log(`Square: ${id} filled by player : ${tik}`);
-      }}
-    >
-      <p>{mark[tik]}</p>
-    </Button>
+    <StyledButton $inputColor={colorForSquare(value)} onClick={onSquareClick}>
+      {value}
+    </StyledButton>
   );
-};
-
-function renderSquare(i, takeTurn, finished) {
-  return <Square takeTurn={takeTurn} id={i} finished={finished}></Square>;
 }
 
-const Board = () => {
-  const [player, setPlayer] = useState(1);
-  const [gameState, setGameState] = useState([]);
-  const [finished, setFinished] = useState(false);
-  let status = `Winner is ${checkForWinner(gameState).player}`;
-  if (checkForWinner(gameState).finished && !finished) {
-    setFinished(true);
+function Board({ xIsNext, squares, onPlay }) {
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = "X";
+    } else {
+      nextSquares[i] = "O";
+    }
+    onPlay(nextSquares);
   }
 
-  let playerTurn = `Next Player: ${player == "0" ? "Player O" : "Player X"}`;
-
-  const takeTurn = (id) => {
-    setGameState([...gameState, { id: id, player: player }]);
-    setPlayer((player + 1) % 2);
-    return player;
-  };
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = "Winner: " + winner;
+  } else {
+    status = "Next player: " + (xIsNext ? "X" : "O");
+  }
 
   return (
-    <GameBoard>
-      <GridRow>
-        {renderSquare(0, takeTurn, finished)}
-        {renderSquare(1, takeTurn, finished)}
-        {renderSquare(2, takeTurn, finished)}
-      </GridRow>
-      <GridRow>
-        {renderSquare(3, takeTurn, finished)}
-        {renderSquare(4, takeTurn, finished)}
-        {renderSquare(5, takeTurn, finished)}
-      </GridRow>
-      <GridRow>
-        {renderSquare(6, takeTurn, finished)}
-        {renderSquare(7, takeTurn, finished)}
-        {renderSquare(8, takeTurn, finished)}
-      </GridRow>
-      <div id="info">
-        <p id="turn">{playerTurn}</p>
-        <p>{status}</p>
-      </div>
-    </GameBoard>
+    <StyledGameBoard>
+      <StyledGridRow>
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
+        <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+      </StyledGridRow>
+      <StyledGridRow>
+        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
+        <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
+        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+      </StyledGridRow>
+      <StyledGridRow>
+        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
+        <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
+        <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+      </StyledGridRow>
+      <div>{status}</div>
+    </StyledGameBoard>
   );
-};
+}
 
-const App = () => {
+function App() {
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [currentMove, setCurrentMove] = useState(0);
+  const xIsNext = currentMove % 2 === 0;
+  const currentSquares = history[currentMove];
+
+  function handlePlay(nextSquares) {
+    const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+    setHistory(nextHistory);
+    setCurrentMove(nextHistory.length - 1);
+  }
+
+  function jumpTo(nextMove) {
+    setCurrentMove(nextMove);
+  }
+
+  const moves = history.map((squares, move) => {
+    let description;
+    if (move > 0) {
+      description = "Go to move #" + move;
+    } else {
+      description = "Go to game start";
+    }
+    return (
+      <li key={move}>
+        <button onClick={() => jumpTo(move)}>{description}</button>
+      </li>
+    );
+  });
+
   return (
-    <div>
-      <Board></Board>
-    </div>
+    <>
+      <>
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      </>
+      <>
+        <ol>{moves}</ol>
+      </>
+    </>
   );
-};
+}
 
-const win = [
-  // rows
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  // cols
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  // diagonal
-  [0, 4, 8],
-  [2, 4, 6],
-];
-
-const checkForWinner = (gameState) => {
-  if (gameState.length < 5) return "No Winner Yet";
-  let p0 = gameState.filter((item) => {
-    if (item.player == 0) return item;
-  });
-  p0 = p0.map((item) => item.id);
-  let px = gameState.filter((item) => {
-    if (item.player == 1) return item;
-  });
-  px = px.map((item) => item.id);
-  if (p0 != null && px != null) {
-    var win0 = win.filter((item) => {
-      return isSuperset(new Set(p0), new Set(item));
-    });
-    var winX = win.filter((item) => {
-      return isSuperset(new Set(px), new Set(item));
-    });
-  }
-  if (win0.length > 0) {
-    return { player: "Player O ", finished: true };
-  } else if (winX.length > 0) {
-    return { player: "Player X ", finished: true };
-  }
-  return { player: "No Winner Yet", finished: false };
-};
-
-function isSuperset(set, subset) {
-  for (let elem of subset) {
-    if (!set.has(elem)) {
-      return false;
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
     }
   }
-  return true;
+  return null;
 }
 
 export default App;
