@@ -9,6 +9,7 @@ import {
   ContainerInformation,
   TitleContainer,
   Content,
+  StyledSelect,
 } from "./StyledDish";
 import { Image } from "./Components/BannerImage";
 import { Text, Icon } from "./Components/OptionInfo";
@@ -18,6 +19,7 @@ import {
   Paragraph,
   Hyperlink,
 } from "./Components/Information";
+import { Select } from "./Components/Cheked";
 
 function ContainerText(props) {
   const { children, direction = "row" } = props;
@@ -86,6 +88,10 @@ function DishCard() {
                   <Paragraph label=" (949)123-4567  " />
                 </ContainerText>
               </ContainerText>
+              <StyledSelect>
+                <Select Text="Pickup (Turn-Around: 30 Minutes)" />
+                <Select Text="Delivery $5.000 (Turn-Around: 1 Hour)" />
+              </StyledSelect>
             </ContainerInformation>
           </InfoContainer>
         </DishContainer>
