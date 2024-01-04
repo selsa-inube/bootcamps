@@ -12,7 +12,7 @@ const StyledChatWindow = styled.section`
 `;
 
 const MyMessage = styled.div`
-  background: #8f47ff;
+  background: var(--purple-col);
   color: white;
   border-radius: 10px 10px 0px 10px;
   width: 60%;
@@ -50,7 +50,7 @@ const OtherMessage = styled(MyMessage)`
     text-align: left;
   }
   > i {
-    color: #8f47ff;
+    color: var(--purple-col);
   }
 `;
 
@@ -61,7 +61,7 @@ const StyledForm = styled.form`
   padding: 10px 20px;
 
   > button {
-    background-color: #8f47ff;
+    background-color: var(--purple-col);
     border-radius: 50%;
     width: 40px;
     height: 40px;
