@@ -1,5 +1,6 @@
 import { StyledFastForward } from "./styles.js";
 import { FastForwardArticles } from "../fastForwardArticles";
+import { ContinueReading } from "../continueReading/index.js";
 
 const FastForward = () => {
   return (
@@ -26,7 +27,7 @@ const FastForward = () => {
           imgSrc="public/fast-forward3.jpg"
         />
       </section>
-      <a className="continue-reading">Show All</a>
+      <ContinueReading content="Show All" />
     </StyledFastForward>
   );
 };

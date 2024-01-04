@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledFastForwardArticles = styled.section`
+const StyledFastForwardArticles = styled.article`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;

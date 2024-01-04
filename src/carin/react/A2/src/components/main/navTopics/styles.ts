@@ -24,16 +24,6 @@ const StyledNavTopics = styled.nav`
     justify-content: space-around;
   }
 
-  li {
-    list-style-type: none;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 0.6rem;
-    color: gray;
-  }
-
   button {
     height: 5vh;
     width: 5vh;

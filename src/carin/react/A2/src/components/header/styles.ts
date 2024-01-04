@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   width: 100%;
   height: 10vh;
 
-  #account-managment {
+  nav {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -17,13 +17,13 @@ const StyledHeader = styled.header`
     align-items: center;
   }
 
-  #left-side-header i {
+  nav div:first-of-type i {
     color: black;
     margin: 10px;
     font-size: 0.9rem;
   }
 
-  #left-side-header i:first-of-type {
+  nav div:first-of-type i:first-of-type {
     margin-left: 0px;
   }
 
@@ -36,31 +36,11 @@ const StyledHeader = styled.header`
     font-size: 1.5rem;
   }
 
-  #right-side-header {
+  div:last-of-type {
     display: flex;
     justify-content: flex-end;
   }
 
-  #right-side-header button {
-    padding: 10px 20px;
-    color: black;
-    font-weight: bold;
-    font-size: 0.8rem;
-  }
-
-  #right-side-header button:hover {
-    cursor: pointer;
-  }
-
-  #right-side-header button:nth-of-type(2) {
-    background-color: #f6f6f6;
-    border: solid #d8d8d8;
-  }
-
-  #right-side-header button:nth-of-type(1) {
-    background-color: #f6f6f6;
-    border: none;
-  }
   /* end of header styles */
 `;
 

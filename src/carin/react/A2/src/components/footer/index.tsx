@@ -1,34 +1,34 @@
-import { StyledFooter } from "./styles.js";
+import {
+  StyledFooter,
+  StyledLeftSideFooter,
+  StyledOverview,
+} from "./styles.js";
+
+import { listFromArray } from "../listFromArray/index.js";
 
 const Footer = () => {
+  let arrayWithContents = [
+    "Futures",
+    "Americas",
+    "Europe",
+    "Asia",
+    "Commodities",
+  ];
+  let arrayForList = [];
+  arrayWithContents.forEach((element) => {
+    arrayForList.push({ href: "#", content: element });
+  });
+  let list = listFromArray(arrayForList);
   return (
     <StyledFooter>
-      <nav id="left-side-footer">
+      <StyledLeftSideFooter>
         <div>
           <p>MARKET SNAPSHOT</p>
           <p>6:07 AM</p>
         </div>
-        <ul>
-          <li>
-            <a href="#">Futures</a>
-          </li>
-          <li>
-            <a href="#">Americas</a>
-          </li>
-          <li>
-            <a href="#">Europe</a>
-          </li>
-          <li>
-            <a href="#">Asia</a>
-          </li>
-          <li>
-            <a href="#">Commodities</a>
-          </li>
-        </ul>
-      </nav>
-      <a id="overview" href="#">
-        FULL MARKET OVERVIEW{" >"}
-      </a>
+        <ul>{list}</ul>
+      </StyledLeftSideFooter>
+      <StyledOverview href="#">FULL MARKET OVERVIEW{" >"}</StyledOverview>
     </StyledFooter>
   );
 };

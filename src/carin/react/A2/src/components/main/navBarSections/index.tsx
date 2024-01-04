@@ -1,28 +1,24 @@
 import { StyledNavBarSections } from "./styles.js";
+import { listFromArray } from "../../listFromArray/index.js";
 
 const NavBarSections = () => {
+  let arrayWithContents = [
+    "Business",
+    "Tech",
+    "Econ",
+    "Media",
+    "Money",
+    "dealBook",
+  ];
+  let arrayForList = [];
+  arrayWithContents.forEach((element) => {
+    arrayForList.push({ href: "#", content: element });
+  });
+  let list = listFromArray(arrayForList);
+
   return (
     <StyledNavBarSections>
-      <ul>
-        <li>
-          <a href="#">Business</a>
-        </li>
-        <li>
-          <a href="#">Tech</a>
-        </li>
-        <li>
-          <a href="#">Econ</a>
-        </li>
-        <li>
-          <a href="#">Media</a>
-        </li>
-        <li>
-          <a href="#">Money</a>
-        </li>
-        <li>
-          <a href="#">dealBook</a>
-        </li>
-      </ul>
+      <ul>{list}</ul>
     </StyledNavBarSections>
   );
 };

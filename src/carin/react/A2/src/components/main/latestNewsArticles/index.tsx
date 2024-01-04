@@ -1,14 +1,13 @@
 import { StyledLatestNewsArticles } from "./styles.js";
+import { ArticleInfo } from "../articleInfo/index.js";
+import { ContinueReading } from "../continueReading/index.js";
 
 const LatestNewsArticles = ({ span, date, title }) => {
   return (
     <StyledLatestNewsArticles>
-      <div className="article-info">
-        <span>{span}</span>
-        <p>{date}</p>
-      </div>
+      <ArticleInfo span={span} date={date} />
       <h3>{title}</h3>
-      <a className="continue-reading">Continue Reading</a>
+      <ContinueReading content="Continue Reading" />
     </StyledLatestNewsArticles>
   );
 };

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const StyledHome = styled.article`
-  margin: 40px;
   margin-left: 90px;
   padding: 0px;
   background-color: #f6f6f6;

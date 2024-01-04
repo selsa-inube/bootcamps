@@ -14,17 +14,6 @@ const StyledNavBarSections = styled.nav`
     width: 100%;
   }
 
-  li {
-    list-style-type: none;
-    margin: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 0.6rem;
-    color: gray;
-  }
-
   a:hover {
     cursor: pointer;
     text-decoration: underline;

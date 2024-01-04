@@ -5,7 +5,7 @@ const StyledMain = styled.main`
 
   width: 100%;
 
-  article {
+  > article {
     display: grid;
     grid-template-rows: 10vh auto;
     grid-template-columns: 4fr auto 3fr auto 3fr;
@@ -13,14 +13,14 @@ const StyledMain = styled.main`
     padding-bottom: 15px;
   }
 
-  article hr:first-of-type {
+  > article hr:first-of-type {
     height: 100%;
     grid-row: 2/3;
     grid-column: 2/3;
     margin: 0 20px;
   }
 
-  article hr:nth-of-type(2) {
+  > article hr:nth-of-type(2) {
     height: 100%;
     grid-row: 2/3;
     grid-column: 4/5;
