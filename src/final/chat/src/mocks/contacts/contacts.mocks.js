@@ -2,7 +2,7 @@ const contactMocks = [
   {
     id: "c00001",
     name: "Jane Cooper",
-    status: "Hello, don't forget to find me",
+    status: "Hello, don't forget to",
     avatar: "/src/mocks/contacts/imgs/contact00001.jpg",
     username: "janecooper",
     phone: "+6288888888",

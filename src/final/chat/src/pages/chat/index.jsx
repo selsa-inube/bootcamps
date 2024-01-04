@@ -13,7 +13,7 @@ const Chat = () => {
     <StyledChat>
       <UserNav />
       <SearchBar />
-      <ChatSpace activeChat={activeChat} setActiveChat={setActiveChat} />
+      <ChatSpace activeChat={"c00002"} setActiveChat={setActiveChat} />
       <GroupsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
       <ChatsWindow activeChat={activeChat} setActiveChat={setActiveChat} />
     </StyledChat>
