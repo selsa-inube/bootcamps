@@ -1,6 +1,12 @@
 import { StyledForm } from "./styles.js";
 
-const NewMessagesForm = ({ handleSubmit, name, newMessage, handleChange }) => {
+const NewMessagesForm = ({
+  handleSubmit,
+  name,
+  newMessage,
+  handleChange,
+  activeChat,
+}) => {
   return (
     <StyledForm name={name} onSubmit={handleSubmit}>
       <div>

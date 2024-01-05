@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledContainerButton = styled.button`
   display: grid;
-  border: none;
+  border: solid transparent 1px;
   grid-template-columns: auto 1fr;
   gap: 10px;
   background-color: ${({ $backroundColor }) => $backroundColor || "white"};
@@ -12,7 +12,7 @@ const StyledContainerButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    border: solid black 1px;
+    border: solid gray 1px;
   }
 `;
 
