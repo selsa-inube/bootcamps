@@ -1,21 +1,22 @@
-import { StyledContainerCheck, StyledInput, StyledText } from "./styled.js";
+import { ContainerCheck, ContainerInput, ContainerText } from "./styled.js";
+
 import { useState } from "react";
-function Select({ Text }) {
-  const [isChecked, setIsChecked] = useState(false);
+function OptionCheck({ Text }) {
+  const [isCheckout, setIsCheckout] = useState(false);
   const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
+    setIsCheckout(!isCheckout);
   };
   return (
-    <StyledContainerCheck>
-      <StyledInput
+    <ContainerCheck>
+      <ContainerInput
         type="checkbox"
         id="chkCircular"
-        checked={isChecked}
+        checked={isCheckout}
         onChange={handleCheckboxChange}
-      ></StyledInput>
-      <StyledText checked={isChecked}> {Text}</StyledText>
-    </StyledContainerCheck>
+      ></ContainerInput>
+      <ContainerText checked={isCheckout}> {Text}</ContainerText>
+    </ContainerCheck>
   );
 }
 
-export { Select };
+export { OptionCheck };

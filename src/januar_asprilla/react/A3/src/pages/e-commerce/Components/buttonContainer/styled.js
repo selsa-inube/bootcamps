@@ -1,18 +1,23 @@
 import styled from "styled-components";
 
-const StyledContainerOff = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+const OffContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
   background-color: #e3e3fd;
-  color: #4440d2;
-  width: 10%;
-  padding: 10px;
-  border-radius: 10px;
+  color: #4441d2;
+  padding: 8px;
+  border-radius: 9px;
 `;
 
-const StyledPercentage = styled.p``;
+const TextPercentage = styled.p`
+  font-weight: bolder;
+  font-size: 15px;
+`;
 
-const StyledOff = styled.p``;
+const OffText = styled.p`
+  font-weight: bolder;
+  font-size: 15px;
+`;
 
-export { StyledContainerOff, StyledPercentage, StyledOff };
+export { OffContainer, TextPercentage, OffText };

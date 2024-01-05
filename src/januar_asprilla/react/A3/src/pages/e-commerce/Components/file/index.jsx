@@ -1,44 +1,47 @@
 import {
-  StyleTitle,
-  StyledText,
-  StyledContainerOne,
-  StyledContainerTwo,
-  StyledShipping,
-  StyledMoney,
-  StyledIcon,
-  StyledLink,
+  FirstContainer,
+  TitleContainer,
+  TextContainer,
+  IconContainer,
+  TextLink,
+  SecondContainer,
+  DinnerContainer,
+  ShippingContainer,
   StyledPais,
   StyledContainerPais,
-  StyledImag,
-  StyledSeleccion,
+  StyledImage,
+  IconSelection,
 } from "./styled";
 function InfoCard(props) {
-  const { title, text, money, shipping, link, pais, size = "small" } = props;
+  const { title, text, dinner, shipping, link, pais, size = "small" } = props;
 
   return (
     <>
-      <StyledContainerOne size={size}>
-        <StyleTitle size={size}>{title}</StyleTitle>
-        <StyledText>
-          <StyledIcon className="fa-solid fa-truck" size={size}></StyledIcon>
+      <FirstContainer size={size}>
+        <TitleContainer size={size}>{title}</TitleContainer>
+        <TextContainer>
+          <IconContainer
+            className="fa-solid fa-truck"
+            size={size}
+          ></IconContainer>
           {text}
-          <StyledLink href={link} target="_blank" size={size}>
+          <TextLink href={link} target="_blank" size={size}>
             BrunksWick East, Australia
-          </StyledLink>
+          </TextLink>
           <StyledContainerPais size={size}>
-            <StyledImag src="pais.png" alt="New Zeland" />
+            <StyledImage src="pais.png" alt="New Zeland" />
             <StyledPais>{pais}</StyledPais>
-            <StyledSeleccion
+            <IconSelection
               className="fa fa-angle-down"
               aria-hidden="true"
-            ></StyledSeleccion>
+            ></IconSelection>
           </StyledContainerPais>
-        </StyledText>
-      </StyledContainerOne>
-      <StyledContainerTwo>
-        <StyledMoney>{money}</StyledMoney>
-        <StyledShipping size={size}>{shipping}</StyledShipping>
-      </StyledContainerTwo>
+        </TextContainer>
+      </FirstContainer>
+      <SecondContainer>
+        <DinnerContainer>{dinner}</DinnerContainer>
+        <ShippingContainer size={size}>{shipping}</ShippingContainer>
+      </SecondContainer>
     </>
   );
 }

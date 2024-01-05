@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const StyledContainerOne = styled.div`
+const FirstContainer = styled.div`
   display: ${(props) => (props.size === "small" ? "grid" : "flex")};
   grid-template-columns: ${(props) =>
     props.size === "small" ? "none" : "auto 1fr"};
@@ -9,37 +9,37 @@ const StyledContainerOne = styled.div`
   gap: ${(props) => (props.size === "small" ? "10px" : "none")};
   border-right: 1px solid #b9b4b4;
 `;
-const StyleTitle = styled.h2`
+const TitleContainer = styled.h2`
   font-size: 20px;
   max-width: 350px;
   font-weight: lighter;
 `;
 
-const StyledText = styled.p`
+const TextContainer = styled.p`
   font-size: 16px;
   color: #575966;
 `;
-const StyledIcon = styled.i`
+const IconContainer = styled.i`
   margin-right: 5px;
   color: #575966;
   display: ${(props) => (props.size === "small" ? "inline" : "none")};
 `;
 
-const StyledLink = styled.a`
+const TextLink = styled.a`
   font-size: 16px;
   display: ${(props) => (props.size === "small" ? "inline" : "none")};
 `;
 
-const StyledContainerTwo = styled.div`
+const SecondContainer = styled.div`
   display: grid;
   grid-template-rows: auto auto 1fr;
 `;
 
-const StyledMoney = styled.p`
+const DinnerContainer = styled.p`
   font-size: 17px;
   font-weight: 600;
 `;
-const StyledShipping = styled.p`
+const ShippingContainer = styled.p`
   color: ${(props) => (props.size === "small" ? "#575966" : "none")};
   font-weight: ${(props) => (props.size === "small" ? "none" : "700")};
 `;
@@ -54,25 +54,25 @@ const StyledContainerPais = styled.div`
   padding: 0 20px;
 `;
 
-const StyledImag = styled.img`
+const StyledImage = styled.img`
   width: 20px;
   border-radius: 5px;
 `;
-const StyledSeleccion = styled.i`
+const IconSelection = styled.i`
   font-size: 15px;
 `;
 
 export {
-  StyleTitle,
-  StyledText,
-  StyledContainerOne,
-  StyledContainerTwo,
-  StyledMoney,
-  StyledShipping,
-  StyledIcon,
-  StyledLink,
+  FirstContainer,
+  TitleContainer,
+  TextContainer,
+  IconContainer,
+  TextLink,
+  SecondContainer,
+  DinnerContainer,
+  ShippingContainer,
   StyledPais,
   StyledContainerPais,
-  StyledImag,
-  StyledSeleccion,
+  StyledImage,
+  IconSelection,
 };

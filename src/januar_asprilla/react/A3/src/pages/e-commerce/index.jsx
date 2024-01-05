@@ -5,13 +5,13 @@ import {
   Title,
   TextTitle,
   ContainerProduct,
-  StyledOffer,
-  StyledMoney,
-  StyledConatinerPercentage,
+  OfferContainer,
+  PriceContainer,
+  PercentContainer,
 } from "./StiledEcommerce";
 import { Logocard, Iconcard } from "./Components/imagesCard";
 import { InfoCard } from "./Components/file";
-import { Button } from "./Components/buttonContainer";
+import { Discounts } from "./Components/buttonContainer";
 import { Transaction } from "./Components/mensajeTransition";
 
 function EcommerceCard() {
@@ -36,13 +36,16 @@ function EcommerceCard() {
             title="MacBook Pro 16 `M3 12-Core CPU 18-CoreGPU 36/512 GB Space Black"
             text="Ships from: "
             link="https://www.apple.com"
-            money="$5,200"
+            dinner="$5,200"
             shipping="+49 Shipping"
           />
         </ContainerProduct>
-        <StyledOffer>Your Offer</StyledOffer>
+        <OfferContainer>Your Offer</OfferContainer>
         <ContainerProduct hasPadding={hasPadding} hasGap={hasGap} size="medium">
-          <StyledMoney className="fa fa-usd" aria-hidden="true"></StyledMoney>
+          <PriceContainer
+            className="fa fa-usd"
+            aria-hidden="true"
+          ></PriceContainer>
           <InfoCard
             size="large"
             title="4800.00"
@@ -50,11 +53,11 @@ function EcommerceCard() {
             shipping="+49 Shipping"
           />
         </ContainerProduct>
-        <StyledConatinerPercentage>
-          <Button num="5" off="OFF" />
-          <Button num="10" off="OFF" />
-          <Button num="15" off="OFF" />
-        </StyledConatinerPercentage>
+        <PercentContainer>
+          <Discounts number="5" off="OFF" />
+          <Discounts number="10" off="OFF" />
+          <Discounts number="15" off="OFF" />
+        </PercentContainer>
         <ContainerProduct hasBorder={hasBorder} size="small">
           <Transaction />
         </ContainerProduct>

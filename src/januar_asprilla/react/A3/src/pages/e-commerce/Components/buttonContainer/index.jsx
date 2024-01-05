@@ -1,12 +1,12 @@
-import { StyledContainerOff, StyledOff, StyledPercentage } from "./styled";
-function Button(props) {
-  const { num, off } = props;
+import { OffContainer, OffText, TextPercentage } from "./styled";
+function Discounts(props) {
+  const { number, off } = props;
   return (
-    <StyledContainerOff>
-      <StyledPercentage>{num}%</StyledPercentage>
-      <StyledOff>{off}</StyledOff>
-    </StyledContainerOff>
+    <OffContainer>
+      <TextPercentage>{number}%</TextPercentage>
+      <OffText>{off}</OffText>
+    </OffContainer>
   );
 }
 
-export { Button };
+export { Discounts };

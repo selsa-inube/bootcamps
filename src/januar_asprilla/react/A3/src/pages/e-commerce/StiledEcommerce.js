@@ -7,13 +7,14 @@ const BackgroundContainer = styled.div`
 `;
 const EcommerceContainer = styled.div`
   display: grid;
-  gap: 5px;
+  gap: 15px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
   border: 1px solid #d5d8db;
   box-shadow: 0px 0px 80px -30px gray;
+  font-family: "Arial Narrow", Arial, sans-serif;
 `;
 
 const IconsContainer = styled.div`
@@ -39,7 +40,7 @@ const ContainerProduct = styled.div`
   background-color: ${(props) => {
     switch (props.size) {
       case "small":
-        return "rgb(170 58 255 / 59%)";
+        return "#cad6fb";
       case "medium":
         return "transparent";
       case "large":
@@ -54,15 +55,18 @@ const ContainerProduct = styled.div`
   border-radius: 15px;
   font-family: "Arial Narrow", Arial, sans-serif;
 `;
-const StyledOffer = styled.p`
-  font-size: 16px;
+const OfferContainer = styled.p`
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 15px;
 `;
-const StyledMoney = styled.i`
+const PriceContainer = styled.i`
   color: #575966;
-  margin-right: 20px;
+  margin-right: 22px;
 `;
-const StyledConatinerPercentage = styled.div`
-  display: flex;
+const PercentContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto 1fr;
   gap: 10px;
 `;
 export {
@@ -72,7 +76,7 @@ export {
   BackgroundContainer,
   EcommerceContainer,
   ContainerProduct,
-  StyledOffer,
-  StyledMoney,
-  StyledConatinerPercentage,
+  OfferContainer,
+  PriceContainer,
+  PercentContainer,
 };

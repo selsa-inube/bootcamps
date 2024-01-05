@@ -60,9 +60,10 @@ const TitleContainer = styled.div`
   margin: 30px 20px 8px;
   align-items: center;
 `;
-const StyledSelect = styled.div`
-  display: flex;
-  flex-direction: column;
+const StyledOptions = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 25px;
   gap: 20px;
   margin-top: 70px;
 `;
@@ -78,5 +79,5 @@ export {
   ExtraContainer,
   ContainerInformation,
   TitleContainer,
-  StyledSelect,
+  StyledOptions,
 };

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-const StyledText = styled.p`
+const ContainerText = styled.p`
   color: ${({ checked }) => (checked ? "#575966" : "#b9b4b4")};
 `;
 
-const StyledContainerCheck = styled.div`
+const ContainerCheck = styled.div`
   display: flex;
   gap: 10px;
 `;
-const StyledInput = styled.input`
+const ContainerInput = styled.input`
   width: 1.3em;
   height: 1.3em;
 
@@ -20,11 +20,11 @@ const StyledInput = styled.input`
   outline: none;
   cursor: pointer;
 
-  &:checked + ${StyledText} {
+  &:checked + ${ContainerText} {
     color: #575966;
   }
 
-  &:not(:checked) + ${StyledText} {
+  &:not(:checked) + ${ContainerText} {
     color: #b9b4b4;
   }
   &:checked {
@@ -32,4 +32,4 @@ const StyledInput = styled.input`
   }
 `;
 
-export { StyledContainerCheck, StyledInput, StyledText };
+export { ContainerCheck, ContainerInput, ContainerText };
