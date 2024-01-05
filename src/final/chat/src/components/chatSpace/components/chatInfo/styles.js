@@ -19,12 +19,16 @@ const StyledChatInfo = styled.section`
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     border: none;
   }
 
+  button:hover {
+    cursor: pointer;
+  }
+
   button i {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 `;
 

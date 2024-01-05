@@ -8,13 +8,14 @@ const StyledChatSpace = styled.section`
 const StyledChatWindow = styled.section`
   background: #f5f5f5;
   overflow-y: auto;
-  height: calc(100% - 120px);
+  height: calc(100% - 140px);
+  padding-top: 20px;
 `;
 
 const MyMessage = styled.div`
   background: var(--purple-col);
   color: white;
-  border-radius: 10px 10px 0px 10px;
+  border-radius: 15px 15px 0px 15px;
   width: 60%;
   margin: 5px;
   padding-right: 20px;
@@ -24,6 +25,9 @@ const MyMessage = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
+  line-height: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   > p {
     text-align: right;
@@ -43,18 +47,19 @@ const StyledWwriteNewMessage = styled(StyledDateMessage)`
 
 const OtherMessage = styled(MyMessage)`
   background: white;
-  border-radius: 10px 10px 10px 0px;
+  border-radius: 15px 15px 15px 0px;
   color: black;
   left: 15px;
   justify-content: space-between;
 
-  padding-right: 0px;
+  padding-right: 15px;
   padding-left: 15px;
   > p {
     text-align: left;
   }
   > i {
     color: var(--purple-col);
+    font-size: 1.5rem;
   }
 `;
 

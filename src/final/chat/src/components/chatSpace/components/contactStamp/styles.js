@@ -8,16 +8,17 @@ const StyledContactStamp = styled.section`
     align-items: center;
   }
   > div img {
-    width: 30px;
+    width: 40px;
     border-radius: 50%;
+    margin: 5px;
   }
   > div p {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   > p {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #988f8f;
   }
 `;

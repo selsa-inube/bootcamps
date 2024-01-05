@@ -8,7 +8,7 @@ const ContactStamp = ({ contactID, contactMocks, hour, you }) => {
     <StyledContactStampYou>
       <div>
         <img src={contactInfo.avatar} alt="Chat Pic" />
-        <p>you</p>
+        <p>You</p>
       </div>
       <p>{hour}</p>
     </StyledContactStampYou>

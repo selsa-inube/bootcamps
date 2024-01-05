@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     color: #000;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: sans-serif;
   }
   :root {
   --purple-col: #8f47ff;

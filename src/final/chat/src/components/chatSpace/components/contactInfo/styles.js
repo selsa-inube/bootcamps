@@ -4,7 +4,7 @@ const StyledContactInfo = styled.section`
   width: 40%;
   > img {
     float: left;
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
     margin: 5px 10px;
   }
@@ -17,8 +17,9 @@ const StyledContactInfo = styled.section`
   }
   > p:first-of-type {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 7.5px;
+    font-weight: bold;
   }
 `;
 
