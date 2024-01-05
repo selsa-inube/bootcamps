@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
   }
   :root {
   --purple-col: #8f47ff;
+  --gay-col: #f9f9f9;
 }
   
 `;
