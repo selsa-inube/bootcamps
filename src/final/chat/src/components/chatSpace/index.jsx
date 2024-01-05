@@ -145,7 +145,6 @@ const chatSpace = ({ activeChat, setActiveChat }) => {
 
       {activeChat != "" && (
         <NewMessagesForm
-          activeChat={activeChat}
           handleSubmit={handleSubmit}
           name="newMessages"
           newMessage={newMessage}

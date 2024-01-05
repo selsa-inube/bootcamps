@@ -3,16 +3,16 @@ import {
   SearchBarContainer,
   ContactContainer,
 } from "./styles.js";
-import { ContactSearchBar } from "./Components/contac/index.jsx";
-import { useContext, useState, useEffect } from "react";
+import { ContactSearchBar } from "./Components/contact";
+import { useContext } from "react";
 import { DataContext } from "../../context/data.mocks.jsx";
-import { AppContext } from "../../context/index.jsx";
-import { Search } from "./Components/search/index.jsx";
-import { NewChat } from "./Components/newContac/index.jsx";
+import { AppContext } from "../../context";
+import { Search } from "./Components/search";
+import { NewChat } from "./Components/newContact";
 
 const SearchBar = () => {
-  const { chatMocks, contactMocks, groupMocks } = useContext(DataContext);
-  const { authUser, darkMode, language } = useContext(AppContext);
+  const { contactMocks } = useContext(DataContext);
+  const { authUser } = useContext(AppContext);
   return (
     <StyledSearchBar>
       <ContactContainer>

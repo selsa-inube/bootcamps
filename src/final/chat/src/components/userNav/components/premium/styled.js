@@ -25,7 +25,7 @@ const StyledContainerText = styled.div`
   flex-direction: column;
 
   p:nth-of-type(1) {
-    font-size: 23px;
+    font-size: 20px;
     color: #fff;
 
     a {

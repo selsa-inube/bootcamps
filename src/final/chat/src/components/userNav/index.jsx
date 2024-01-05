@@ -7,10 +7,10 @@ import {
 import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../../context/index.jsx";
 import { DataContext } from "../../context/data.mocks.jsx";
-import { Profile } from "./comoponents/profile/index.jsx";
-import { Data } from "./comoponents/data/index.jsx";
-import { Settings } from "./comoponents/settings/index.jsx";
-import { Premium } from "./comoponents/premium/index.jsx";
+import { Profile } from "./components/profile/index.jsx";
+import { Data } from "./components/data/index.jsx";
+import { Settings } from "./components/settings/index.jsx";
+import { Premium } from "./components/premium/index.jsx";
 
 const UserNav = () => {
   const { authUser, darkMode, language } = useContext(AppContext);

@@ -1,12 +1,6 @@
 import { StyledForm } from "./styles.js";
 
-const NewMessagesForm = ({
-  handleSubmit,
-  name,
-  newMessage,
-  handleChange,
-  activeChat,
-}) => {
+const NewMessagesForm = ({ handleSubmit, name, newMessage, handleChange }) => {
   return (
     <StyledForm name={name} onSubmit={handleSubmit}>
       <div>
@@ -19,10 +13,7 @@ const NewMessagesForm = ({
           placeholder="Type a message"
           onChange={handleChange}
         />
-        <button
-          type="submit"
-          disabled={newMessage.length === 0 || activeChat === ""}
-        >
+        <button type="submit" disabled={newMessage.length === 0}>
           <i className="fa fa-paper-plane-o" aria-hidden="true"></i>
         </button>
       </div>

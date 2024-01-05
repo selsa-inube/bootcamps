@@ -39,6 +39,10 @@ const StyledForm = styled.form`
     padding-left: 5px;
     color: #000;
   }
+
+  div input[type="text"]:focus {
+    outline: none;
+  }
   div button {
     width: 30px;
     display: flex;
