@@ -1,13 +1,19 @@
-function getLabel(labels) {
-  const options = ["assignment", "exercise", "lecture", "project", "quiz"];
+const labels = {
+  topic: {
+    prework: "topic: prework",
+    "html-css": "topic: html-css",
+    javascript: "topic: javascript",
+    react: "topic: react",
+    git: "topic: git",
+    typescript: "topic: typescript",
+  },
+  type: {
+    assignement: "type: assignement",
+    exercise: "type: exercise",
+    lecture: "type: lecture",
+    project: "type: project",
+    bug: "type: bug",
+  },
+};
 
-  labels.forEach((label) => {
-    if (!options.includes(label)) {
-      throw new Error(`Label "${label}" not found`);
-    }
-  });
-
-  return labels;
-}
-
-export { getLabel };
+export { labels };
