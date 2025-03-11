@@ -8,6 +8,5 @@ https://www.youtube.com/watch?v=35EN3iP1-8c
 
 **Notas:**
 
-💡 1. No reparar mucho en la sección de agregar plugins. No es necesario instalar los plugins de Z, ni docker-compose, ni autosuggestions.
-
+1. No reparar mucho en la sección de agregar plugins. No es necesario instalar los plugins de Z, ni docker-compose, ni autosuggestions.
 2. Sí vale la pena instalar zsh-syntax-highlighting.
