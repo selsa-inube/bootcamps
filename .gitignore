@@ -5,4 +5,4 @@ build
 coverage
 
 # Tokens
-**/*.token.mjs
+.env
