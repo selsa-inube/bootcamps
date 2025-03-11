@@ -1,12 +1,6 @@
-function getAssignees(assignees) {
-  const options = ["wfercanas", "JanuarAsprilla", "LinconOssa", "carin91"];
-  assignees.forEach((assignee) => {
-    if (!options.includes(assignee)) {
-      throw new Error(`Assignee "${assignee}" not found`);
-    }
-  });
+const assignees = {
+  fcanas: "wfercanas",
+  dgarzon: "LoweLeo",
+};
 
-  return assignees;
-}
-
-export { getAssignees };
+export { assignees };
