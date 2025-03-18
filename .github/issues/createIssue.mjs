@@ -4,10 +4,7 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-const owner = "selsa-inube";
-const repo = "bootcamp";
-
-async function createIssue(issue) {
+async function createIssue(owner, repo, issue) {
   octokit
     .request(`POST /repos/${owner}/${repo}/issues`, {
       owner: owner,

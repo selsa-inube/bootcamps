@@ -12,10 +12,10 @@ import { prework } from "../content/meta/prework.mjs";
 // import { ts } from "../content/meta/ts.mjs";
 
 const issues = prework;
-const assignee = assignees["dgarzon"];
+const assignee = assignees["jramirez"];
 
 issues.forEach(({ title, body, labels }) => {
-  createIssue({
+  createIssue("selsa-inube", "bootcamps", {
     title,
     body,
     labels,
