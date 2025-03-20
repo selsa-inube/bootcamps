@@ -1,3 +1,3 @@
-# AG-1 | Convenciones y Sintaxis de GO Ejercicio 1 clase 13
+# VG-16 | Aplicación Backend: Sistemas de relaciones
 
 https://www.udemy.com/course/lenguaje-go/learn/lecture/15876048#overview
