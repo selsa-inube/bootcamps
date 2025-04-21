@@ -2,55 +2,50 @@
 
 ## Scope
 
-This bootcamp is dedicated to junior frontend developers, so they can learn the basics of the core technologies of this domain:
-
-1. HTML
-2. CSS
-3. JavaScript
-4. React
-5. Git
+This repository contains training material for entry-level software engineers, so you can learn the basics of core technologies within the frame of what we build in inube. Read the following guidelines so you know how to progress with your bootcamp.
 
 ## Guidelines
 
-### Directories
+### Repositories
 
-Every participant of the bootcamp should create their own directory inside /src. Like this, all the exercises of each participants are stored in a particular directory and ensure that there are no git conflicts due to other participants.
+Every participant of a bootcamp should create their own repository in their personal account. It should be an empty repository, not a fork from this repo.
 
-### Issues
+### Board and Cards
 
-- You can check the issues tab in GitHub to see all the issues of the project. You can then filter out the issues per participant to see what is pending.
-- You can and also must check the Projects tab in GitHub, there is the board where you can keep track of all the issues and their corresponding state, including the due date of the issues in process. Keep those dates in mind so you are always up to date.
-
-### Labels
-
-Each issue has a label that indicates the type of issue it is. This information lets you to know what is expected from you:
+- This repository is attached to a GitHub project, where you can check all the cards assigned to you: [Board](https://github.com/orgs/selsa-inube/projects/21)
+- Check for the due dates of each card so you don't miss an activity.
+- Each card has a label that indicates its type of task. This information lets you to know what is expected from you:
 
 1. **Assignment**: tasks with this label expects that you commit your solution and create a Pull Request. Assign your mentor as a reviewer so he/she can check it and provide feedback or approve it.
-2. **Exercise**: these tasks are for you to practice and improve your skills. These don't demand that you code the solution in this project or create a PR.
+2. **Exercise**: these tasks are for you to practice and improve your skills. These don't require that you code the solution in your repo.
 3. **Lecture**: these tasks are lectures where you will learn new concepts. Each lecture has a quiz assigned, so you must complete it to evaluate that you have understood the concepts related.
-4. **Project**: these are special tasks that will test your knowledge in a big domain. It requires that you commit your code and create a PR. More details will be given to you when this type of task is assigned.
+4. **Project**: these are special tasks that will test your knowledge in different areas. It requires that you commit your code and create a PR. More details will be given to you when this type of task is assigned.
+
+### Reviews
+
+- It is expected that you work in feature branches before creating Pull Requests to main.
+- To avoid conflicts when merging new assignments, we suggest you add a protection rule for your main branch so that (1) you must use Pull Requests before merging and (2) disable anyone from bypassing the Pull Request (particularly you since you're the repo owner).
+- In that repository, you should add your mentor as contributor so he/she can review the Pull Requests associated with assignments.
+- When a new Pull Requests is created, remember to add your mentor as a reviewer.
+- Finally, move the card to "Review" in your board to signal that you've finished.
 
 ### Commits
 
-In this project all commits are evaluated before they are created. The commit messages should be aligned with the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+You must create commit messages aligned with the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
 ### Code format
 
-The code is formatted automatically during the commit process using [Prettier](https://prettier.io/). It is recommended that you have the VS Code extension of this formatter and that you allow it to auto format the code every time you save so you can see how the code is progressing.
+For frontend applications, we use [Prettier](https://prettier.io/) as the default formatter. Configure it to automatically format your code during the commit process. It is recommended that you have the VS Code extension of this formatter and that you allow it to auto format the code every time you save so you can see how the code is progressing.
 
 ### Branches
 
 Follow this structure when creating new branches in the project.
 
 1. Start the branch name with the initial characters of your firstname and lastname. For example, 'John Doe' would use 'jd'.
-2. Continue the branch name with the number of the issue you're working on. For example, '27'.
+2. Continue the branch name with the code of the task you're working on. For example, 'a27'.
 3. Complete the name with a brief title of the issue.
 
-A complete example would look like this: 'jd/27/markup-a-readme'.
-
-### Pull Request
-
-The main branch is protected, so the only way to have your code in there is through a Pull Request. When you complete the issue, create a Pull Request and assign your mentor as the reviewer. Also move the card in the board to the 'Review' state so your mentor can easily track that it is time to review your code.
+A complete example would look like this: 'jd/a27/markup-a-readme'.
 
 ## Contributions
 
