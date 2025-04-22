@@ -1,4 +1,4 @@
-import { labels } from "../../.github/issues/labels.mjs";
+import { labels } from "../../../.github/issues/labels.mjs";
 
 const URL = "https://github.com/selsa-inube/bootcamp/blob/main/content";
 
