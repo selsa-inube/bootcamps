@@ -5,7 +5,7 @@ import { createIssue } from "../.github/issues/createIssue.mjs";
 import { assignees } from "../.github/issues/assignees.mjs";
 
 // Modules
-// import { prework } from "../content/frontend/meta/prework.mjs";
+import { prework } from "../content/frontend/meta/prework.mjs";
 // import { htmlCSS } from "../content/frontend/meta/html-css.mjs";
 // import { js } from "../content/frontend/meta/js.mjs";
 // import { react } from "../content/frontend/meta/react.mjs";
@@ -13,8 +13,8 @@ import { assignees } from "../.github/issues/assignees.mjs";
 // import { go } from "../content/backend/meta/go.mjs";
 import { sql } from "../content/backend/meta/sql.mjs";
 
-const issues = sql;
-const assignee = assignees["jramirez"];
+const issues = prework;
+const assignee = assignees.jpinilla;
 
 issues.forEach(({ title, body, labels }) => {
   createIssue("selsa-inube", "bootcamps", {
