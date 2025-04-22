@@ -6,6 +6,9 @@ import { assignees } from "../.github/issues/assignees.mjs";
 
 // Modules
 
+// All
+import { git } from "../content/all/meta/git.mjs";
+
 // Frontend
 import { prework } from "../content/frontend/meta/prework.mjs";
 import { htmlCSS } from "../content/frontend/meta/html-css.mjs";
@@ -16,7 +19,7 @@ import { ts } from "../content/frontend/meta/ts.mjs";
 // Backend
 import { go } from "../content/backend/v2/meta/go.mjs";
 
-const issues = go;
+const issues = git;
 const assignee = assignees.jpinilla;
 
 issues.forEach(({ title, body, labels }) => {
