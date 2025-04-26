@@ -4,5 +4,6 @@ type: exercise
 topic: go
 ---
 
-Complete the module: "Concurrency".
-https://go.dev/tour/list
+# Tour of Go - Concurrency
+
+Complete the module: "Concurrency": https://go.dev/tour/list

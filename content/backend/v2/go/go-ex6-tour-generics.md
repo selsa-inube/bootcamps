@@ -4,5 +4,6 @@ type: exercise
 topic: go
 ---
 
-Complete the module: "Generics".
-https://go.dev/tour/list
+# Tour of Go - Generics
+
+Complete the module: "Generics": https://go.dev/tour/list

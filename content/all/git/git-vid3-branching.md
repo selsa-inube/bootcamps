@@ -4,6 +4,8 @@ type: video
 topic: git
 ---
 
+# Git - Branching
+
 Source: https://www.youtube.com/watch?v=mBYSUUnMt9M
 
 Timelapse: 01:45:00 -> 02:28:00

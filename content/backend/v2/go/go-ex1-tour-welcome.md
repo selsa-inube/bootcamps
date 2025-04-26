@@ -4,5 +4,6 @@ type: exercise
 topic: go
 ---
 
-Complete the module: "Welcome".
-https://go.dev/tour/list
+# Tour of Go - Welcome
+
+Complete the module: "Welcome": https://go.dev/tour/list

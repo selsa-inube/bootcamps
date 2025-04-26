@@ -1,8 +1,10 @@
 ---
-title: Git - Branching
+title: Git - GitHub (Part I)
 type: video
 topic: git
 ---
+
+# Git - GitHub (Part I)
 
 Source: https://www.youtube.com/watch?v=mBYSUUnMt9M
 
