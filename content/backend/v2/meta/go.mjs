@@ -1,7 +1,7 @@
 const URL =
   "https://github.com/selsa-inube/bootcamp/blob/main/content/backend/v2";
 
-const activities = [
+const exercises = [
   {
     title: "go-ex1-tour-welcome",
     body: `${URL}/go/go-ex1-tour-welcome.md`,
@@ -39,6 +39,99 @@ const activities = [
   },
 ];
 
-const go = [...activities];
+const lectures = [
+  {
+    title: "Head First Go - Arrays",
+    body: `${URL}/go/go-lec-head-first-go-arrays.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Automated Testing",
+    body: `${URL}/go/go-lec-head-first-go-automated-testing.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Conditionals and Loops",
+    body: `${URL}/go/go-lec-head-first-go-conditionals-and-loops.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Defined Types",
+    body: `${URL}/go/go-lec-head-first-go-defined-types.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Encapsulation",
+    body: `${URL}/go/go-lec-head-first-go-encapsulation.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Functions",
+    body: `${URL}/go/go-lec-head-first-go-functions.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Goroutines and Channels",
+    body: `${URL}/go/go-lec-head-first-go-goroutines-and-channels.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - HTML Templates",
+    body: `${URL}/go/go-lec-head-first-go-html-templates.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Interfaces",
+    body: `${URL}/go/go-lec-head-first-go-interfaces.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Leftovers",
+    body: `${URL}/go/go-lec-head-first-go-leftovers.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Maps",
+    body: `${URL}/go/go-lec-head-first-go-maps.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Opening Files",
+    body: `${URL}/go/go-lec-head-first-go-opening-files.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Packages",
+    body: `${URL}/go/go-lec-head-first-go-packages.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Recovering From Failure",
+    body: `${URL}/go/go-lec-head-first-go-recovering-from-failure.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Slices",
+    body: `${URL}/go/go-lec-head-first-go-slices.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Structs",
+    body: `${URL}/go/go-lec-head-first-go-structs.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Syntax Basics",
+    body: `${URL}/go/go-lec-head-first-go-syntax-basics.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Head First Go - Web Apps",
+    body: `${URL}/go/go-lec-head-first-go-web-apps.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+];
+
+const go = [...exercises, ...lectures];
 
 export { go };
