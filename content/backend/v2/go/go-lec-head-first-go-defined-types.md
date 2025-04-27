@@ -9,3 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Defined Types
+- Quiz:

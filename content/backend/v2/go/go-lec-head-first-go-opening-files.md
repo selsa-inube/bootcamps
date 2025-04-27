@@ -9,3 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Opening Files
+- Quiz:

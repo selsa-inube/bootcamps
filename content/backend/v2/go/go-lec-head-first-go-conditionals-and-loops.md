@@ -9,3 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Conditionals and Loops
+- Quiz:
