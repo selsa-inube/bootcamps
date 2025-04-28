@@ -41,6 +41,11 @@ const exercises = [
 
 const lectures = [
   {
+    title: "How To Write Go Code",
+    body: `${URL}/go/go-lec-how-to-write-go-code.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
     title: "Head First Go - Arrays",
     body: `${URL}/go/go-lec-head-first-go-arrays.md`,
     labels: ["topic: go", "type: lecture"],
