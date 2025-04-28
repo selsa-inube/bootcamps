@@ -2,7 +2,7 @@
 title: Syntax Basics
 type: lecture
 topic: go
-estimate:
+estimate: 3 hours
 ---
 
 # Syntax Basics
