@@ -9,4 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Syntax Basics
-- Quiz:
+- Quiz: https://forms.office.com/r/zWGFdafkQF
