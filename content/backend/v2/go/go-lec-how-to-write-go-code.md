@@ -8,7 +8,7 @@ estimate: 2 hours
 # How To Write Go Code
 
 - Lecture: https://go.dev/doc/code
-- Quiz: https://forms.office.com/Pages/ResponsePage.aspx?id=23ZOJwSNEEGrykTcWD3veVhFPlICMQ1NtjPgCiHMWN1URjM0WkM5S0tUNjVNMjVYMjIyOFoyUENKSy4u
+- Quiz: https://forms.office.com/r/vZdZ63cEBk
 
 > [!CAUTION]
 > If you want, you can try to change the PATH env variable to test that your program runs. You can skip this by
