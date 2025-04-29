@@ -19,7 +19,7 @@ import { ts } from "../content/frontend/meta/ts.mjs";
 // Backend
 import { go } from "../content/backend/v2/meta/go.mjs";
 
-const issues = git;
+const issues = go;
 const assignee = assignees.jpinilla;
 
 issues.forEach(({ title, body, labels }) => {
