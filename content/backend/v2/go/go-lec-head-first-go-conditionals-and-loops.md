@@ -2,7 +2,7 @@
 title: Conditionals and Loops
 type: lecture
 topic: go
-estimate:
+estimate: 6 hours
 ---
 
 # Conditionals and Loops
