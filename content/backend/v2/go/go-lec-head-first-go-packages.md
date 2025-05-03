@@ -21,23 +21,23 @@ estimate:
 The lecture lets you work directly in the go/src directory in order to create packages. To know where your go/src directory is you can:
 
 1. Open the terminal
-2. Type: $GOPATH
-3. Check the route and navigate to it using the change directory command (cd)
+2. Type: `$GOPATH`
+3. Check the route and navigate to it using the change directory command (`cd`)
 
 In my case, after typing `$GOPATH` and hitting Enter, I get: **/usr/local/go/src**
 
 When I navigate into that directory and check what is inside, I see packages like:
 
-1. fmt
-2. bufio
-3. bytes
+1. `fmt`
+2. `bufio`
+3. `bytes`
 4. etc.
 
 So, the author in the book is asking us to work in this directory. You can do it if you want, or you can work using modules (recommended).
 
 ### Create a module with packages
 
-You can have a regular directory outside of that $GOPATH directory where you can work all the exercises in the book. Let's say you have the directory ~/Documents/books/go and there is where you're practicing.
+You can have a regular directory outside of that `$GOPATH` directory where you can work all the exercises in the book. Let's say you have the directory `~/Documents/books/go` and there is where you're practicing.
 
 To add some order, let's create some subdirectories per chapter in there. So, if you use `ls`, you could see something like:
 
