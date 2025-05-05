@@ -9,7 +9,7 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Packages
-- Quiz:
+- Quiz: https://forms.office.com/r/VHuHFc6bdW
 
 > [!WARNING]
 > Read the following instructions on how to use modules before reading the chapter.

@@ -9,4 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Arrays
-- Quiz:
+- Quiz: https://forms.office.com/r/6z8MZgPhXj
