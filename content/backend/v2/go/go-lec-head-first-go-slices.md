@@ -9,4 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Slices
-- Quiz:
+- Quiz: https://forms.office.com/r/8VYGxaKc7J
