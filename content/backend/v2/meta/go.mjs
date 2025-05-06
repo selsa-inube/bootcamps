@@ -137,6 +137,14 @@ const lectures = [
   },
 ];
 
-const go = [...exercises, ...lectures];
+const assignments = [
+  {
+    title: "MinMax",
+    body: `${URL}/go/go-as-slice`,
+    labels: ["topic: go", "type: assignment"],
+  },
+];
+
+const go = [...exercises, ...lectures, ...assignments];
 
 export { go };
