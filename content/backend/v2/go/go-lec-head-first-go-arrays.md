@@ -2,7 +2,7 @@
 title: Arrays
 type: lecture
 topic: go
-estimate:
+estimate: 6 hours
 ---
 
 # Arrays

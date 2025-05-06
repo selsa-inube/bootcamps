@@ -2,7 +2,7 @@
 title: Slices
 type: lecture
 topic: go
-estimate:
+estimate: 6 hours
 ---
 
 # Slices
