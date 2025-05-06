@@ -6,7 +6,7 @@ topic: go
 
 # Minmax
 
-## Assignment
+## Assignment
 
 Create a program that asks the user about a minimum value, a maximum value and a list of values. After that, filter out all the values that are out of range and print the values in range using a slice.
 
