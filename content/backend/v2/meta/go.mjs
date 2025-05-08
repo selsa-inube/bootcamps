@@ -140,7 +140,7 @@ const lectures = [
 const assignments = [
   {
     title: "MinMax",
-    body: `${URL}/go/go-as-slice`,
+    body: `${URL}/go/go-as-minmax`,
     labels: ["topic: go", "type: assignment"],
   },
 ];
