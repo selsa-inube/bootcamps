@@ -2,11 +2,11 @@
 title: Maps
 type: lecture
 topic: go
-estimate:
+estimate: 5 hours
 ---
 
 # Maps
 
 - Book: Head First Go
 - Chapter: Maps
-- Quiz:
+- Quiz: https://forms.office.com/r/KF3M9xvrAm
