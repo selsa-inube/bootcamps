@@ -9,4 +9,4 @@ estimate:
 
 - Book: Head First Go
 - Chapter: Structs
-- Quiz:
+- Quiz: https://forms.office.com/r/jc4d0M9ymc
