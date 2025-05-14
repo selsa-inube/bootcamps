@@ -140,7 +140,12 @@ const lectures = [
 const assignments = [
   {
     title: "MinMax",
-    body: `${URL}/go/go-as-minmax`,
+    body: `${URL}/go/go-as-minmax.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
+  {
+    title: "Word Counter",
+    body: `${URL}/go/go-as-word-counter.md`,
     labels: ["topic: go", "type: assignment"],
   },
 ];

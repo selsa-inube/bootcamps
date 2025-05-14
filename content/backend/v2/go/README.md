@@ -19,12 +19,13 @@
 15. [Maps](./go-lec-head-first-go-maps.md) -- Lecture
 16. [Structs](./go-lec-head-first-go-structs.md) -- Lecture
 17. [Defined Types](./go-lec-head-first-go-defined-types.md) -- Lecture
-18. [Encapsulation and Embedding](./go-lec-head-first-go-encapsulation.md) -- Lecture
-19. [Interfaces](./go-lec-head-first-go-interfaces.md) -- Lecture
-20. [Recovering from Failure](./go-lec-head-first-go-recovering-from-failure.md) -- Lecture
-21. [Goroutines and Channels](./go-lec-head-first-go-goroutines-and-channels.md) -- Lecture
-22. [Automated Testing](./go-lec-head-first-go-automated-testing.md) -- Lecture
-23. [Web Apps](./go-lec-head-first-go-web-apps.md) -- Lecture
-24. [HTML Templates](./go-lec-head-first-go-html-templates.md) -- Lecture
-25. [Opening Files](./go-lec-head-first-go-opening-files.md) -- Lecture
-26. [Leftovers](./go-lec-head-first-go-leftovers.md) -- Lecture
+18. [Word Counter](./go-as-word-counter.md) -- Assignment
+19. [Encapsulation and Embedding](./go-lec-head-first-go-encapsulation.md) -- Lecture
+20. [Interfaces](./go-lec-head-first-go-interfaces.md) -- Lecture
+21. [Recovering from Failure](./go-lec-head-first-go-recovering-from-failure.md) -- Lecture
+22. [Goroutines and Channels](./go-lec-head-first-go-goroutines-and-channels.md) -- Lecture
+23. [Automated Testing](./go-lec-head-first-go-automated-testing.md) -- Lecture
+24. [Web Apps](./go-lec-head-first-go-web-apps.md) -- Lecture
+25. [HTML Templates](./go-lec-head-first-go-html-templates.md) -- Lecture
+26. [Opening Files](./go-lec-head-first-go-opening-files.md) -- Lecture
+27. [Leftovers](./go-lec-head-first-go-leftovers.md) -- Lecture
