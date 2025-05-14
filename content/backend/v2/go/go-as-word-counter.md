@@ -19,3 +19,4 @@ Create a program that captures an input from the user through stdin, count how m
 5. The user can execute the program with the optional '-l' argument in order to change from counting words to counting lines. (example: `go run main.go -l`)
 6. When counting words, the word 'exit' should not count as a new word in the counter of words.
 7. When counting lines, the line with the 'exit' word should not count as a new line in the counter of lines.
+8. Use os.Args to control the '-l' argument
