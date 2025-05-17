@@ -2,11 +2,11 @@
 title: Interfaces
 type: lecture
 topic: go
-estimate:
+estimate: 8 hours
 ---
 
 # Interfaces
 
 - Book: Head First Go
 - Chapter: Interfaces
-- Quiz:
+- Quiz: https://forms.office.com/r/ney4nAyVvD
