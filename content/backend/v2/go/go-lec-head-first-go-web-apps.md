@@ -2,11 +2,11 @@
 title: Web Apps
 type: lecture
 topic: go
-estimate:
+estimate: 1 day
 ---
 
 # Web Apps
 
 - Book: Head First Go
 - Chapter: Web Apps
-- Quiz:
+- Quiz: https://forms.office.com/r/E4x7V4xzQ0
