@@ -4,7 +4,7 @@ type: assignment
 topic: go
 ---
 
-# MinMax
+# Testing - MinMax
 
 ## Assignment
 
