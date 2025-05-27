@@ -148,6 +148,11 @@ const assignments = [
     body: `${URL}/go/go-as-word-counter.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "MinMax - Testing",
+    body: `${URL}/go/go-as-test-minmax.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
