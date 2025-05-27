@@ -1,10 +1,10 @@
 ---
-title: Testing - Word Counter
+title: Testing - MinMax
 type: assignment
 topic: go
 ---
 
-# Word Counter
+# MinMax
 
 ## Assignment
 
