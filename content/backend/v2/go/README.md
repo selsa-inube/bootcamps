@@ -27,5 +27,5 @@
 23. [Automated Testing](./go-lec-head-first-go-automated-testing.md) -- Lecture
 24. [Web Apps](./go-lec-head-first-go-web-apps.md) -- Lecture
 25. [HTML Templates](./go-lec-head-first-go-html-templates.md) -- Lecture
-26. [Opening Files](./go-lec-head-first-go-opening-files.md) -- Lecture
-27. [Leftovers](./go-lec-head-first-go-leftovers.md) -- Lecture
+26. [Testing - MinMax](./go-as-test-minmax.md) -- Assignment
+27. [Testing - Word Counter](./go-as-test-word-counter.md) -- Assignment
