@@ -153,6 +153,11 @@ const assignments = [
     body: `${URL}/go/go-as-test-minmax.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Boolean Flags",
+    body: `${URL}/go/go-as-boolean-flags.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
