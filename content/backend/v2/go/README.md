@@ -29,3 +29,4 @@
 25. [HTML Templates](./go-lec-head-first-go-html-templates.md) -- Lecture
 26. [Testing - MinMax](./go-as-test-minmax.md) -- Assignment
 27. [Testing - Word Counter](./go-as-test-word-counter.md) -- Assignment
+28. [Boolean Flags](./go-as-boolean-flags.md) -- Assignment
