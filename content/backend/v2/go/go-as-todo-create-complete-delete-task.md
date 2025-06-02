@@ -1,20 +1,20 @@
 ---
-title: Todo - Create and Complete Task
+title: Todo - Create, Complete, and Task
 type: assignment
 topic: go
 ---
 
-# Todo - Create and Complete Task
+# Todo - Create, Complete and Delete Task
 
 ## Situation
 
-This is the first of a series of assignments to create a simple to-do application. In this particular task we'll create tasks, a list of tasks and a set of methods to work with them
+This is the first of a series of assignments to create a simple to-do application. In this particular task we'll create tasks, a list of tasks and a set of methods to work with them.
 
 ## Design
 
 ### Packages and file system
 
-1. We'll work with two packages: `todo` and `main`. For this assignment we'll work only with the `todo` package.
+1. Our full implementation will have two packages: `todo` and `main`. For this assignment we'll work only with the `todo` package.
 2. Use the following diagram to create the starting directories.
 3. Inside `todo/` initialize a module with `go mod init todo`.
 
@@ -35,7 +35,7 @@ For our to-do app we'll work with two types: `item` and `List`. Define the types
 
 ### Methods
 
-As we said before, we'll let the user work with items through the list. So, we'll start by creating two methods for the `List` type.
+As we said before, we'll let the user work with items through the list. So, we'll create some methods for the `List` type.
 
 #### Add
 
@@ -46,6 +46,12 @@ As we said before, we'll let the user work with items through the list. So, we'l
 
 1. This method accesses the list in a specific index and marks the item as completed. This means that the `Done` property is now true and the `CompletedAt` property is equal to the current time.
 2. This method must return an error value. Particularly useful if we're trying to access an invalid index in the list.
+
+#### Delete
+
+1. This method accesses a specific index of the list as well and deletes it.
+2. Deleting means that the item should be removed from the list while the rest of items remaing in the list.
+3. This method must return an error value. Particularly for the case where we're trying to delete an item in an invalid index of the list.
 
 ## Assignment
 

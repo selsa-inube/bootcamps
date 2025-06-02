@@ -31,4 +31,4 @@
 27. [Testing - Word Counter](./go-as-test-word-counter.md) -- Assignment
 28. [Boolean Flags](./go-as-boolean-flags.md) -- Assignment
 29. [Word Counter with Flags](./go-as-word-counter-with-flags.md) -- Assignment
-30. [Todo - Create and Complete Task](./go-as-todo-create-and-complete-task.md) -- Assignment
+30. [Todo - Create, Complete and Delete Task](./go-as-todo-create-complete-delete-task.md) -- Assignment
