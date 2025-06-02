@@ -158,6 +158,11 @@ const assignments = [
     body: `${URL}/go/go-as-boolean-flags.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Word Counter with Flags",
+    body: `${URL}/go/go-as-word-counter-with-flags.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
