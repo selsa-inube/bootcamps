@@ -163,6 +163,11 @@ const assignments = [
     body: `${URL}/go/go-as-word-counter-with-flags.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Todo - Create and Complete Task",
+    body: `${URL}/go/go-as-todo-create-and-complete-task.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
