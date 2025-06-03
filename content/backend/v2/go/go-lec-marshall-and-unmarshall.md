@@ -9,8 +9,8 @@ estimate: 1 hours
 
 This lecture is actually two lectures in one. Both related with the Marshalling process and its application in Go.
 
-Lecture 1: https://en.wikipedia.org/wiki/Marshalling_(computer_science)
-Lecture 2: https://withcodeexample.com/the-art-of-marshal-and-unmarshal-in-go/
+- Lecture 1: https://en.wikipedia.org/wiki/Marshalling_(computer_science)
+- Lecture 2: https://withcodeexample.com/the-art-of-marshal-and-unmarshal-in-go/
 
 > [!NOTE]
 > These lectures don't have a quiz.
