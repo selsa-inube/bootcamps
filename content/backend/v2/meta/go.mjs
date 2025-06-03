@@ -135,6 +135,11 @@ const lectures = [
     body: `${URL}/go/go-lec-head-first-go-web-apps.md`,
     labels: ["topic: go", "type: lecture"],
   },
+  {
+    title: "An Introduction to JSON",
+    body: `${URL}/go/go-lec-an-intro-to-json.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
 ];
 
 const assignments = [

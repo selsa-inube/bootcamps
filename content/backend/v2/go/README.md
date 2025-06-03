@@ -32,3 +32,4 @@
 28. [Boolean Flags](./go-as-boolean-flags.md) -- Assignment
 29. [Word Counter with Flags](./go-as-word-counter-with-flags.md) -- Assignment
 30. [Todo - Create, Complete and Delete Task](./go-as-todo-create-complete-delete-task.md) -- Assignment
+31. [An Introduction to JSON](./go-lec-an-intro-to-json.md) -- Lecture
