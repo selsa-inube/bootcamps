@@ -7,8 +7,11 @@ estimate: 1 hours
 
 # Marshall and Unmarshall
 
-Lecture: https://en.wikipedia.org/wiki/Marshalling_(computer_science)
+This lecture is actually two lectures in one. Both related with the Marshalling process and its application in Go.
+
+Lecture 1: https://en.wikipedia.org/wiki/Marshalling_(computer_science)
+Lecture 2: https://withcodeexample.com/the-art-of-marshal-and-unmarshal-in-go/
 
 > [!NOTE]
-> This lecture does not have quiz. The article has a lot of information, but we're interested only in the concept. So, pay close attention to intro and the "Comparison with serialization" sections (the first two sections).
-> If the concept remains unclear, we advise you to search more resources about it.
+> These lectures don't have a quiz.
+> In the Wikipedia article we're interested only in the "intro" and the "Comparison with serialization" sections (the first two sections).
