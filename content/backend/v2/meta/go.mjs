@@ -178,6 +178,11 @@ const assignments = [
     body: `${URL}/go/go-as-todo-create-complete-delete-task.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Todo - Save and Get tasks",
+    body: `${URL}/go/go-as-todo-save-and-get-tasks.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
