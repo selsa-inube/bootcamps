@@ -35,3 +35,4 @@
 31. [An Introduction to JSON](./go-lec-an-intro-to-json.md) -- Lecture
 32. [Marshall and Unmarshall](./go-lec-marshall-and-unmarshall.md) -- Lecture
 33. [Todo - Save and Get Tasks](./go-as-todo-save-and-get-tasks.md) -- Assignment
+34. [Todo - Test List methods](./go-as-todo-test-list-methods.md) -- Assignment

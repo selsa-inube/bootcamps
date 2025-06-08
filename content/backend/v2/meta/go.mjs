@@ -183,6 +183,11 @@ const assignments = [
     body: `${URL}/go/go-as-todo-save-and-get-tasks.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Todo - Test List methods",
+    body: `${URL}/go/go-as-todo-test-list-methods.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
