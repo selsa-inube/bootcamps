@@ -16,7 +16,7 @@ You will use this article as a reference. The idea is that you try the different
 
 https://blog.kowalczyk.info/article/wOYk/advanced-command-execution-in-go-with-osexec.html
 
-### Exercises and Commits
+### Exercises and Commits
 
 When you create your Pull Request, it is expected that your branch has one commit per exercise. The list of exercises to send are:
 
