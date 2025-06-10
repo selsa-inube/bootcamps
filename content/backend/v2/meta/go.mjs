@@ -145,6 +145,21 @@ const lectures = [
     body: `${URL}/go/go-lec-marshall-and-unmarshall.md`,
     labels: ["topic: go", "type: lecture"],
   },
+  {
+    title: "Why Use TestMain for Testing in Go?",
+    body: `${URL}/go/go-lec-why-use-test-main-for-go-testing.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Linux Exit Status Codes",
+    body: `${URL}/go/go-lec-linux-exit-status-codes.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
+  {
+    title: "Linux File Permissions Explained",
+    body: `${URL}/go/go-lec-linux-file-permissions-explained.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
 ];
 
 const assignments = [
