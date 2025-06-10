@@ -39,3 +39,4 @@
 35. [Todo - Test List methods](./go-as-todo-test-list-methods.md) -- Assignment
 36. [Why Use TestMain for Testing in Go?](./go-lec-why-use-test-main-for-go-testing.md) -- Lecture
 37. [Linux Exit Status Codes](./go-lec-linux-exit-status-codes.md) -- Lecture
+38. [Exec Command](./go-as-exec-command.md) -- Assignment

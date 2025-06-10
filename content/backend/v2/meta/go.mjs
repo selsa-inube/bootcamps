@@ -203,6 +203,11 @@ const assignments = [
     body: `${URL}/go/go-as-todo-test-list-methods.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Exec Command",
+    body: `${URL}/go/go-as-exec-command.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
