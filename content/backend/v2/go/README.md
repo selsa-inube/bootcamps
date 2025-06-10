@@ -34,8 +34,8 @@
 30. [Todo - Create, Complete and Delete Task](./go-as-todo-create-complete-delete-task.md) -- Assignment
 31. [An Introduction to JSON](./go-lec-an-intro-to-json.md) -- Lecture
 32. [Marshall and Unmarshall](./go-lec-marshall-and-unmarshall.md) -- Lecture
-33. [Todo - Save and Get Tasks](./go-as-todo-save-and-get-tasks.md) -- Assignment
-34. [Todo - Test List methods](./go-as-todo-test-list-methods.md) -- Assignment
-35. [Why Use TestMain for Testing in Go?](./go-lec-why-use-test-main-for-go-testing.md) -- Lecture
-36. [Linux Exit Status Codes](./go-lec-linux-exit-status-codes.md) -- Lecture
-37. [Linux File Permissions Explained](./go-lec-linux-file-permissions-explained.md) -- Lecture
+33. [Linux File Permissions Explained](./go-lec-linux-file-permissions-explained.md) -- Lecture
+34. [Todo - Save and Get Tasks](./go-as-todo-save-and-get-tasks.md) -- Assignment
+35. [Todo - Test List methods](./go-as-todo-test-list-methods.md) -- Assignment
+36. [Why Use TestMain for Testing in Go?](./go-lec-why-use-test-main-for-go-testing.md) -- Lecture
+37. [Linux Exit Status Codes](./go-lec-linux-exit-status-codes.md) -- Lecture
