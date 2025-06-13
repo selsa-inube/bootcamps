@@ -41,3 +41,4 @@
 37. [Linux Exit Status Codes](./go-lec-linux-exit-status-codes.md) -- Lecture
 38. [Exec Command](./go-as-exec-command.md) -- Assignment
 39. [Todo - Main function](./go-as-todo-main-func.md) -- Assignment
+40. [Todo - Use flags](./go-as-todo-use-flags.md) -- Assignment
