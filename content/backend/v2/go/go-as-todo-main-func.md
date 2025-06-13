@@ -1,10 +1,10 @@
 ---
-title: Todo - Test List methods
+title: Todo - Main Function
 type: assignment
 topic: go
 ---
 
-# Todo - Test List methods
+# Todo - Main Function
 
 ## Situation
 
