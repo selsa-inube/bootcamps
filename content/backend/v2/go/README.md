@@ -44,3 +44,4 @@
 40. 🚀 Assignment: [Todo - Use flags](./go-as-todo-use-flags.md)
 41. 🚀 Assignment: [Todo - Stringer interface](./go-as-todo-stringer-interface.md)
 42. 📖 Lecture: [Environment Variables](./go-lec-env-variables.md)
+43. 🚀 Assignment: [Todo - Env Variables](./go-as-todo-env-variables.md)

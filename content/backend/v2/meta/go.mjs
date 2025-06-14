@@ -228,6 +228,11 @@ const assignments = [
     body: `${URL}/go/go-as-todo-stringer-interface.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Todo - Env Variables",
+    body: `${URL}/go/go-as-todo-env-variables.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
