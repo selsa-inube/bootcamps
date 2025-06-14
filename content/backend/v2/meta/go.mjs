@@ -160,6 +160,11 @@ const lectures = [
     body: `${URL}/go/go-lec-linux-file-permissions-explained.md`,
     labels: ["topic: go", "type: lecture"],
   },
+  {
+    title: "Environment Variables",
+    body: `${URL}/go/go-lec-env-variables.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
 ];
 
 const assignments = [
