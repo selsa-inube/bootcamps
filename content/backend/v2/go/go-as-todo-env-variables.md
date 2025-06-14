@@ -6,11 +6,11 @@ topic: go
 
 # Todo - Env Variables
 
-## Situation
+## Situation
 
 We don't have a way to personalize where to store the list of tasks.
 
-## Assignment
+## Assignment
 
 Let's use environment variables to control where the list of task is saved. By using environment variables we can change the file depending on the environment where the program is run.
 
