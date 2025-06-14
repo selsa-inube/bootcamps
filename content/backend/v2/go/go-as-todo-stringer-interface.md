@@ -30,10 +30,10 @@ In main we were printing the list using the format:
 fmt.Printf("Title: %s, Done: %t, CreatedAt: %s, CompletedAt: %s\n", task.Task, task.Done, task.CreatedAt, task.CompletedAt)
 ```
 
-You must change it so that in prints each item like this (the number represents the index of the task in the list):
+You must change it so that it prints each item like this (the number represents the index of the task in the list):
 
-1. Complete task: `- [ ] 0: New Task\n`
-2. Incomplete task: `- [X] 0: New Task\n`
+1. Complete task: `- [X] 0: New Task\n`
+2. Incomplete task: `- [ ] 0: New Task\n`
 
 ### Tests
 
