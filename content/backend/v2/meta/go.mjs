@@ -218,6 +218,11 @@ const assignments = [
     body: `${URL}/go/go-as-todo-use-flags.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Todo - Stringer Interface",
+    body: `${URL}/go/go-as-todo-stringer-interface.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];

@@ -42,3 +42,4 @@
 38. [Exec Command](./go-as-exec-command.md) -- Assignment
 39. [Todo - Main function](./go-as-todo-main-func.md) -- Assignment
 40. [Todo - Use flags](./go-as-todo-use-flags.md) -- Assignment
+41. [Todo - Stringer interface](./go-as-todo-stringer-interface.md) -- Assignment
