@@ -1,6 +1,6 @@
 ---
 title: Todo - Env Variables
-type: exercise
+type: assignment
 topic: go
 ---
 
