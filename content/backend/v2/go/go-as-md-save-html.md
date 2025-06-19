@@ -19,7 +19,7 @@ Create the save HTML function to save an HTML file in disk.
 1. Create the `md` directory, where we'll store all the program code.
 2. For this program we'll only need `main.go` and `main_test.go` files.
 
-### Flags
+### Flags
 
 This iteration requires only the `out` flag. This is a string flag so the user can pass the name of the HTML file.
 
@@ -34,19 +34,19 @@ You must create the following functions (only):
 2. `run()`
 3. `saveHTML()`
 
-#### main() function
+#### `main()` function
 
 This is the entry point to your program. This is the place where you define flags and call the run function, which will be responsible for controlling the program execution.
 
 Main runs the `run()` function. If that function returns an error, `main()` prints the error and finishes the program with status code 1.
 
-#### run() function
+#### `run()` function
 
 This function will serve as a controller function, which means that the function will control the logical sequence of the program.
 
 In this assignment, this function will start by using some constants, the flags, and the saveHTML() function to create an HTML file.
 
-#### saveHTML() function
+#### `saveHTML()` function
 
 This function is responsible for receiving the path where the HTML file should be created along with the data that this file contains. Consider that:
 
