@@ -165,6 +165,11 @@ const lectures = [
     body: `${URL}/go/go-lec-env-variables.md`,
     labels: ["topic: go", "type: lecture"],
   },
+  {
+    title: "Markdown",
+    body: `${URL}/go/go-lec-markdown.md`,
+    labels: ["topic: go", "type: lecture"],
+  },
 ];
 
 const assignments = [
