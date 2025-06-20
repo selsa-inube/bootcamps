@@ -48,7 +48,7 @@ In this assignment, this function will start by using some constants, the flags,
 
 #### `saveHTML()` function
 
-This function is responsible for receiving the path where the HTML file should be created along with the data that this file contains. Consider that:
+This function is responsible for receiving the name of the HTML file that should be created along with the data that this file contains. Consider that:
 
 1. This function must get the name of the saved file as an argument, including the .html extension.
 2. This function must get the data to include in the file as an argument. The parameter should be of type `[]byte`.
