@@ -243,6 +243,11 @@ const assignments = [
     body: `${URL}/go/go-as-md-save-html.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Markdown - Parse Content",
+    body: `${URL}/go/go-as-md-parse-content.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];

@@ -47,3 +47,4 @@
 43. 🚀 Assignment: [Todo - Env Variables](./go-as-todo-env-variables.md)
 44. 📖 Lecture: [Markdown](./go-lec-markdown.md)
 45. 🚀 Assignment: [Markdown - Save HTML](./go-as-md-save-html.md)
+46. 🚀 Assignment: [Markdown - Parse Content](./go-as-md-parse-content.md)
