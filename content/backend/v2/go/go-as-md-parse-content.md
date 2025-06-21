@@ -85,4 +85,4 @@ Just a test
 
 ## Result
 
-We should be able to call the program like: `go run main.go -in README.md -out readme` and get a file inside the md/ directory with the file `readme.html`. This file must contain the value of the two constants.
+We should be able to call the program like: `go run main.go -in README.md -out readme` and get a file inside the md/ directory with the file `readme.html`. This file must contain the value of the two constants and the body in between.

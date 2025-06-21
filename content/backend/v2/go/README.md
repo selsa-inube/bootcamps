@@ -48,3 +48,4 @@
 44. 📖 Lecture: [Markdown](./go-lec-markdown.md)
 45. 🚀 Assignment: [Markdown - Save HTML](./go-as-md-save-html.md)
 46. 🚀 Assignment: [Markdown - Parse Content](./go-as-md-parse-content.md)
+47. 🚀 Assignment: [Markdown - Temporal File](./go-as-md-temp-file.md)

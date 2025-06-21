@@ -248,6 +248,11 @@ const assignments = [
     body: `${URL}/go/go-as-md-parse-content.md`,
     labels: ["topic: go", "type: assignment"],
   },
+  {
+    title: "Markdown - Temporal Files",
+    body: `${URL}/go/go-as-md-temp-file.md`,
+    labels: ["topic: go", "type: assignment"],
+  },
 ];
 
 const go = [...exercises, ...lectures, ...assignments];
