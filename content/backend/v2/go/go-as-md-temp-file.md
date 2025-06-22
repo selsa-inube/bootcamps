@@ -25,6 +25,9 @@ In order to use temporal files, you'll need to use the `os.CreateTemp()` functio
 1. `dir`: The first argument indicates where to create the file. If you use "." you're indicating you want to create it in the current directory. If you leave it as "", you'll save it in the temp directory of your operative system. Use the one you prefer (recommended: current directory).
 2. `name`: The second argument indicates the name of the file. Here you can use **"md\*.html"** to achieve the requested result. `*` is a placeholder where the function will automatically insert a random number.
 
+> [!IMPORTANT]
+> When you create the temporal file, the you have the file open to work with it. You can close it right after creating it and let saveHTML function to directly write in it.
+
 ### Printing the file name
 
 Print the file name so the user can find the HTML file generated. Do it inside the `run()` function after you validate that the saving operation worked well.
