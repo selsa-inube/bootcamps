@@ -1,4 +1,10 @@
-# A12: freeCodeCamp → CSS Grid
+---
+title: freeCodeCamp - CSS Grid
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → CSS Grid
 
 In the Legacy Certification of Responsive Web Design, there is a module for CSS Grid. Complete it.
 

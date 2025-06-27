@@ -1,4 +1,10 @@
-# A8: freeCodeCamp → Café Menu
+---
+title: freeCodeCamp - Cafe Menu
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Café Menu
 
 In the New Responsive Web Design Certificate, there are a bunch of projects that the platform provides to learn the basics of HTML and CSS. Complete the second project: Cafe Menu.
 

@@ -1,4 +1,10 @@
-# A11: freeCodeCamp → Photo Gallery
+---
+title: freeCodeCamp - Photo Gallery
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Photo Gallery
 
 In the New Responsive Web Design Certification, there is the Photo Gallery project. The assignment is to complete the project.
 

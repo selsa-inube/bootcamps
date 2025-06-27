@@ -1,4 +1,10 @@
-# A24: freeCodeCamp → Registration Form
+---
+title: freeCodeCamp - Registration Form
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Registration Form
 
 Complete the project called Registration Form in the New Responsive Web Design Ceritification in freeCodeCamp:
 

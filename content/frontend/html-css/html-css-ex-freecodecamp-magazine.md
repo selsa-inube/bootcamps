@@ -1,4 +1,10 @@
-# A13: freeCodeCamp → Magazine
+---
+title: freeCodeCamp - Magazine
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Magazine
 
 In the New Responsive Web Design Certification, there is the Magazine project. The assignment is to complete the project.
 

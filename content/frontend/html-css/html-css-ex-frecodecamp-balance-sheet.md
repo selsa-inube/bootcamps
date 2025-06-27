@@ -1,4 +1,10 @@
-# A15: freeCodeCamp → Balance Sheet
+---
+title: freeCodeCamp - Balance Sheet
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Balance Sheet
 
 In the New Responsive Web Design Certification, there is the Balance Sheet project. The assignment is to complete the project.
 

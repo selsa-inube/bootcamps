@@ -1,3 +1,9 @@
+---
+title: freeCodeCamp - Basic HTML and HTML5
+type: exercise
+topic: html, css
+---
+
 # A1: freeCodeCamp → Basic HTML and HTML5
 
 The freeCodeCamp platform provides the Legacy Responsive Web Design Certification in which the vary basic elements of HTML are taught. The assignment consist in fulfilling all the exercises within the Basic HTML and HTML5 module of this certification.

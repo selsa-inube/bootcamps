@@ -1,4 +1,10 @@
-# A21: freeCodeCamp → Technical Documentation Page
+---
+title: freeCodeCamp - Technical Documentation Page
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Technical Documentation Page
 
 Complete the following project in the new curriculum of freeCodeCamp: Technical Documentation Project.
 

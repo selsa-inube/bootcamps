@@ -1,4 +1,10 @@
-# A14: freeCodeCamp → Rothko Painting
+---
+title: freeCodeCamp - Rothko Painting
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Rothko Painting
 
 In the New Responsive Web Design Certification, there is the Rotthko Painting project. The assignment is to complete the project.
 

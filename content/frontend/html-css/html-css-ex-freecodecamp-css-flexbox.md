@@ -1,4 +1,10 @@
-# A10: freeCodeCamp → CSS Flexbox
+---
+title: freeCodeCamp - CSS Flexbox
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → CSS Flexbox
 
 In the Legacy Certification of Responsive Web Design, there is a module for CSS Flexbox. Complete it.
 

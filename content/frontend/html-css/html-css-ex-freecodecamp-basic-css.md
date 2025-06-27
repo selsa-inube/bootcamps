@@ -1,4 +1,10 @@
-# A4: freeCodeCamp → Basic CSS
+---
+title: freeCodeCamp - Basic CSS
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Basic CSS
 
 The freeCodeCamp platform provides the Legacy Responsive Web Design Certification in which the vary basic elements of HTML are taught. The assignment consist in fulfilling all the exercises within the Basic CSS module of this certification.
 

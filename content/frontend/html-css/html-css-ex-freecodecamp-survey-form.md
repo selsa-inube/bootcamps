@@ -1,4 +1,10 @@
-# A25: freeCodeCamp → Survey Form
+---
+title: freeCodeCamp - Survey Form
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Survey Form
 
 Complete the project called Registration Form in the New Responsive Web Design Ceritification in freeCodeCamp:
 

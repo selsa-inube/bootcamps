@@ -1,4 +1,10 @@
-# A20: freeCodeCamp → Piano
+---
+title: freeCodeCamp - Piano
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Piano
 
 In the new curriculum of freeCodeCamp, complete the project for rendering a piano on different screens:
 

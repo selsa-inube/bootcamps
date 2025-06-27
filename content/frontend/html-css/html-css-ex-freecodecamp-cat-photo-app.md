@@ -1,4 +1,10 @@
-# #A7: freeCodeCamp → Cat Photo App
+---
+title: freeCodeCamp - Cat Photo App
+type: exercise
+topic: html, css
+---
+
+# freeCodeCamp → Cat Photo App
 
 In the New Responsive Web Design Certificate, there are a bunch of projects that the platform provides to learn the basics of HTML and CSS. Complete the first project: Cat Photo App.
 
