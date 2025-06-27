@@ -16,7 +16,7 @@
 12. 🚀 Assignment: [Pseudoclasses and Pseudoelements](./html-css-as-pseudoclasses-pseudoelements.md)
 13. 🚀 Assignment: [Selectors without classes and ids](./html-css-as-selectors-without-classes-and-ids.md)
 14. 🏃‍♂️ Exercise: [Freecodecamp - Cat Photo App](./html-css-ex-freecodecamp-cat-photo-app.md)
-15. 🏃‍♂️ Exercise: [Freecodecamp - Cafe Menu](./html-css-as-freecodecamp-cafe-menu.md)
+15. 🏃‍♂️ Exercise: [Freecodecamp - Cafe Menu](./html-css-ex-freecodecamp-cafe-menu.md)
 16. 📖 Lecture: [Sizing units](./html-css-lec-sizing-units.md)
 17. 📖 Lecture: [Specificity](./html-css-lec-specificity.md)
 18. 🏃‍♂️ Exercise: [Freecodecamp - CSS Flexbox](./html-css-ex-freecodecamp-css-flexbox.md)
