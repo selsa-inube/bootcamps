@@ -1,6 +1,15 @@
-# L13: Positioning
+---
+title: Positioning
+type: lecture
+topic: html, css
+---
 
-Read the following article:
+# Positioning
+
+## Lecture
+
 https://internetingishard.netlify.app/html-and-css/advanced-positioning/
 
-Quiz: https://forms.office.com/r/EcuAejApYq
+## Quiz
+
+https://forms.office.com/r/EcuAejApYq

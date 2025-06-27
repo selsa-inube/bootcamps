@@ -1,6 +1,15 @@
-# L15: Responsive Design
+---
+title: Responsive Design
+type: lecture
+topic: html, css
+---
 
-Read the following material:
+# Responsive Design
+
+## Lectures
+
 https://internetingishard.netlify.app/html-and-css/responsive-design/
 
-Quiz: https://forms.office.com/r/d0PMQBuNmZ
+## Quiz
+
+https://forms.office.com/r/d0PMQBuNmZ

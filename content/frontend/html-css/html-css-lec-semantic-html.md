@@ -1,6 +1,15 @@
-# L17: Semantic HTML
+---
+title: Semantic HTML
+type: lecture
+topic: html, css
+---
 
-Read the following material:
+# Semantic HTML
+
+## Lecture
+
 https://internetingishard.netlify.app/html-and-css/semantic-html/
 
-Quiz: https://forms.office.com/r/nvwPYjNpXx
+## Quiz
+
+https://forms.office.com/r/nvwPYjNpXx

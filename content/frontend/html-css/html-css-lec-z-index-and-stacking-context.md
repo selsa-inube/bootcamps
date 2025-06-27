@@ -1,6 +1,15 @@
-# L14: Z index and stacking contexts
+---
+title: Z-index and stacking contexts
+type: lecture
+topic: html, css
+---
 
-Read the following article:
+# Z-index and stacking contexts
+
+## Lectures
+
 https://web.dev/learn/css/z-index/
 
-Quiz: https://forms.office.com/r/3QRLCpWDjM
+## Quiz
+
+https://forms.office.com/r/3QRLCpWDjM

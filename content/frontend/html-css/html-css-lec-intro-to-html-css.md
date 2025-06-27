@@ -1,4 +1,12 @@
-# L1: Introduction to HTML & CSS
+---
+title: Introduction to HTML & CSS
+type: lecture
+topic: html, css
+---
+
+# Introduction to HTML & CSS
+
+## Lectures
 
 **Read the following sections of the article:**
 
@@ -10,3 +18,6 @@
 6. Hands-on Learning
 
 Resource: https://internetingishard.netlify.app/html-and-css/introduction/
+
+> [!NOTE]
+> This lecture doesn't have quiz

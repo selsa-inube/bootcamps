@@ -1,6 +1,15 @@
-# L2 - Basic Web Pages
+---
+title: Basic Web Pages
+type: lecture
+topic: html, css
+---
 
-**Read the following article:**
+# Basic Web Pages
+
+## Lecture
+
 https://internetingishard.netlify.app/html-and-css/basic-web-pages/
 
-Quiz: https://forms.office.com/r/QYASMEzV0v
+## Quiz
+
+https://forms.office.com/r/QYASMEzV0v

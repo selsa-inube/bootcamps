@@ -1,6 +1,15 @@
-# L8 - Sizing Units
+---
+title: Sizing Units
+type: lecture
+topic: html, css
+---
 
-Read this resource:
+# Sizing Units
+
+## Lecture
+
 https://web.dev/learn/css/sizing/
 
-Quiz: https://forms.office.com/r/rAnhJS3WVi
+## Quiz
+
+https://forms.office.com/r/rAnhJS3WVi

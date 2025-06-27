@@ -1,6 +1,15 @@
-# L19: Typography
+---
+title: Typography
+type: lecture
+topic: html, css
+---
 
-Read the following article:
+# Typography
+
+## Lecture
+
 https://internetingishard.netlify.app/html-and-css/web-typography/
 
-Quiz: https://forms.office.com/r/GsNTFftHLG
+## Quiz
+
+https://forms.office.com/r/GsNTFftHLG
