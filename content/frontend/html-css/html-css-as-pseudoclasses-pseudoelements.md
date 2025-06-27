@@ -1,4 +1,12 @@
-# A5: Pseudoclasses and pseudoelements in a form
+---
+title: Pseudoeclasses and Pseudoelements
+type: assignment
+topic: html, css
+---
+
+# Pseudoclasses and pseudoelements in a form
+
+## Assignment
 
 Create a page where:
 

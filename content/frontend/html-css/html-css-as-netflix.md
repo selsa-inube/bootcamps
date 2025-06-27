@@ -1,3 +1,11 @@
-# A29: Netflix
+---
+title: Netflix
+type: assignment
+topic: html, css
+---
 
-Create the mockup for this desktop image of Dune: https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/netflix.png
+# Netflix
+
+## Assignment
+
+Create this [mockup](./assets/netflix.png) of Dune.

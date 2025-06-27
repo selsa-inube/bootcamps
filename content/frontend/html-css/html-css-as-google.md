@@ -1,7 +1,12 @@
-# A27: Google
+---
+title: Google
+type: assignment
+topic: html, css
+---
 
-Create the mockup of the homepage of **google.com**.
+# Google
 
-The project must be responsive. Check the behavior of the site with the browser at different sizes.
+## Assignment
 
-Image: https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/google.png
+1. Create the mockup of the homepage of [google.com](./assets/google.png).
+2. The project must be responsive. Check the behavior of the site with the browser at different sizes.

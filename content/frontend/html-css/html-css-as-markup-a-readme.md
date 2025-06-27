@@ -1,10 +1,16 @@
-# A2: Markup a Readme
+---
+title: Markup a readme
+type: assignment
+topic: html, css
+---
 
-This assignment requires that you create an HTML file with the markup file you find here:
+# Markup a Readme
 
-https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/markup-readme.pdf
+## Assignment
 
-**Notes**:
+This assignment requires that you create an HTML file with this [markup file](./assets/markup-readme.pdf)
+
+## Guidelines
 
 1. Download the file to see the behavior of the file.
 2. Only write HTML, you don't have to create styles. The aim is to create the most semantic document you can, not to replicate the styles of the PDF.

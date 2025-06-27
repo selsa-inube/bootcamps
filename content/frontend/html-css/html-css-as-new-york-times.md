@@ -1,7 +1,14 @@
-# A30: New York Times
+---
+title: New York Times
+type: assignment
+topic: html, css
+---
 
-Create the following mockup of the New York Times.
+# New York Times
 
-💡 You can avoid the graphs in the cards of indexes at the bottom.
+## Assignment
 
-Image: https://github.com/selsa-inube/bootcamp/blob/main/content/html-css/assets/new-york-times.png
+Create this [mockup](./assets/new-york-times.png) of the New York Times.
+
+> [!TIP]
+> You can avoid the graphs in the cards of indexes at the bottom.
