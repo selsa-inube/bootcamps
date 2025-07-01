@@ -1,5 +1,4 @@
-const URL =
-  "https://github.com/selsa-inube/bootcamp/blob/main/content/backend/v2";
+const URL = "https://github.com/selsa-inube/bootcamp/blob/main/content/backend";
 
 const exercises = [
   {
