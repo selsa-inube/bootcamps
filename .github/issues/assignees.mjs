@@ -3,7 +3,7 @@ const assignees = {
   dgarzon: "LoweLeo",
   jramirez: "Jero-RM",
   jpinilla: "JeissonP09",
-  lmartinex: "LouisMartinez20",
+  lmartinez: "LouisMartinez20",
 };
 
 export { assignees };
