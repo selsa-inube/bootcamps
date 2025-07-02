@@ -6,13 +6,14 @@ const labels = {
     react: "topic: react",
     git: "topic: git",
     typescript: "topic: typescript",
+    http: "topic: http",
   },
   type: {
-    assignement: "type: assignement",
-    exercise: "type: exercise",
-    lecture: "type: lecture",
-    project: "type: project",
-    video: "type: video",
+    assignment: "type: assignment 🚀",
+    exercise: "type: exercise 🏃‍♂️",
+    lecture: "type: lecture 📖",
+    project: "type: project ⭐️",
+    video: "type: video ▶️",
   },
 };
 
