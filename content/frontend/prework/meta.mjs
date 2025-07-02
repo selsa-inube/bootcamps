@@ -29,4 +29,6 @@ const lectures = [
   },
 ];
 
-export { lectures };
+const prework = [...lectures];
+
+export { prework };
