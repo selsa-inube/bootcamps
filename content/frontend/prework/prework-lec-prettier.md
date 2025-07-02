@@ -1,3 +1,9 @@
+---
+title: Prettier
+type: lecture
+topic: prework
+---
+
 # Prettier
 
 Todos los proyectos de frontend de inube usan Prettier como formateador de código. Esto significa que al final la estructura del código será tal como Prettier decida que debe ser guardado el código.

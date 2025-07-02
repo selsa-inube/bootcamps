@@ -1,3 +1,9 @@
+---
+title: WSL
+type: lecture
+topic: prework
+---
+
 # Windows Subsystem for Linux
 
 Este material es útil para que puedan configurar un entorno de desarrollo basado en Linux dentro del sistema operativo Windows. También se explican algunos comandos básicos de bash que son importantes:
@@ -5,5 +11,7 @@ Este material es útil para que puedan configurar un entorno de desarrollo basad
 https://www.youtube.com/watch?v=gm-Kym2iqss
 
 1. Al descargar Ubuntu en la Windows Store, descargar la versión que esté etiquetada como LTS ➝ "Long-Term Support".
-
 2. **No descargar ningún terminal de Electron.**
+
+> [!IMPORTANT]
+> Esta tarea aplica si tienes Windows. En caso contrario puedes pasarla a hecho.

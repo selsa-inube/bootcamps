@@ -1,3 +1,9 @@
+---
+title: VS Code
+type: lecture
+topic: prework
+---
+
 # VS Code - Extensiones
 
 Aunque ya tengamos nuestro sistema Linux embebido dentro de Windows, nuestro editor de código está instalado en Windows y no en Linux (De hecho, aunque tenemos Ubuntu, realmente tenemos Ubuntu sin GUI - Graphical User Interface).
