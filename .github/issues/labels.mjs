@@ -12,7 +12,7 @@ const labels = {
     exercise: "type: exercise",
     lecture: "type: lecture",
     project: "type: project",
-    bug: "type: bug",
+    video: "type: video",
   },
 };
 
