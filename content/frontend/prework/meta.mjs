@@ -19,11 +19,6 @@ const lectures = [
     labels: [labels.topic.prework, labels.type.lecture],
   },
   {
-    title: "Conventional Commits",
-    body: `${URL}/prework-lec-conventional-commits.md`,
-    labels: [labels.topic.prework, labels.type.lecture],
-  },
-  {
     title: "Prettier",
     body: `${URL}/prework-lec-prettier.md`,
     labels: [labels.topic.prework, labels.type.lecture],

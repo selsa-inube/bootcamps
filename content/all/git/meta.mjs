@@ -1,6 +1,14 @@
 import { labels } from "../../../.github/issues/labels.mjs";
 const URL = "https://github.com/selsa-inube/bootcamp/blob/main/content/all";
 
+const lectures = [
+  {
+    title: "git-lec-conventional-commits",
+    body: `${URL}/git/git-lec-conventional-commits.md`,
+    labels: [labels.topic.git, labels.type.lecture],
+  },
+];
+
 const activities = [
   {
     title: "git-vid-getting-started",
@@ -29,6 +37,6 @@ const activities = [
   },
 ];
 
-const git = [...activities];
+const git = [...lectures, ...activities];
 
 export { git };
