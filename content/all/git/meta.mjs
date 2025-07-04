@@ -3,7 +3,7 @@ const URL = "https://github.com/selsa-inube/bootcamp/blob/main/content/all";
 
 const lectures = [
   {
-    title: "git-lec-conventional-commits",
+    title: "Git - Conventional Commits",
     body: `${URL}/git/git-lec-conventional-commits.md`,
     labels: [labels.topic.git, labels.type.lecture],
   },
@@ -11,27 +11,27 @@ const lectures = [
 
 const activities = [
   {
-    title: "git-vid-getting-started",
+    title: "Git - Getting Started",
     body: `${URL}/git/git-vid-getting-started.md`,
     labels: [labels.topic.git, labels.type.video],
   },
   {
-    title: "git-vid-commits",
+    title: "Git - Commits",
     body: `${URL}/git/git-vid-commits.md`,
     labels: [labels.topic.git, labels.type.video],
   },
   {
-    title: "git-vid-branching",
+    title: "Git - Branching",
     body: `${URL}/git/git-vid-branching.md`,
     labels: [labels.topic.git, labels.type.video],
   },
   {
-    title: "git-vid-github-part1",
+    title: "Git - GitHub (Part I)",
     body: `${URL}/git/git-vid-github-part1.md`,
     labels: [labels.topic.git, labels.type.video],
   },
   {
-    title: "git-vid-github-part2",
+    title: "Git - GitHub (Part II)",
     body: `${URL}/git/git-vid-github-part2.md`,
     labels: [labels.topic.git, labels.type.video],
   },
