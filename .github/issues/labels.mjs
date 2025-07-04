@@ -7,6 +7,7 @@ const labels = {
     git: "topic: git",
     typescript: "topic: typescript",
     http: "topic: http",
+    go: "topic: go",
   },
   type: {
     assignment: "type: assignment 🚀",
