@@ -102,16 +102,6 @@ const exercises = [
     labels: [labels.topic.javascript, labels.type.exercise],
   },
   {
-    title: "freeCodeCamp - Object Oriented Programming",
-    body: `${URL}/js-ex-freecodecamp-oop.md`,
-    labels: [labels.topic.javascript, labels.type.exercise],
-  },
-  {
-    title: "freeCodeCamp - Regular Expressions",
-    body: `${URL}/js-ex-freecodecamp-regexp.md`,
-    labels: [labels.topic.javascript, labels.type.exercise],
-  },
-  {
     title: "freeCodeCamp - Intermediate Algorithm Scripting",
     body: `${URL}/js-ex-freecodecamp-intermediate-algorithm-scripting.md`,
     labels: [labels.topic.javascript, labels.type.exercise],
@@ -119,6 +109,31 @@ const exercises = [
   {
     title: "freeCodeCamp - JavaScript Algorithms and Data Structures Projects",
     body: `${URL}/js-ex-freecodecamp-projects.md`,
+    labels: [labels.topic.javascript, labels.type.exercise],
+  },
+  {
+    title: "freeCodeCamp - Asynchronous Javascript",
+    body: `${URL}/js-ex-freecodecamp-asynchronous-javascript.md`,
+    labels: [labels.topic.javascript, labels.type.exercise],
+  },
+  {
+    title: "freeCodeCamp - Dates",
+    body: `${URL}/js-ex-freecodecamp-dates.md`,
+    labels: [labels.topic.javascript, labels.type.exercise],
+  },
+  {
+    title: "freeCodeCamp - DOM Manipulation and Events",
+    body: `${URL}/js-ex-freecodecamp-dom-manipulation-and-events.md`,
+    labels: [labels.topic.javascript, labels.type.exercise],
+  },
+  {
+    title: "freeCodeCamp - Form Validation",
+    body: `${URL}/js-ex-freecodecamp-form-validation.md`,
+    labels: [labels.topic.javascript, labels.type.exercise],
+  },
+  {
+    title: "freeCodeCamp - localStorage and CRUD",
+    body: `${URL}/js-ex-freecodecamp-local-storage-and-crud.md`,
     labels: [labels.topic.javascript, labels.type.exercise],
   },
 ];
