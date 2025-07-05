@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 18
+title: Eloquent JS - The Secret Life of Objects
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 18
+# Eloquent JS - The Secret Life of Objects
 
 ## Assignment
 

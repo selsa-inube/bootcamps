@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 10
+title: Eloquent JS - Modules
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 10
+# Eloquent JS - Modules
 
 ## Assignment
 

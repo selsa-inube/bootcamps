@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 7
+title: Eloquent JS - Project: A Robot
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 7
+# Eloquent JS - Project: A Robot
 
 ## Assignment
 

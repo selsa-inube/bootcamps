@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 4
+title: Eloquent JS - Higher-Order Functions
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 4
+# Eloquent JS - Higher-Order Functions
 
 ## Assignment
 

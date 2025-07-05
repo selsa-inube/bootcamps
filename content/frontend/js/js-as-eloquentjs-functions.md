@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 14
+title: Eloquent JS - Functions
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 14
+# Eloquent JS - Functions
 
 ## Assignment
 

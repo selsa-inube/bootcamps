@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 6
+title: Eloquent JS - Handling Events
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 6
+# Eloquent JS - Handling Events
 
 ## Assignment
 

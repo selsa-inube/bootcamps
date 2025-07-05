@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 5
+title: Eloquent JS - Bugs and Errors
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 5
+# Eloquent JS - Bugs and Errors
 
 ## Assignment
 

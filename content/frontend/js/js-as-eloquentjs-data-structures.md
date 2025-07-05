@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 2
+title: Eloquent JS - Data Structures
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 2
+# Eloquent JS - Data Structures
 
 ## Assignment
 

@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 8
+title: Eloquent JS - HTTP and Forms
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 8
+# Eloquent JS - HTTP and Forms
 
 ## Assignment
 

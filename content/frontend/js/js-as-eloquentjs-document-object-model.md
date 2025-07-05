@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 3
+title: Eloquent JS - Document Object Model
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 3
+# Eloquent JS - Document Object Model
 
 ## Assignment
 

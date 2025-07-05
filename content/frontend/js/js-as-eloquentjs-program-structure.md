@@ -1,10 +1,10 @@
 ---
-title: Eloquent JS - Chapter 15
+title: Eloquent JS - Program Structure
 type: assignment
 topic: javascript
 ---
 
-# Eloquent JS - Chapter 15
+# Eloquent JS - Program Structure
 
 ## Assignment
 
