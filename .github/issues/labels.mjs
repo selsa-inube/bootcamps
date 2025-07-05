@@ -8,6 +8,7 @@ const labels = {
     typescript: "topic: typescript",
     http: "topic: http",
     go: "topic: go",
+    api: "topic: api",
   },
   type: {
     assignment: "type: assignment 🚀",
