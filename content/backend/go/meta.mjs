@@ -1,38 +1,41 @@
 import { labels } from "../../../.github/issues/labels.mjs";
+const URL =
+  "https://github.com/selsa-inube/bootcamps/blob/main/content/backend";
+
 const exercises = [
   {
     title: "Go Tour - Welcome",
-    body: "./go-ex1-tour-welcome.md",
+    body: `${URL}/go/go-ex-tour-welcome.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - Packages, Variables, and Functions",
-    body: "./go-ex2-tour-packages-variables-functions.md",
+    body: `${URL}/go/go-ex-tour-packages-variables-functions.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - Flow control and statements",
-    body: "./go-ex3-tour-flow-control-statements.md",
+    body: `${URL}/go/go-ex-tour-flow-control-statements.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - More Types",
-    body: "./go-ex4-tour-more-types.md",
+    body: `${URL}/go/go-ex-tour-more-types.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - Methods and Interfaces",
-    body: "./go-ex5-tour-methods-and-interfaces.md",
+    body: `${URL}/go/go-ex-tour-methods-and-interfaces.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - Generics",
-    body: "./go-ex6-tour-generics.md",
+    body: `${URL}/go/go-ex-tour-generics.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
   {
     title: "Go Tour - Concurrency",
-    body: "./go-ex7-tour-concurrency.md",
+    body: `${URL}/go/go-ex-tour-concurrency.md`,
     labels: [labels.topic.go, labels.type.exercise],
   },
 ];
