@@ -28,7 +28,7 @@ This is the first of multiple assignments where we'll create a server to handle 
 
 In the handler you have access to the request. Check the `r.URL.Path` property to validate the path.
 
-### 404 Not Found
+### 404 Not Found
 
 Use the function `http.NotFound()` if the path doesn't match the root path "/".
 
