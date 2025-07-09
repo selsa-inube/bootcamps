@@ -1,0 +1,24 @@
+import { labels } from "../../../.github/issues/labels.mjs";
+const URL =
+  "https://github.com/selsa-inube/bootcamps/blob/main/content/backend/go-server";
+
+const exercises = [];
+
+const lectures = [];
+
+const assignments = [
+  {
+    title: "What even is a Mux?",
+    body: `${URL}/go-server-as-what-even-is-a-mux.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
+  {
+    title: "Can You Handle This?",
+    body: `${URL}/go-server-as-can-you-handle-this.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
+];
+
+const goServer = [...exercises, ...lectures, ...assignments];
+
+export { goServer };
