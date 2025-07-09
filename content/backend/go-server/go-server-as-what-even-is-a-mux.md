@@ -6,7 +6,7 @@ topic: go-server
 
 # What Even is a Mux?
 
-## Assignment
+## Assignment
 
 Read the article and push the exercise explained there in a directory named `mux`.
 
@@ -17,7 +17,7 @@ https://dev.to/jpoly1219/what-even-is-a-mux-4fng
 > [!NOTE]
 > This lecture doesn't have a quiz.
 
-## Test
+## Test
 
 Run the program and use postman to the following endpoints to see the responses:
 
