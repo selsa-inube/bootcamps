@@ -10,7 +10,7 @@ topic: go-server
 
 Read the article and push the exercise explained there in a directory named `mux`.
 
-## Lecture
+## Lecture
 
 https://dev.to/jpoly1219/what-even-is-a-mux-4fng
 
