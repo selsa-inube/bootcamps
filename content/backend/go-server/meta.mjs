@@ -22,6 +22,11 @@ const assignments = [
     body: `${URL}/go-server-as-todo-mux-and-root-handler.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
+  {
+    title: "Todo - Server and Handlers files",
+    body: `${URL}/go-server-as-todo-server-and-handlers-files.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
 ];
 
 const goServer = [...exercises, ...lectures, ...assignments];
