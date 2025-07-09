@@ -9,6 +9,7 @@ const labels = {
     http: "topic: http",
     go: "topic: go",
     api: "topic: api",
+    "go-server": "topic: go server",
   },
   type: {
     assignment: "type: assignment 🚀",
