@@ -27,6 +27,11 @@ const assignments = [
     body: `${URL}/go-server-as-todo-server-and-handlers-files.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
+  {
+    title: "Todo - Test Server",
+    body: `${URL}/go-server-as-todo-test-server.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
 ];
 
 const goServer = [...exercises, ...lectures, ...assignments];
