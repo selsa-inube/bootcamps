@@ -42,7 +42,7 @@ func setupAPI(t *testing.T) (url string, cleaner func()) {
 
 You must create two tests:
 
-1. TestGetRoot:
+1. TestGetRoot
 2. TestGetNotFound
 
 #### TestGetRoot
