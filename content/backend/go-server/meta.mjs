@@ -4,7 +4,13 @@ const URL =
 
 const exercises = [];
 
-const lectures = [];
+const lectures = [
+  {
+    title: "How To Use Struct Tags in Go",
+    body: `${URL}/go-server-as-what-even-is-a-mux.md`,
+    labels: [labels.topic["go-server"], labels.type.lecture],
+  },
+];
 
 const assignments = [
   {
