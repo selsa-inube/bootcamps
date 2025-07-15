@@ -48,6 +48,16 @@ const assignments = [
     body: `${URL}/go-server-as-todo-text-and-error-repliers.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
+  {
+    title: "Todo - Require and Replace",
+    body: `${URL}/go-server-as-todo-require-and-replace.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
+  {
+    title: "Todo - JSON Replier",
+    body: `${URL}/go-server-as-todo-json-replier.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
 ];
 
 const goServer = [...exercises, ...lectures, ...assignments];

@@ -10,3 +10,5 @@
 6. 🚀 Assignment: [Todo - Table-Driven Tests](./go-server-as-todo-table-driven-tests.md)
 7. 🚀 Assignment: [Todo - Text and Error Repliers](./go-server-as-todo-text-and-error-repliers.md)
 8. 📖 Lecture: [How To Use Struct Tags in Go](./go-server-lec-how-to-use-struct-tags-in-go.md)
+9. 🚀 Assignment: [Todo - Require and Replace](./go-server-as-require-and-replace.md)
+10. 🚀 Assignment: [Todo - JSON Replier](./go-server-as-todo-json-replier.md)
