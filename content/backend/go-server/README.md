@@ -8,3 +8,4 @@
 4. 🚀 Assignment: [Todo - Server and Handlers files](./go-server-as-todo-server-and-handlers-files.md)
 5. 🚀 Assignment: [Todo - Test Server](./go-server-as-todo-test-server.md)
 6. 🚀 Assignment: [Todo - Table-Driven Tests](./go-server-as-todo-table-driven-tests.md)
+7. 🚀 Assignment: [Todo - Text and Error Repliers](./go-server-as-todo-text-and-error-repliers.md)
