@@ -35,6 +35,9 @@ For the sake of the example, lets say that we plan to publish the package in a f
 5. Check your go.mod file. Did something change?
 6. What happens if you run this code? `go list -m all`.
 
+> [!NOTE]
+> If you use Powershell, add double quotes to "-require=github.com....".
+
 ### Replace
 
 Just requiring the module isn't enough, since it won't be able to find it in the path we provided to github. To fix this:
