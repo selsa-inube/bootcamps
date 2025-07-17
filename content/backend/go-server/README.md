@@ -15,3 +15,4 @@
 11. 🚀 Assignment: [Todo - GET All Todos](./go-server-as-todo-get-all-todos.md)
 12. 🚀 Assignment: [Todo - POST Todo](./go-server-as-todo-post-todo.md)
 13. 🚀 Assignment: [Todo - GET Todo By Id](./go-server-as-todo-get-todo-by-id.md)
+14. 🚀 Assignment: [Todo - DELETE Todo By Id](./go-server-as-todo-delete-todo-by-id.md)
