@@ -75,7 +75,12 @@ const assignments = [
   },
   {
     title: "Todo - DELETE Todo By ID",
-    body: `${URL}/go-server-as-todo-get-todo-by-id.md`,
+    body: `${URL}/go-server-as-todo-delete-todo-by-id.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
+  {
+    title: "Todo - PATCH Todo By ID",
+    body: `${URL}/go-server-as-todo-patch-todo-by-id.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
 ];
