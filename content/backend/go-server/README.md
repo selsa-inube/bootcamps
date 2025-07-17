@@ -12,5 +12,6 @@
 8. 🚀 Assignment: [Todo - Require and Replace](./go-server-as-require-and-replace.md)
 9. 📖 Lecture: [How To Use Struct Tags in Go](./go-server-lec-how-to-use-struct-tags-in-go.md)
 10. 🚀 Assignment: [Todo - JSON Replier](./go-server-as-todo-json-replier.md)
-11. 🚀 Assignment: [Todo - Get All Todos](./go-server-as-todo-get-all-todos.md)
-12. 🚀 Assignment: [Todo - Post Todo](./go-server-as-todo-post-todo.md)
+11. 🚀 Assignment: [Todo - GET All Todos](./go-server-as-todo-get-all-todos.md)
+12. 🚀 Assignment: [Todo - POST Todo](./go-server-as-todo-post-todo.md)
+13. 🚀 Assignment: [Todo - GET Todo By Id](./go-server-as-todo-get-todo-by-id.md)

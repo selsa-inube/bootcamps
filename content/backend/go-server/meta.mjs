@@ -59,13 +59,18 @@ const assignments = [
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
   {
-    title: "Todo - Get All Todos",
+    title: "Todo - GET All Todos",
     body: `${URL}/go-server-as-todo-get-all-todos.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
   {
-    title: "Todo - Post Todo",
+    title: "Todo - POST Todo",
     body: `${URL}/go-server-as-todo-post-todo.md`,
+    labels: [labels.topic["go-server"], labels.type.assignment],
+  },
+  {
+    title: "Todo - GET Todo By ID",
+    body: `${URL}/go-server-as-todo-get-todo-by-id.md`,
     labels: [labels.topic["go-server"], labels.type.assignment],
   },
 ];
