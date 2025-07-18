@@ -10,6 +10,8 @@ const labels = {
     go: "topic: go",
     api: "topic: api",
     "go-server": "topic: go server",
+    docker: "topic: docker",
+    sql: "topic: sql",
   },
   type: {
     assignment: "type: assignment 🚀",
