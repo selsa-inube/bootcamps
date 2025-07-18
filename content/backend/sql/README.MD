@@ -2,4 +2,4 @@
 
 ## Content
 
-1. ▶️ Video: [Learn SQL](./docker-vid-learn-docker.md)
+1. ▶️ Video: [Learn SQL](./sql-vid-learn-sql.md)
