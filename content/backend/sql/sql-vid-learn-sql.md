@@ -1,10 +1,10 @@
 ---
 title: Learn SQL
 type: video
-topic: docker
+topic: sql
 ---
 
-# Learn Docker
+# Learn SQL
 
 ## Video
 
