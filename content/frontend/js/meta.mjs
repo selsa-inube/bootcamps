@@ -4,67 +4,67 @@ const URL =
 
 const lectures = [
   {
-    title: "Values, Types and Operators",
+    title: "Eloquent JS - Values, Types and Operators",
     body: `${URL}/js-lec-eloquentjs-values-types-operators.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Program Structure",
+    title: "Eloquent JS - Program Structure",
     body: `${URL}/js-lec-eloquentjs-program-structure.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Functions",
+    title: "Eloquent JS - Functions",
     body: `${URL}/js-lec-eloquentjs-functions.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Higher-Order Functions",
+    title: "Eloquent JS - Higher-Order Functions",
     body: `${URL}/js-lec-eloquentjs-higher-order-functions.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Data Structures",
+    title: "Eloquent JS - Data Structures",
     body: `${URL}/js-lec-eloquentjs-data-structures.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "The Secret Life of Objects",
+    title: "Eloquent JS - The Secret Life of Objects",
     body: `${URL}/js-lec-eloquentjs-the-secret-life-of-objects.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Bugs and Errors",
+    title: "Eloquent JS - Bugs and Errors",
     body: `${URL}/js-lec-eloquentjs-bugs-and-errors.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Modules",
+    title: "Eloquent JS - Modules",
     body: `${URL}/js-lec-eloquentjs-modules.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "JavaScript and the Browser",
+    title: "Eloquent JS - JavaScript and the Browser",
     body: `${URL}/js-lec-eloquentjs-js-and-the-browser.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Document Object Model",
+    title: "Eloquent JS - Document Object Model",
     body: `${URL}/js-lec-eloquentjs-document-object-model.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Handling Events",
+    title: "Eloquent JS - Handling Events",
     body: `${URL}/js-lec-eloquentjs-handling-events.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "HTTP and Forms",
+    title: "Eloquent JS - HTTP and Forms",
     body: `${URL}/js-lec-eloquentjs-http-and-forms.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Project - A Robot",
+    title: "Eloquent JS - Project - A Robot",
     body: `${URL}/js-lec-eloquentjs-project-a-robot.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
