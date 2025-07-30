@@ -59,6 +59,8 @@ When the test is running, it uses a switch to check the content-type of the resp
 
 The challenge here is to:
 
-1. Use a decoder to transform the body of the request into a go struct
-2. Use the struct to validate the expected items received.
-3. Use the struct to validate the title of the first todo (using the example above: "Task 1")
+1. Use a decoder to transform the body of the request into a go struct.
+2. This struct should match the properties the endpoint returns (Results, Date, TotalResults)
+3. Remember that the JSON recevied uses struct tags. You must set them here for the decoding to work.
+4. Use the struct to validate the expected items received.
+5. Use the struct to validate the title of the first todo (using the example above: "Task 1")

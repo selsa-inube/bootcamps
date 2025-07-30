@@ -17,4 +17,5 @@
 13. 🚀 Assignment: [Todo - GET Todo By Id](./go-server-as-todo-get-todo-by-id.md)
 14. 🚀 Assignment: [Todo - DELETE Todo By Id](./go-server-as-todo-delete-todo-by-id.md)
 15. 🚀 Assignment: [Todo - PATCH Todo By Id](./go-server-as-todo-patch-todo-by-id.md)
-16. 🚀 Assignment: [Todo - Test GET Responses](./go-server-as-todo-test-get-requests.md)
+16. 🚀 Assignment: [Todo - Test GET Requests](./go-server-as-todo-test-get-requests.md)
+17. 🚀 Assignment: [Todo - Test POST Requests](./go-server-as-todo-test-post-requests.md)
