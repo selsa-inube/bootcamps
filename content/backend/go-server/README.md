@@ -19,3 +19,4 @@
 15. 🚀 Assignment: [Todo - PATCH Todo By Id](./go-server-as-todo-patch-todo-by-id.md)
 16. 🚀 Assignment: [Todo - Test GET Requests](./go-server-as-todo-test-get-requests.md)
 17. 🚀 Assignment: [Todo - Test POST Requests](./go-server-as-todo-test-post-requests.md)
+18. 🚀 Assignment: [Todo - Test DELETE Requests](./go-server-as-todo-test-delete-requests.md)
