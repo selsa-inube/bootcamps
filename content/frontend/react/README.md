@@ -1,0 +1,26 @@
+# Learn React
+
+## Content
+
+1. 📖 Lecture: [Your First Component](./l1-your-first-component.md)
+2. 📖 Lecture: [Importing and Exporting Components](./l2-importing-and-exporting-components.md)
+3. 📖 Lecture: [Writing Markup with JSX](./l3-writing-markup-with-jsx.md)
+4. 📖 Lecture: [JS in JSX with Curly Braces](./l4-js-in-jsx-with-curly-braces.md)
+5. 📖 Lecture: [Passing Props to a Component](./l5-passing-props-to-a-component.md)
+6. 📖 Lecture: [Conditional Rendering](./l6-conditional-rendering.md)
+7. 📖 Lecture: [Rendering Lists](./l7-rendering-lists.md)
+8. 📖 Lecture: [Keeping Components Pure](./l8-keeping-components-pure.md)
+9. 📖 Lecture: [Understanding Your UI as a Tree](./l9-understanding-your-ui-as-a-tree.md)
+10. 📖 Lecture: [Responding to Events](./l10-responding-to-events.md)
+11. 📖 Lecture: [State: A Component's Memory](./l11-state-a-components-memory.md)
+12. 📖 Lecture: [Render and Commit](./l12-render-and-commit.md)
+13. 📖 Lecture: [State as a Snapshot](./l13-state-as-a-snapshot.md)
+14. 📖 Lecture: [Queuing a Series of State Updates](./l14-queuing-a-series-of-state-updates.md)
+15. 📖 Lecture: [Updating Objects in State](./l15-updating-objects-in-state.md)
+16. 📖 Lecture: [Updating Arrays in State](./l16-updating-arrays-in-state.md)
+17. 🚀 Assignment: [Google in React](./a1-google-in-react.md)
+18. 🚀 Assignment: [New York Times in React](./a2-new-york-times-in-react.md)
+19. 🚀 Assignment: [Cards](./a3-cards.md)
+20. 🚀 Assignment: [Tic Tac Toe](./a4-tic-tac-toe.md)
+21. 🚀 Assignment: [Thinking in React](./a5-thinking-in-react.md)
+22. 🚀 Assignment: [Chat](./a6-chat.md)
