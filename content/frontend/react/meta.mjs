@@ -146,6 +146,6 @@ const assignments = [
   },
 ];
 
-const js = [...lectures, ...exercises, ...assignments];
+const react = [...lectures, ...exercises, ...assignments];
 
-export { js };
+export { react };
