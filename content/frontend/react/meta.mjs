@@ -96,6 +96,16 @@ const exercises = [
     body: `${URL}/react-ex-tic-tac-toe.md`,
     labels: [labels.topic.react, labels.type.exercise],
   },
+  {
+    title: "Fullstackopen - Introduction to React",
+    body: `${URL}/react-ex-fullstackopen-intro-to-react.md`,
+    labels: [labels.topic.react, labels.type.exercise],
+  },
+  {
+    title: "Fullstackopen - Server Communication",
+    body: `${URL}/react-ex-fullstackopen-server-communication.md`,
+    labels: [labels.topic.react, labels.type.exercise],
+  },
 ];
 
 const assignments = [
@@ -122,6 +132,11 @@ const assignments = [
   {
     title: "Thinking in React",
     body: `${URL}/react-as-thinking-in-react.md`,
+    labels: [labels.topic.react, labels.type.assignment],
+  },
+  {
+    title: "Address Book",
+    body: `${URL}/react-as-address-book.md`,
     labels: [labels.topic.react, labels.type.assignment],
   },
   {
