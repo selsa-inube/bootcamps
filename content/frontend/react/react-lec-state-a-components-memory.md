@@ -1,5 +1,12 @@
-# L11 - State: A Component's Memory
+---
+title: State: A Component's Memory
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/state-a-components-memory
+# State: A Component's Memory
 
-Quiz: https://forms.office.com/r/3tyEBfcDcq
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/state-a-components-memory
+2. Quiz: https://forms.office.com/r/3tyEBfcDcq

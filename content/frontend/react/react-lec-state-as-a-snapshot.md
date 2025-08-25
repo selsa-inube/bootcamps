@@ -1,5 +1,12 @@
-# L13 - State as a Snapshot
+---
+title: State as a Snapshot
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/state-as-a-snapshot
+# State as a Snapshot
 
-Quiz: https://forms.office.com/r/E19j3RSCQS
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/state-as-a-snapshot
+2. Quiz: https://forms.office.com/r/E19j3RSCQS

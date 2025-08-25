@@ -1,4 +1,12 @@
-# A5: Thinking in React
+---
+title: Thinking in React
+type: exercise
+topic: react
+---
+
+# Thinking in React
+
+## Exercise
 
 Complete the Thinking in React explanation you can read in the official React Docs.
 Create a vite project to complete the exercise.

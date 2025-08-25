@@ -1,5 +1,12 @@
-# L3: Writing Markup with JSX
+---
+title: Writing Markup with JSX
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/writing-markup-with-jsx
+# Writing Markup with JSX
 
-Quiz: https://forms.office.com/r/CxPSttHtcH
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/writing-markup-with-jsx
+2. Quiz: https://forms.office.com/r/CxPSttHtcH

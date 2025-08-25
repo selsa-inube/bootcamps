@@ -1,5 +1,10 @@
-# L15 - Updating Objects in State
+---
+title: Updating Objects in State
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/updating-objects-in-state
+# Updating Objects in State
 
-Quiz: https://forms.office.com/r/EhZpMx25UD
+1. Read this guide of React Docs: https://react.dev/learn/updating-objects-in-state
+2. Quiz: https://forms.office.com/r/EhZpMx25UD

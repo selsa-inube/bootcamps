@@ -1,5 +1,12 @@
-# L5: Passing Props to a Component
+---
+title: Passing Props to a Component
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/passing-props-to-a-component
+# Passing Props to a Component
 
-Quiz: https://forms.office.com/r/eFPeShGS70
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/passing-props-to-a-component
+2. Quiz: https://forms.office.com/r/eFPeShGS70

@@ -1,5 +1,12 @@
-# L10 - Responding to Events
+---
+title: Responding to Events
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/responding-to-events
+# Responding to Events
 
-Quiz: https://forms.office.com/r/3k2cjTZvDn
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/responding-to-events
+2. Quiz: https://forms.office.com/r/3k2cjTZvDn

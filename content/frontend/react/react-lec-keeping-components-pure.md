@@ -1,5 +1,12 @@
-# L8: Keeping Components Pure
+---
+title: Keeping Components Pure
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/keeping-components-pure
+# Keeping Components Pure
 
-Quiz: https://forms.office.com/r/7YgKEdJVhk
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/keeping-components-pure
+2. Quiz: https://forms.office.com/r/7YgKEdJVhk

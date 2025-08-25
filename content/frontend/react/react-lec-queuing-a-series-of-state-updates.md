@@ -1,5 +1,12 @@
-# L14 - Queuing a Series of State Updates
+---
+title: Queuing a Series of State Updates
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/queueing-a-series-of-state-updates
+# Queuing a Series of State Updates
 
-Quiz: https://forms.office.com/r/CgT664Pby5
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/queueing-a-series-of-state-updates
+2. Quiz: https://forms.office.com/r/CgT664Pby5

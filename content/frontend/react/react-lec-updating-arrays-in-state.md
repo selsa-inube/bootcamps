@@ -1,5 +1,12 @@
-# L16 - Updating Arrays in State
+---
+title: Updating Arrays in State
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/updating-arrays-in-state
+# Updating Arrays in State
 
-**This lecture doesn't have a quiz**
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/updating-arrays-in-state
+2. **This lecture doesn't have a quiz**

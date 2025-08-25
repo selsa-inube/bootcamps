@@ -1,5 +1,12 @@
-# L1: Your First Component
+---
+title: Your First Component
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/your-first-component
+# Your First Component
 
-Quiz: https://forms.office.com/r/VuDpbyj8UE
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/your-first-component
+2. Quiz: https://forms.office.com/r/VuDpbyj8UE

@@ -1,5 +1,12 @@
-# L6: Conditional Rendering
+---
+title: Conditional Rendering
+type: lecture
+topic: react
+---
 
-Read this guide of React Docs: https://react.dev/learn/conditional-rendering
+# Conditional Rendering
 
-Quiz: https://forms.office.com/r/PL6ykuGk2c
+## Lecture
+
+1. Read this guide of React Docs: https://react.dev/learn/conditional-rendering
+2. Quiz: https://forms.office.com/r/PL6ykuGk2c
