@@ -190,6 +190,11 @@ const assignments = [
     labels: [labels.topic.go, labels.type.assignment],
   },
   {
+    title: "Word Counter - Testing",
+    body: `${URL}/go/go-as-test-word-counter.md`,
+    labels: [labels.topic.go, labels.type.assignment],
+  },
+  {
     title: "Boolean Flags",
     body: `${URL}/go/go-as-boolean-flags.md`,
     labels: [labels.topic.go, labels.type.assignment],
