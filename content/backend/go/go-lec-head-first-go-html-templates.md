@@ -9,4 +9,6 @@ estimate:
 
 - Book: Head First Go
 - Chapter: HTML Templates
-- Quiz:
+
+> [!NOTE]
+> This lecture doesn't have quiz
