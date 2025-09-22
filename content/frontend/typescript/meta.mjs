@@ -79,4 +79,6 @@ const exercises = [];
 
 const assignments = [];
 
-export { lectures, exercises, assignments };
+const ts = [...lectures, ...exercises, ...assignments];
+
+export { ts };
