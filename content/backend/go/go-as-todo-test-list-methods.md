@@ -14,7 +14,7 @@ Our List type now supports 5 methods: Create, Delete, Complete, Save, and Get. T
 
 ### Test file
 
-Create these tests in a test_todo.go file (same directory as todo.go)
+Create these tests in a todo_test.go file (same directory as todo.go)
 
 ### Tests
 
