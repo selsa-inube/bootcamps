@@ -37,15 +37,17 @@ You must create commit messages aligned with the [Conventional Commit](https://w
 
 For frontend applications, we use [Prettier](https://prettier.io/) as the default formatter. Configure it to automatically format your code during the commit process. It is recommended that you have the VS Code extension of this formatter and that you allow it to auto format the code every time you save so you can see how the code is progressing.
 
+For backend applications, you can use the golang formatter.
+
 ### Branches
 
 Follow this structure when creating new branches in the project.
 
-1. Start the branch name with the initial characters of your firstname and lastname. For example, 'John Doe' would use 'jd'.
-2. Continue the branch name with the code of the task you're working on. For example, 'a27'.
+1. Start the branch name with the initial part of your corporate email. For example, if your email is jdoe@sistemasenlinea.com, use 'jdoe'.
+2. Next add the topic the task is related to. For example: 'javascript'.
 3. Complete the name with a brief title of the issue.
 
-A complete example would look like this: 'jd/a27/markup-a-readme'.
+A complete example would look like this: 'jdoe/javascript/markup-a-readme'.
 
 ## Contributions
 
