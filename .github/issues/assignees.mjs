@@ -5,6 +5,8 @@ const assignees = {
   jpinilla: "JeissonP09",
   lmartinez: "LouisMartinez20",
   stejero: "stejero",
+  arodriguez: "Carola-caicedo",
+  omora: "oscardaniel17032019",
 };
 
 export { assignees };
