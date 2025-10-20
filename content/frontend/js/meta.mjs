@@ -4,68 +4,68 @@ const URL =
 
 const lectures = [
   {
-    title: "Eloquent JS - Values, Types and Operators",
-    body: `${URL}/js-lec-eloquentjs-values-types-operators.md`,
+    title: "Head First JS - Getting Your Feet Wet",
+    body: `${URL}/js-lec-head-first-js-getting-your-feet-wet.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Program Structure",
-    body: `${URL}/js-lec-eloquentjs-program-structure.md`,
+    title: "Head First JS - Getting to Know the DOM",
+    body: `${URL}/js-lec-head-first-js-getting-to-know-the-dom.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Functions",
-    body: `${URL}/js-lec-eloquentjs-functions.md`,
+    title: "Head First JS - Creating Objects",
+    body: `${URL}/js-lec-head-first-js-creating-objects.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Higher-Order Functions",
-    body: `${URL}/js-lec-eloquentjs-higher-order-functions.md`,
+    title: "Head First JS - A Trip to Objectville",
+    body: `${URL}/js-lec-head-first-js-a-trip-to-objectville.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Data Structures",
-    body: `${URL}/js-lec-eloquentjs-data-structures.md`,
+    title: "Head First JS - Arrays",
+    body: `${URL}/js-lec-head-first-js-arrays.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - The Secret Life of Objects",
-    body: `${URL}/js-lec-eloquentjs-the-secret-life-of-objects.md`,
+    title: "Head First JS - Getting Functional",
+    body: `${URL}/js-lec-head-first-js-getting-functional.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Bugs and Errors",
-    body: `${URL}/js-lec-eloquentjs-bugs-and-errors.md`,
+    title: "Head First JS - Serious Functions",
+    body: `${URL}/js-lec-head-first-js-serious-functions.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Modules",
-    body: `${URL}/js-lec-eloquentjs-modules.md`,
+    title: "Head First JS - Serious Types",
+    body: `${URL}/js-lec-head-first-js-serious-types.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - JavaScript and the Browser",
-    body: `${URL}/js-lec-eloquentjs-js-and-the-browser.md`,
+    title: "Head First JS - Liberated Functions",
+    body: `${URL}/js-lec-head-first-js-liberated-functions.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Document Object Model",
-    body: `${URL}/js-lec-eloquentjs-document-object-model.md`,
+    title: "Head First JS - Building an App",
+    body: `${URL}/js-lec-head-first-js-building-an-app.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Handling Events",
-    body: `${URL}/js-lec-eloquentjs-handling-events.md`,
+    title: "Head First JS - Getting Asynchronous",
+    body: `${URL}/js-lec-head-first-js-getting-asynchronous.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - HTTP and Forms",
-    body: `${URL}/js-lec-eloquentjs-http-and-forms.md`,
+    title: "Head First JS - Going Further",
+    body: `${URL}/js-lec-head-first-js-going-further.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
   {
-    title: "Eloquent JS - Project - A Robot",
-    body: `${URL}/js-lec-eloquentjs-project-a-robot.md`,
+    title: "Head First JS - Leftovers",
+    body: `${URL}/js-lec-head-first-js-leftovers.md`,
     labels: [labels.topic.javascript, labels.type.lecture],
   },
 ];
@@ -138,63 +138,7 @@ const exercises = [
   },
 ];
 
-const assignments = [
-  {
-    title: "Eloquent JS - Bugs and Errors",
-    body: `${URL}/js-as-eloquentjs-bugs-and-errors.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Data Structures",
-    body: `${URL}/js-as-eloquentjs-data-structures.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Document Object Model",
-    body: `${URL}/js-as-eloquentjs-document-object-model.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Functions",
-    body: `${URL}/js-as-eloquentjs-functions.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Handling Events",
-    body: `${URL}/js-as-eloquentjs-handling-events.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Higher-Order Functions",
-    body: `${URL}/js-as-eloquentjs-higher-order-functions.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - HTTP and Forms",
-    body: `${URL}/js-as-eloquentjs-http-and-forms.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Modules",
-    body: `${URL}/js-as-eloquentjs-modules.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Program Structure",
-    body: `${URL}/js-as-eloquentjs-program-structure.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - Project: A Robot",
-    body: `${URL}/js-as-eloquentjs-project-a-robot.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-  {
-    title: "Eloquent JS - The Secret Life of Objects",
-    body: `${URL}/js-as-eloquentjs-the-secret-life-of-objects.md`,
-    labels: [labels.topic.javascript, labels.type.assignment],
-  },
-];
+const assignments = [];
 
 const js = [...lectures, ...exercises, ...assignments];
 
