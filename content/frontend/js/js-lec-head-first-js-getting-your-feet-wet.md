@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Getting Your Feet Wet
-- Quiz:
+- Quiz: https://forms.office.com/r/t5YcJhMVm5

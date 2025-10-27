@@ -24,8 +24,8 @@ import { goServer } from "../content/backend/go-server/meta.mjs";
 import { sql } from "../content/backend/sql/meta.mjs";
 import { docker } from "../content/all/docker/meta.mjs";
 
-const issues = htmlCSS;
-const assignee = assignees.mcgonzalez;
+const issues = js;
+const assignee = assignees.dgarzon;
 
 issues.forEach(({ title, body, labels }) => {
   createIssue("selsa-inube", "bootcamps", {
