@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Going Further
-- Quiz:
+- Quiz: https://forms.office.com/r/zmyUTL7XP5
