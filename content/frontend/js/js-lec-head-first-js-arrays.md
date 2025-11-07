@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Arrays
-- Quiz:
+- Quiz: https://forms.office.com/r/wBjxeGVwK5
