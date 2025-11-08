@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: A Trip To Objectville
-- Quiz:
+- Quiz: https://forms.office.com/r/7A33z770Uv
