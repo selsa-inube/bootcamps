@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Getting To Know The Dom
-- Quiz:
+- Quiz: https://forms.office.com/r/AHcxBAQwHC
