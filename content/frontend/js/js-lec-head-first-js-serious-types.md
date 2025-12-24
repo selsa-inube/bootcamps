@@ -8,4 +8,4 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Serious Types
-- Quiz:
+- Quiz: https://forms.office.com/r/xYJ1HveE3w
