@@ -8,4 +8,6 @@ topic: javascript
 
 - Book: Head First JavaScript
 - Chapter: Building an App
-- Quiz:
+
+> [!NOTE]
+> This chapter doesn't have quiz
